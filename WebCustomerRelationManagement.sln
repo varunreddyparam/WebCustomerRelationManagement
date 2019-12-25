@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManageme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement.Interface", "WebCustomerRelationManagement.Interface\WebCustomerRelationManagement.Interface.csproj", "{E9A61309-5A7F-464D-ABF6-1FA1180847D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement.Concrete", "..\..\WebCustomerRelationManagement.Concrete\WebCustomerRelationManagement.Concrete.csproj", "{95CBE750-06AC-45E0-8DC2-8691A0FFC78E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement.Concrete", "WebCustomerRelationManagement.Concrete\WebCustomerRelationManagement.Concrete.csproj", "{95CBE750-06AC-45E0-8DC2-8691A0FFC78E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebCustomerRelationManagement.Models
 {
-    [Table("Contact")]
+    [Table("tbl_Contact")]
     public class Contact
     {
         public string Name { get; set; }
@@ -40,15 +40,15 @@ namespace WebCustomerRelationManagement.Models
         public string statecodename { get; set; }
         public int statuscode { get; set; }
         public string statuscodename { get; set; }
-        public int createdby { get; set; }
+        public Guid createdby { get; set; }
         public string createdbyname { get; set; }
         public DateTime createdon { get; set; }
-        public int createdonbehalfby { get; set; }
-        public string createdonbehalfbyname { get; set; }
+        public Guid createdonbehalfby { get; set; }
+        public Guid  createdonbehalfbyname { get; set; }
         public int modifiedby { get; set; }
         public string modifiedbyname { get; set; }
         public DateTime modifiedon { get; set; }
-        public int modifiedonbehalfby { get; set; }
+        public Guid  modifiedonbehalfby { get; set; }
         public string modifiedonbehalfbyname { get; set; }
     }
 }
