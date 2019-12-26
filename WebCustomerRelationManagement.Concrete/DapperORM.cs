@@ -40,5 +40,14 @@ namespace WebCustomerRelationManagement.Concrete
                 return con.Query<T>(proceedureName, parameters, commandType: CommandType.StoredProcedure);
             }
         }
+
+        public static T GetTotalCount<T>(string proceedureName, DynamicParameters parameters = null)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                return (T)Convert.ChangeType(con.Query<T>(proceedureName, parameters, commandType: CommandType.StoredProcedure),typeof(T));
+            }
+        }
     }
 }

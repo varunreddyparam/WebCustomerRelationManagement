@@ -1,0 +1,2 @@
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csprojAssemblyReference.cache
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csproj.CoreCompileInputs.cache

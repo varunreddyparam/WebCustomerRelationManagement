@@ -19,20 +19,20 @@ namespace WebCustomerRelationManagement.Models
         public string PhoneNumberTypeName { get; set; }
         public Guid CustomerType { get; set; }
         public string CustomerTypeName { get; set; }
-        public int statecode { get; set; }
-        public string statecodename { get; set; }
-        public int statuscode { get; set; }
-        public string statuscodename { get; set; }
-        public Guid createdby { get; set; }
-        public string createdbyname { get; set; }
-        public DateTime createdon { get; set; }
-        public Guid createdonbehalfby { get; set; }
-        public Guid createdonbehalfbyname { get; set; }
-        public int modifiedby { get; set; }
-        public string modifiedbyname { get; set; }
-        public DateTime modifiedon { get; set; }
-        public Guid modifiedonbehalfby { get; set; }
-        public string modifiedonbehalfbyname { get; set; }
+        public int Statecode { get; set; }
+        public string Statecodename { get; set; }
+        public int Statuscode { get; set; }
+        public string Statuscodename { get; set; }
+        public Guid Createdby { get; set; }
+        public string Createdbyname { get; set; }
+        public DateTime Createdon { get; set; }
+        public Guid Createdonbehalfby { get; set; }
+        public Guid Createdonbehalfbyname { get; set; }
+        public int Modifiedby { get; set; }
+        public string Modifiedbyname { get; set; }
+        public DateTime Modifiedon { get; set; }
+        public Guid Modifiedonbehalfby { get; set; }
+        public string Modifiedonbehalfbyname { get; set; }
 
     }
 }

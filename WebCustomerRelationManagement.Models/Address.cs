@@ -11,21 +11,19 @@ namespace WebCustomerRelationManagement.Models
     [Table("tbl_Address")]
     public class Address
     {
-        public string Address1_AddressId { get; set; }
-        public string Address1_City { get; set; }
-        public string Address1_Country { get; set; }
-        public string Address1_County { get; set; }
-        public string Address1_FreightTermsCode { get; set; }
-        public string Address1_FreightTermsCodeName { get; set; }
-        public string Address1_Latitude { get; set; }
-        public string Address1_Line1 { get; set; }
-        public string Address1_Line2 { get; set; }
-        public string Address1_Line3 { get; set; }
-        public string Address1_Longitude { get; set; }
-        public string Address1_Name { get; set; }
-        public string Address1_PostalCode { get; set; }
-        public string Address1_PostOfficeBox { get; set; }
-        public string Address1_StateOrProvince { get; set; }
+        public string AddressId { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
+        public string County { get; set; }
+        public string Latitude { get; set; }
+        public string AddressLine1 { get; set; }
+        public string AddressLine2 { get; set; }
+        public string AddressLine3 { get; set; }
+        public string Longitude { get; set; }
+        public string Name { get; set; }
+        public string PostalCode { get; set; }
+        public string PostOfficeBox { get; set; }
+        public string StateOrProvince { get; set; }
         public bool IsPrimary { get; set; }
         public Guid CustomerType { get; set; }
         public string CustomerTypeName { get; set; }

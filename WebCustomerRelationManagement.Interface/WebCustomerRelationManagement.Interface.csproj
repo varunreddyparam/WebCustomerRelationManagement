@@ -41,8 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAddress.cs" />
     <Compile Include="IContacts.cs" />
+    <Compile Include="IEmailAddress.cs" />
+    <Compile Include="IPhoneNumber.cs" />
+    <Compile Include="IWebSiteURL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebCustomerRelationManagement.Models\WebCustomerRelationManagement.Models.csproj">
+      <Project>{187e80d8-56af-43a9-a81e-5c2a30bdc5ea}</Project>
+      <Name>WebCustomerRelationManagement.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
