@@ -14,7 +14,7 @@ namespace WebCustomerRelationManagement.Interface
 
         IQueryable<Contact> ShowAllContacts(string sortColumn, string sortColumnDir, string Search);
 
-        void CreateContact(Contact contact);
+        Guid CreateContact(Contact contact);
 
         void UpdateContact(Guid contactId);
 

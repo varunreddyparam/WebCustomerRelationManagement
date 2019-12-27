@@ -77,7 +77,7 @@ namespace WebCustomerRelationManagement.Concrete
             return contactList;
         }
 
-        public void CreateContact(Contact contact)
+        public Guid CreateContact(Contact contact)
         {
             throw new NotImplementedException();
         }

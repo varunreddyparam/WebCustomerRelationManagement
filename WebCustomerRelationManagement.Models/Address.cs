@@ -11,7 +11,7 @@ namespace WebCustomerRelationManagement.Models
     [Table("tbl_Address")]
     public class Address
     {
-        public string AddressId { get; set; }
+        public Guid AddressId { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
         public string County { get; set; }

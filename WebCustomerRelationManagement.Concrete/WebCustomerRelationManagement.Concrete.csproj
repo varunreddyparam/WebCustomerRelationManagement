@@ -58,11 +58,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddressConcrete.cs" />
     <Compile Include="ContactConcrete.cs" />
     <Compile Include="DapperORM.cs" />
     <Compile Include="DatabaseContext.cs" />
+    <Compile Include="EmailAddressConcrete.cs" />
+    <Compile Include="Enum\ContactStatusCode.cs" />
     <Compile Include="PhoneNumberConcrete.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebSiteUrlConcrete.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebCustomerRelationManagement.Interface\WebCustomerRelationManagement.Interface.csproj">

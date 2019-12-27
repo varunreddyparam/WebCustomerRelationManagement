@@ -10,5 +10,10 @@ namespace WebCustomerRelationManagement.Interface
     public interface IEmailAddress
     {
         IQueryable<EmailAddress> GetEmailAddressByContact(Guid contactId,string customerType);
+        void CreateEmailAddress(EmailAddress entity);
+
+        void UpdateEmailAddress(Guid emailAddressId, string contactEmailAddress, int stateCode, int statusCode);
+
+        int DeleteEmailAddress(Guid phoneNumberId);
     }
 }
