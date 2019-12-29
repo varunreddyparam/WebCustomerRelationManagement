@@ -10,7 +10,7 @@ namespace WebCustomerRelationManagement.Interface
 
         void CreatePhoneNumber(PhoneNumber entity);
 
-        void UpdatePhoneNumber(int phoneNumberType, Guid phoneNumberId, string phoneNumberTypeName, string contactphoneNumber, int stateCode, int statusCode);
+        void UpdatePhoneNumber(PhoneNumber phoneNumber);
 
         int DeletePhoneNumber(Guid phoneNumberId);
     }

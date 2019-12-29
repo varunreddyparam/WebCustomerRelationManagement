@@ -12,7 +12,7 @@ namespace WebCustomerRelationManagement.Interface
         IQueryable<EmailAddress> GetEmailAddressByContact(Guid contactId,string customerType);
         void CreateEmailAddress(EmailAddress entity);
 
-        void UpdateEmailAddress(Guid emailAddressId, string contactEmailAddress, int stateCode, int statusCode);
+        void UpdateEmailAddress(EmailAddress emailAddress);
 
         int DeleteEmailAddress(Guid phoneNumberId);
     }

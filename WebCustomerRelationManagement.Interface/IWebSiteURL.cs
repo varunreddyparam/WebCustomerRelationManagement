@@ -9,7 +9,7 @@ namespace WebCustomerRelationManagement.Interface
         IQueryable<WebsiteURL> GetWebSiteByContact(Guid contactId, string contactType);
         void CreateWebSiteUrl(WebsiteURL entity);
 
-        void UpdateWebsiteURL(int webSiteUrlType, Guid webSiteUrlId, string webSiteUrlTypeName, string contactWebSiteUrlName, int stateCode, int statusCode);
+        void UpdateWebsiteURL(WebsiteURL websiteURL);
 
         int DeleteWebsiteURL(Guid webSiteUrlId);
     }

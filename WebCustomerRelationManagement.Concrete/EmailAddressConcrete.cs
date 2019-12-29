@@ -59,30 +59,17 @@ namespace WebCustomerRelationManagement.Concrete
             }
         }
 
-        public void UpdateEmailAddress(Guid emailAddressId, string contactEmailAddress, int stateCode, int statusCode)
+        public void UpdateEmailAddress(EmailAddress emailAddress)
         {
             try
             {
-                var _Context = new DatabaseContext();
-                var context = new DatabaseContext();
-                var emailAddress = (from emailAddressentity in context.EmailAddresses
-                                    where emailAddressentity.EmailAddressId == emailAddressId
-                                    select emailAddressentity).SingleOrDefault();
-                if (emailAddress != null)
+                using (var context = new DatabaseContext())
                 {
-                    emailAddress.EmailAddressName = contactEmailAddress;
-                    emailAddress.statecode = stateCode;
-                    //emailAddress.statecodename = 
-                    emailAddress.statuscode = statusCode;
-                    //emailAddress.statuscodename
-                    //emailAddress.modifiedby
-                    emailAddress.modifiedon = DateTime.Now;
-                    //emailAddress.modifiedbyname
-                    //emailAddress.modifiedonbehalfby
-                    //emailAddress.modifiedonbehalfbyname
+                    var emailAddressEntity = context.EmailAddresses.Where(key => key.EmailAddressId == emailAddress.EmailAddressId).SingleOrDefault();
+                    context.Entry(emailAddressEntity).CurrentValues.SetValues(emailAddress);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
             }

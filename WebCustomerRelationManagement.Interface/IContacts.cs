@@ -16,8 +16,8 @@ namespace WebCustomerRelationManagement.Interface
 
         Guid CreateContact(Contact contact);
 
-        void UpdateContact(Guid contactId);
+        void UpdateContact(Contact contact);
 
-        void DeleteContact(Guid contactId);
+        int DeleteContact(Guid contactId);
     }
 }

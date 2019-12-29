@@ -59,32 +59,17 @@ namespace WebCustomerRelationManagement.Concrete
             return urlDeatil;
         }
 
-        public void UpdateWebsiteURL(int webSiteUrlType, Guid webSiteUrlId, string webSiteUrlTypeName, string contactWebSiteUrlName, int stateCode, int statusCode)
+        public void UpdateWebsiteURL(WebsiteURL websiteURL)
         {
             try
             {
-                var _Context = new DatabaseContext();
-                var context = new DatabaseContext();
-                var webSiteUrl = (from websiteUrlentity in context.WebsiteURLs
-                                    where websiteUrlentity.WebsiteUrlId == webSiteUrlId
-                                  select websiteUrlentity).SingleOrDefault();
-                if (webSiteUrl != null)
+                using (var context = new DatabaseContext())
                 {
-                    webSiteUrl.Name = contactWebSiteUrlName;
-                    webSiteUrl.WebsiteTypeCode = webSiteUrlType;
-                    webSiteUrl.WebsiteTypeName = webSiteUrlTypeName;
-                    webSiteUrl.statecode = stateCode;
-                    //emailAddress.statecodename = 
-                    webSiteUrl.statuscode = statusCode;
-                    //emailAddress.statuscodename
-                    //emailAddress.modifiedby
-                    webSiteUrl.modifiedon = DateTime.Now;
-                    //emailAddress.modifiedbyname
-                    //emailAddress.modifiedonbehalfby
-                    //emailAddress.modifiedonbehalfbyname
+                    var contactEntity = context.WebsiteURLs.Where(key => key.WebsiteUrlId == websiteURL.WebsiteUrlId).SingleOrDefault();
+                    context.Entry(contactEntity).CurrentValues.SetValues(websiteURL);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
             }

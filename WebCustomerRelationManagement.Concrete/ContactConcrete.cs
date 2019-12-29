@@ -79,17 +79,63 @@ namespace WebCustomerRelationManagement.Concrete
 
         public Guid CreateContact(Contact contact)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (var context = new DatabaseContext())
+                {
+                    context.Contacts.Add(contact);
+                    context.SaveChanges();
+                    return contact.ContactId;
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+            return Guid.Empty;
         }
 
-        public void UpdateContact(Guid contactId)
+        public void UpdateContact(Contact contact)
         {
-            throw new NotImplementedException();
+
+            try
+            {
+                using (var context = new DatabaseContext())
+                {
+                    var contactEntity = context.Contacts.Where(key => key.ContactId == contact.ContactId).SingleOrDefault();
+                    context.Entry(contactEntity).CurrentValues.SetValues(contact);
+                }
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
 
-        public void DeleteContact(Guid contactId)
+        public int DeleteContact(Guid contactId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var context = new DatabaseContext();
+                var contact = (from addressentity in context.Contacts
+                               where addressentity.ContactId == contactId
+                               select addressentity).SingleOrDefault();
+                if (contact != null)
+                {
+                    context.Contacts.Remove(contact);
+                    int resultContact = context.SaveChanges();
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

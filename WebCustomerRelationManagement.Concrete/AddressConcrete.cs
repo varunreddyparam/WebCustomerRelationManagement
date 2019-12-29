@@ -61,36 +61,17 @@ namespace WebCustomerRelationManagement.Concrete
         }
 
 
-        public void UpdateAddress(Guid addressid, string contactaddressName, int stateCode, int statusCode, string line1, string line2, string line3, string city, string country, string county)
+        public void UpdateAddress(Address address)
         {
             try
             {
-                var _Context = new DatabaseContext();
-                var context = new DatabaseContext();
-                var address = (from addressentity in context.Addresses
-                               where addressentity.AddressId == addressid
-                               select addressentity).SingleOrDefault();
-                if (address != null)
+                using (var context = new DatabaseContext())
                 {
-                    address.Name = contactaddressName;
-                    address.AddressLine1 = line1;
-                    address.AddressLine2 = line2;
-                    address.AddressLine3 = line3;
-                    address.City = city;
-                    address.Country = country;
-                    address.County = county;
-                    address.statecode = stateCode;
-                    //emailAddress.statecodename = 
-                    address.statuscode = statusCode;
-                    //emailAddress.statuscodename
-                    //emailAddress.modifiedby
-                    address.modifiedon = DateTime.Now;
-                    //emailAddress.modifiedbyname
-                    //emailAddress.modifiedonbehalfby
-                    //emailAddress.modifiedonbehalfbyname
+                    var contactEntity = context.Addresses.Where(key => key.AddressId == address.AddressId).SingleOrDefault();
+                    context.Entry(contactEntity).CurrentValues.SetValues(address);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
             }

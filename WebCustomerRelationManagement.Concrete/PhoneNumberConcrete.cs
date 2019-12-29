@@ -71,33 +71,17 @@ namespace WebCustomerRelationManagement.Concrete
             return null;
         }
 
-        public void UpdatePhoneNumber(int phoneNumberType, Guid phoneNumberId, string phoneNumberTypeName, string contactphoneNumber, int stateCode, int statusCode)
+        public void UpdatePhoneNumber(PhoneNumber phoneNumber)
         {
             try
             {
-                var _Context = new DatabaseContext();
-                var context = new DatabaseContext();
-                var phoneNumber = (from phoneNumberentity in context.PhoneNumbers
-                                   where phoneNumberentity.PhoneNumberId == phoneNumberId
-                                   select phoneNumberentity).SingleOrDefault();
-                if (phoneNumber != null)
+                using (var context = new DatabaseContext())
                 {
-                    phoneNumber.Phonenumber = contactphoneNumber;
-                    phoneNumber.PhoneNumberType = phoneNumberType;
-                    phoneNumber.PhoneNumberTypeName = phoneNumberTypeName;
-                    phoneNumber.Statecode = stateCode;
-                    //phoneNumber.Statecodename = 
-                    phoneNumber.Statuscode = statusCode;
-                    //phoneNumber.Statuscodename
-                    //phoneNumber.modifiedby
-                    phoneNumber.Modifiedon = DateTime.Now;
-                    //phoneNumber.modifiedbyname
-                    //phoneNumber.modifiedonbehalfby
-                    //phoneNumber.modifiedonbehalfbyname
-
+                    var phoneNumberEntity = context.PhoneNumbers.Where(key => key.PhoneNumberId == phoneNumber.PhoneNumberId).SingleOrDefault();
+                    context.Entry(phoneNumberEntity).CurrentValues.SetValues(phoneNumber);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
             }
