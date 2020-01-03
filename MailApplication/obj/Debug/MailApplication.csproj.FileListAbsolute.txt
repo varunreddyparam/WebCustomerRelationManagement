@@ -1,0 +1,11 @@
+C:\Mail\Gmail\WebCustomerRelationManagement\MailApplication\bin\Debug\MailApplication.dll
+C:\Mail\Gmail\WebCustomerRelationManagement\MailApplication\bin\Debug\MailApplication.pdb
+C:\Mail\Gmail\WebCustomerRelationManagement\MailApplication\bin\Debug\BouncyCastle.Crypto.dll
+C:\Mail\Gmail\WebCustomerRelationManagement\MailApplication\bin\Debug\MailKit.dll
+C:\Mail\Gmail\WebCustomerRelationManagement\MailApplication\bin\Debug\MimeKit.dll
+C:\Mail\Gmail\WebCustomerRelationManagement\MailApplication\bin\Debug\MailKit.xml
+C:\Mail\Gmail\WebCustomerRelationManagement\MailApplication\bin\Debug\MimeKit.xml
+C:\Mail\Gmail\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.csprojAssemblyReference.cache
+C:\Mail\Gmail\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.csproj.CopyComplete
+C:\Mail\Gmail\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.dll
+C:\Mail\Gmail\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.pdb

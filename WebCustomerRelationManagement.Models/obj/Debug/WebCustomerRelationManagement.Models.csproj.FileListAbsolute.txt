@@ -10,3 +10,8 @@ C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelati
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\WebCustomerRelationManagement.Models.pdb
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.dll
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.pdb
+C:\Mail\Gmail\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\WebCustomerRelationManagement.Models.dll
+C:\Mail\Gmail\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\WebCustomerRelationManagement.Models.pdb
+C:\Mail\Gmail\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.csprojAssemblyReference.cache
+C:\Mail\Gmail\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.dll
+C:\Mail\Gmail\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.pdb
