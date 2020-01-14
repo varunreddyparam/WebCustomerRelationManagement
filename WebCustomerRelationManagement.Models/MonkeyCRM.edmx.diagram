@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8ab9fb0a32e844a9be18d6a40f065935" Name="Diagram1">
+        <EntityTypeShape EntityType="MonkeyCRMModel.sysdiagram" Width="1.5" PointX="4.5" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MonkeyCRMModel.tbl_Account" Width="1.5" PointX="3" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MonkeyCRMModel.tbl_Address" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MonkeyCRMModel.tbl_Contact" Width="1.5" PointX="0.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="MonkeyCRMModel.tbl_EmailAddress" Width="1.5" PointX="8.25" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MonkeyCRMModel.tbl_PhoneNumber" Width="1.5" PointX="11.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MonkeyCRMModel.tbl_SystemUser" Width="1.5" PointX="11.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="MonkeyCRMModel.tbl_WebsiteURL" Width="1.5" PointX="8.25" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="MonkeyCRMModel.FK_tbl_Account_tbl_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="MonkeyCRMModel.FK_tbl_Address_tbl_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="MonkeyCRMModel.FK_tbl_EmailAddress_tbl_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="MonkeyCRMModel.FK_tbl_PhoneNumber_tbl_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="MonkeyCRMModel.FK_tbl_WebsiteURL_tbl_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="MonkeyCRMModel.FK_tbl_Address_tbl_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="MonkeyCRMModel.FK_tbl_EmailAddress_tbl_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="MonkeyCRMModel.FK_tbl_PhoneNumber_tbl_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="MonkeyCRMModel.FK_tbl_WebsiteURL_tbl_Contact" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

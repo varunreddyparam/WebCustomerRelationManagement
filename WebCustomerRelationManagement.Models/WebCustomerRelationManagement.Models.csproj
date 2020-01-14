@@ -31,10 +31,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,15 +51,75 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs" />
-    <Compile Include="Account.cs" />
-    <Compile Include="ContactDetailView.cs" />
-    <Compile Include="Contact.cs" />
-    <Compile Include="EmailAddress.cs" />
     <Compile Include="Enums\CustomEnum.cs" />
-    <Compile Include="PhoneNumber.cs" />
+    <Compile Include="MonkeyCRM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MonkeyCRM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MonkeyCRM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MonkeyCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MonkeyCRM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MonkeyCRM.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebsiteURL.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>MonkeyCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Account.cs">
+      <DependentUpon>MonkeyCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Address.cs">
+      <DependentUpon>MonkeyCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Contact.cs">
+      <DependentUpon>MonkeyCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EmailAddress.cs">
+      <DependentUpon>MonkeyCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PhoneNumber.cs">
+      <DependentUpon>MonkeyCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SystemUser.cs">
+      <DependentUpon>MonkeyCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_WebsiteURL.cs">
+      <DependentUpon>MonkeyCRM.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="MonkeyCRM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MonkeyCRM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="MonkeyCRM.edmx.diagram">
+      <DependentUpon>MonkeyCRM.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MonkeyCRM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MonkeyCRM.Context.cs</LastGenOutput>
+      <DependentUpon>MonkeyCRM.edmx</DependentUpon>
+    </Content>
+    <Content Include="MonkeyCRM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MonkeyCRM.edmx</DependentUpon>
+      <LastGenOutput>MonkeyCRM.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

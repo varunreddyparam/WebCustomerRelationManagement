@@ -6,11 +6,11 @@ namespace WebCustomerRelationManagement.Interface
 {
     public interface IPhoneNumber
     {
-        IQueryable<PhoneNumber> GetPhoneNumberByContact(Guid contactId, string contactType);
+        IQueryable<tbl_PhoneNumber> GetPhoneNumberByContact(Guid contactId, string contactType);
 
-        void CreatePhoneNumber(PhoneNumber entity);
+        void CreatePhoneNumber(tbl_PhoneNumber entity);
 
-        void UpdatePhoneNumber(PhoneNumber phoneNumber);
+        void UpdatePhoneNumber(tbl_PhoneNumber phoneNumber);
 
         int DeletePhoneNumber(Guid phoneNumberId);
     }

@@ -10,13 +10,13 @@ namespace WebCustomerRelationManagement.Interface
 
         int GetTotalContactbyType(int contactType);
 
-        ContactDetailView GetContactById(Guid contactId);
+        tbl_Contact GetContactById(Guid contactId);
 
-        IQueryable<Contact> ShowAllContacts(string sortColumn, string sortColumnDir, string Search);
+        IQueryable<tbl_Contact> ShowAllContacts(string sortColumn, string sortColumnDir, string Search);
 
-        Guid CreateContact(Contact contact);
+        Guid CreateContact(tbl_Contact contact);
 
-        void UpdateContact(Contact contact);
+        void UpdateContact(tbl_Contact contact);
 
         int DeleteContact(Guid contactId);
     }

@@ -6,10 +6,10 @@ namespace WebCustomerRelationManagement.Interface
 {
     public interface IAddress
     {
-        IQueryable<Address> GetAddressByContact(Guid contactId, string contactType);
-        void CreateAddress(Address entity);
+        IQueryable<tbl_Address> GetAddressByContact(Guid contactId, string contactType);
+        void CreateAddress(tbl_Address entity);
 
-        void UpdateAddress(Address address);
+        void UpdateAddress(tbl_Address address);
 
         int DeleteAddress(Guid addressid);
     }
