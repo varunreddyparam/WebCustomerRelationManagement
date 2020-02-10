@@ -7,13 +7,13 @@ namespace WebCustomerRelationManagement.Concrete
 {
     public class WebSiteUrlConcrete : IWebSiteURL
     {
-        public void CreateWebSiteUrl(WebsiteURL entity)
+        public void CreateWebSiteUrl(tbl_WebsiteURL entity)
         {
             try
             {
-                using (var context = new DatabaseContext())
+                using (var context = new MonkeyCRMEntities())
                 {
-                    context.WebsiteURLs.Add(entity);
+                    context.tbl_WebsiteURL.Add(entity);
                     context.SaveChanges();
                 }
             }
@@ -27,13 +27,13 @@ namespace WebCustomerRelationManagement.Concrete
         {
             try
             {
-                var context = new DatabaseContext();
-                var webSiteUrl = (from webSiteUrlentity in context.WebsiteURLs
-                                    where webSiteUrlentity.WebsiteUrlId == webSiteUrlId
+                var context = new MonkeyCRMEntities();
+                var webSiteUrl = (from webSiteUrlentity in context.tbl_WebsiteURL
+                                    where webSiteUrlentity.websiteurlid == webSiteUrlId
                                     select webSiteUrlentity).SingleOrDefault();
                 if (webSiteUrl != null)
                 {
-                    context.WebsiteURLs.Remove(webSiteUrl);
+                    context.tbl_WebsiteURL.Remove(webSiteUrl);
                     int resultWebSiteUrl = context.SaveChanges();
                     return 1;
                 }
@@ -49,23 +49,23 @@ namespace WebCustomerRelationManagement.Concrete
             }
         }
 
-        public IQueryable<WebsiteURL> GetWebSiteByContact(Guid contactId, string contactType)
+        public IQueryable<tbl_WebsiteURL> GetWebSiteByContact(Guid contactId, string contactType)
         {
-            var _Context = new DatabaseContext();
-            var urlDeatil = (from webSiteUrl in _Context.WebsiteURLs
-                             where webSiteUrl.CustomerType == contactId &&
-                             webSiteUrl.CustomerTypeName == contactType
+            var _Context = new MonkeyCRMEntities();
+            var urlDeatil = (from webSiteUrl in _Context.tbl_WebsiteURL
+                             where webSiteUrl.customertype == contactId &&
+                             webSiteUrl.customertypename == contactType
                              select webSiteUrl);
             return urlDeatil;
         }
 
-        public void UpdateWebsiteURL(WebsiteURL websiteURL)
+        public void UpdateWebsiteURL(tbl_WebsiteURL websiteURL)
         {
             try
             {
-                using (var context = new DatabaseContext())
+                using (var context = new MonkeyCRMEntities())
                 {
-                    var contactEntity = context.WebsiteURLs.Where(key => key.WebsiteUrlId == websiteURL.WebsiteUrlId).SingleOrDefault();
+                    var contactEntity = context.tbl_WebsiteURL.Where(key => key.websiteurlid == websiteURL.websiteurlid).SingleOrDefault();
                     context.Entry(contactEntity).CurrentValues.SetValues(websiteURL);
                 }
             }

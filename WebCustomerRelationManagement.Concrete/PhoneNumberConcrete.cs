@@ -7,13 +7,13 @@ namespace WebCustomerRelationManagement.Concrete
 {
     public class PhoneNumberConcrete : IPhoneNumber
     {
-        public void CreatePhoneNumber(PhoneNumber entity)
+        public void CreatePhoneNumber(tbl_PhoneNumber entity)
         {
             try
             {
-                using (var context = new DatabaseContext())
+                using (var context = new MonkeyCRMEntities())
                 {
-                    context.PhoneNumbers.Add(entity);
+                    context.tbl_PhoneNumber.Add(entity);
                     context.SaveChanges();
                 }
             }
@@ -27,13 +27,13 @@ namespace WebCustomerRelationManagement.Concrete
         {
             try
             {
-                var context = new DatabaseContext();
-                var phoneNumber = (from phoneNumberentity in context.PhoneNumbers
-                                   where phoneNumberentity.PhoneNumberId == phoneNumberId
+                var context = new MonkeyCRMEntities();
+                var phoneNumber = (from phoneNumberentity in context.tbl_PhoneNumber
+                                   where phoneNumberentity.phonenumberd == phoneNumberId
                                    select phoneNumberentity).SingleOrDefault();
                 if (phoneNumber != null)
                 {
-                    context.PhoneNumbers.Remove(phoneNumber);
+                    context.tbl_PhoneNumber.Remove(phoneNumber);
                     int resultphoneNumber = context.SaveChanges();
                     return 1;
                 }
@@ -49,17 +49,17 @@ namespace WebCustomerRelationManagement.Concrete
             }
         }
 
-        public IQueryable<PhoneNumber> GetPhoneNumberByContact(Guid contactId, string contactType)
+        public IQueryable<tbl_PhoneNumber> GetPhoneNumberByContact(Guid contactId, string contactType)
         {
 
             try
             {
-                var _Context = new DatabaseContext();
-                var phoneNumberDeatil = (from phoneNumber in _Context.PhoneNumbers
-                                         where phoneNumber.CustomerType == contactId &&
-                                         phoneNumber.CustomerTypeName == contactType &&
-                                         phoneNumber.Statuscode == 0 &&
-                                         phoneNumber.Statuscodename == "Active"
+                var _Context = new MonkeyCRMEntities();
+                var phoneNumberDeatil = (from phoneNumber in _Context.tbl_PhoneNumber
+                                         where phoneNumber.customertype == contactId &&
+                                         phoneNumber.customertypename == contactType &&
+                                         phoneNumber.statuscode == 0 &&
+                                         phoneNumber.statuscodename == "Active"
                                          select phoneNumber);
                 return phoneNumberDeatil;
 
@@ -71,13 +71,13 @@ namespace WebCustomerRelationManagement.Concrete
             return null;
         }
 
-        public void UpdatePhoneNumber(PhoneNumber phoneNumber)
+        public void UpdatePhoneNumber(tbl_PhoneNumber phoneNumber)
         {
             try
             {
-                using (var context = new DatabaseContext())
+                using (var context = new MonkeyCRMEntities())
                 {
-                    var phoneNumberEntity = context.PhoneNumbers.Where(key => key.PhoneNumberId == phoneNumber.PhoneNumberId).SingleOrDefault();
+                    var phoneNumberEntity = context.tbl_PhoneNumber.Where(key => key.phonenumberd == phoneNumber.phonenumberd).SingleOrDefault();
                     context.Entry(phoneNumberEntity).CurrentValues.SetValues(phoneNumber);
                 }
             }

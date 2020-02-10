@@ -17,7 +17,8 @@ namespace WebCustomerRelationManagement.Concrete
 
         public int GetTotalContactsCount()
         {
-            return DapperORM.GetTotalCount<int>("Usp_GetContactsCount");
+            throw new NotImplementedException();
+            //return DapperORM.GetTotalCount<int>("Usp_GetContactsCount");
         }
 
         public int GetTotalContactbyType(int contactType)
@@ -27,65 +28,65 @@ namespace WebCustomerRelationManagement.Concrete
 
         public ContactDetailView GetContactById(Guid contactId)
         {
-            var _Context = new DatabaseContext();
-            var contactDeatil = (from contact in _Context.Contacts
-                                 where contact.ContactId == contactId
+            var _Context = new MonkeyCRMEntities();
+            var contactDeatil = (from contact in _Context.tbl_Contact
+                                 where contact.contactid == contactId
                                  select new ContactDetailView
                                  {
-                                     Name = contact.Name,
-                                     FirstName = contact.FirstName,
-                                     LastName = contact.LastName,
-                                     MiddleName = contact.MiddleName,
-                                     ContactId = contact.ContactId,
-                                     ContactType = contact.ContactType,
-                                     ContactTypeName = contact.ContactTypeName,
+                                     Name = contact.name,
+                                     FirstName = contact.firstname,
+                                     LastName = contact.lastname,
+                                     MiddleName = contact.middlename,
+                                     ContactId = contact.contactid,
+                                     ContactType = contact.contacttype,
+                                     ContactTypeName = contact.contacttypename,
                                      Phone = phoneNumber.GetPhoneNumberByContact(contactId, contactType).ToList(),
                                      Emails = emailAddress.GetEmailAddressByContact(contactId, contactType).ToList(),
                                      WebsiteURLs = webSiteUrl.GetWebSiteByContact(contactId, contactType).ToList(),
                                      Addresses = address.GetAddressByContact(contactId, contactType).ToList(),
-                                     Description = contact.Description,
-                                     DoNotBulkEmail = contact.DoNotBulkEmail,
-                                     DoNotBulkPostalMail = contact.DoNotBulkPostalMail,
-                                     DoNotEmail = contact.DoNotEmail,
-                                     DoNotFax = contact.DoNotFax,
-                                     DoNotPhone = contact.DoNotPhone,
-                                     Donotpostalmail = contact.Donotpostalmail,
-                                     Statecode = contact.Statecode,
-                                     Statecodename = contact.Statecodename,
-                                     Statuscode = contact.Statuscode,
-                                     Statuscodename = contact.Statuscodename,
-                                     Createdby = contact.Createdby,
-                                     Createdbyname = contact.Createdbyname,
-                                     Createdon = contact.Createdon,
-                                     Createdonbehalfby = contact.Createdonbehalfby,
-                                     Createdonbehalfbyname = contact.Createdonbehalfbyname,
-                                     Modifiedby = contact.Modifiedby,
-                                     Modifiedbyname = contact.Modifiedbyname,
-                                     Modifiedon = contact.Modifiedon,
-                                     Modifiedonbehalfby = contact.Modifiedonbehalfby,
-                                     Modifiedonbehalfbyname = contact.Modifiedonbehalfbyname
+                                     Description = contact.description,
+                                     DoNotBulkEmail = contact.donotbulkemail,
+                                     DoNotBulkPostalMail = contact.donotbulkpostalmail,
+                                     DoNotEmail = contact.donotemail,
+                                     DoNotFax = contact.donotfax,
+                                     DoNotPhone = contact.donotphone,
+                                     Donotpostalmail = contact.donotpostalmail,
+                                     Statecode = contact.statecode,
+                                     Statecodename = contact.statecodename,
+                                     Statuscode = contact.statuscode,
+                                     Statuscodename = contact.statuscodename,
+                                     Createdby = contact.createdby,
+                                     Createdbyname = contact.createdbyname,
+                                     Createdon = contact.createdon,
+                                     Createdonbehalfby = contact.createdonbehalfby,
+                                     Createdonbehalfbyname = contact.createdonbehalfbyname,
+                                     Modifiedby = contact.modifiedby,
+                                     Modifiedbyname = contact.modifiedbyname,
+                                     Modifiedon = contact.modifiedon,
+                                     Modifiedonbehalfby = contact.modifiedonbehalfby,
+                                     Modifiedonbehalfbyname = contact.modifiedonbehalfbyname
                                  }).FirstOrDefault();
 
             return contactDeatil;
         }
 
-        public IQueryable<Contact> ShowAllContacts(string sortColumn, string sortColumnDir, string Search)
+        public IQueryable<tbl_Contact> ShowAllContacts(string sortColumn, string sortColumnDir, string Search)
         {
-            var _Context = new DatabaseContext();
-            var contactList = (from contact in _Context.Contacts
+            var _Context = new MonkeyCRMEntities();
+            var contactList = (from contact in _Context.tbl_Contact
                                  select contact);
             return contactList;
         }
 
-        public Guid CreateContact(Contact contact)
+        public Guid CreateContact(tbl_Contact contact)
         {
             try
             {
-                using (var context = new DatabaseContext())
+                using (var context = new MonkeyCRMEntities())
                 {
-                    context.Contacts.Add(contact);
+                    context.tbl_Contact.Add(contact);
                     context.SaveChanges();
-                    return contact.ContactId;
+                    return contact.contactid;
                 }
             }
             catch (Exception)
@@ -95,14 +96,14 @@ namespace WebCustomerRelationManagement.Concrete
             return Guid.Empty;
         }
 
-        public void UpdateContact(Contact contact)
+        public void UpdateContact(tbl_Contact contact)
         {
 
             try
             {
-                using (var context = new DatabaseContext())
+                using (var context = new MonkeyCRMEntities())
                 {
-                    var contactEntity = context.Contacts.Where(key => key.ContactId == contact.ContactId).SingleOrDefault();
+                    var contactEntity = context.tbl_Contact.Where(key => key.contactid == contact.contactid).SingleOrDefault();
                     context.Entry(contactEntity).CurrentValues.SetValues(contact);
                 }
             }
@@ -116,13 +117,13 @@ namespace WebCustomerRelationManagement.Concrete
         {
             try
             {
-                var context = new DatabaseContext();
-                var contact = (from addressentity in context.Contacts
-                               where addressentity.ContactId == contactId
+                var context = new MonkeyCRMEntities();
+                var contact = (from addressentity in context.tbl_Contact
+                               where addressentity.contactid == contactId
                                select addressentity).SingleOrDefault();
                 if (contact != null)
                 {
-                    context.Contacts.Remove(contact);
+                    context.tbl_Contact.Remove(contact);
                     int resultContact = context.SaveChanges();
                     return 1;
                 }

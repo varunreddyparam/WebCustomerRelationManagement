@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MonkeyCRMConfigModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_Organization">
+    <Key>
+      <PropertyRef Name="slno" />
+      <PropertyRef Name="organizationid" />
+      <PropertyRef Name="organizationname" />
+      <PropertyRef Name="createdon" />
+    </Key>
+    <Property Name="slno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="organizationid" Type="Guid" Nullable="false" />
+    <Property Name="organizationname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="organizationurl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="createdon" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="createdby" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedon" Type="DateTime" Precision="3" />
+    <Property Name="modifiedby" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="createdbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="statuscodename" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="statuscode" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="MonkeyCRMConfigEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_Organization" EntityType="Self.tbl_Organization" />
+  </EntityContainer>
+</Schema>

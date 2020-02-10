@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MonkeyCRMConfigModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_Organization">
+          <Key>
+            <PropertyRef Name="organizationid" />
+          </Key>
+          <Property Name="slno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="organizationid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="organizationname" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="organizationurl" Type="varchar(max)" />
+          <Property Name="createdon" Type="datetime" Nullable="false" />
+          <Property Name="createdby" Type="varchar(max)" />
+          <Property Name="modifiedon" Type="datetime" />
+          <Property Name="modifiedby" Type="varchar(max)" />
+          <Property Name="createdbyname" Type="varchar(max)" />
+          <Property Name="modifiedbyname" Type="varchar(max)" />
+          <Property Name="statuscodename" Type="varchar(max)" />
+          <Property Name="statuscode" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="MonkeyCRMConfigModelStoreContainer">
+          <EntitySet Name="tbl_Organization" EntityType="Self.tbl_Organization" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MonkeyCRMConfigModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_Organization">
+          <Key>
+            <PropertyRef Name="organizationid" />
+          </Key>
+          <Property Name="slno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="organizationid" Type="Guid" Nullable="false" />
+          <Property Name="organizationname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="organizationurl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="createdon" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="createdby" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="modifiedon" Type="DateTime" Precision="3" />
+          <Property Name="modifiedby" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="createdbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="modifiedbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="statuscodename" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="statuscode" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="MonkeyCRMConfigEntitiesOrg" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Organization" EntityType="Self.tbl_Organization" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MonkeyCRMConfigModelStoreContainer" CdmEntityContainer="MonkeyCRMConfigEntitiesOrg">
+          <EntitySetMapping Name="tbl_Organization">
+            <EntityTypeMapping TypeName="MonkeyCRMConfigModel.tbl_Organization">
+              <MappingFragment StoreEntitySet="tbl_Organization">
+                <ScalarProperty Name="slno" ColumnName="slno" />
+                <ScalarProperty Name="organizationid" ColumnName="organizationid" />
+                <ScalarProperty Name="organizationname" ColumnName="organizationname" />
+                <ScalarProperty Name="organizationurl" ColumnName="organizationurl" />
+                <ScalarProperty Name="createdon" ColumnName="createdon" />
+                <ScalarProperty Name="createdby" ColumnName="createdby" />
+                <ScalarProperty Name="modifiedon" ColumnName="modifiedon" />
+                <ScalarProperty Name="modifiedby" ColumnName="modifiedby" />
+                <ScalarProperty Name="createdbyname" ColumnName="createdbyname" />
+                <ScalarProperty Name="modifiedbyname" ColumnName="modifiedbyname" />
+                <ScalarProperty Name="statuscodename" ColumnName="statuscodename" />
+                <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

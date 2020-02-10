@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MonkeyCRMConfigModelStoreContainer" CdmEntityContainer="MonkeyCRMConfigEntities1">
+    <EntitySetMapping Name="tbl_Organization">
+      <EntityTypeMapping TypeName="MonkeyCRMConfigModel.tbl_Organization">
+        <MappingFragment StoreEntitySet="tbl_Organization">
+          <ScalarProperty Name="slno" ColumnName="slno" />
+          <ScalarProperty Name="organizationid" ColumnName="organizationid" />
+          <ScalarProperty Name="organizationname" ColumnName="organizationname" />
+          <ScalarProperty Name="organizationurl" ColumnName="organizationurl" />
+          <ScalarProperty Name="createdon" ColumnName="createdon" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="modifiedon" ColumnName="modifiedon" />
+          <ScalarProperty Name="modifiedby" ColumnName="modifiedby" />
+          <ScalarProperty Name="createdbyname" ColumnName="createdbyname" />
+          <ScalarProperty Name="modifiedbyname" ColumnName="modifiedbyname" />
+          <ScalarProperty Name="statuscodename" ColumnName="statuscodename" />
+          <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

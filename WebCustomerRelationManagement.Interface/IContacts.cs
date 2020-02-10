@@ -10,7 +10,7 @@ namespace WebCustomerRelationManagement.Interface
 
         int GetTotalContactbyType(int contactType);
 
-        tbl_Contact GetContactById(Guid contactId);
+        ContactDetailView GetContactById(Guid contactId);
 
         IQueryable<tbl_Contact> ShowAllContacts(string sortColumn, string sortColumnDir, string Search);
 

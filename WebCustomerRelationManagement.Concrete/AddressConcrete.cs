@@ -8,13 +8,13 @@ namespace WebCustomerRelationManagement.Concrete
 {
     public class AddressConcrete : IAddress
     {
-        public void CreateAddress(Address entity)
+        public void CreateAddress(tbl_Address entity)
         {
             try
             {
-                using (var context = new DatabaseContext())
+                using (var context = new MonkeyCRMEntities())
                 {
-                    context.Addresses.Add(entity);
+                    context.tbl_Address.Add(entity);
                     context.SaveChanges();
                 }
             }
@@ -28,13 +28,13 @@ namespace WebCustomerRelationManagement.Concrete
         {
             try
             {
-                var context = new DatabaseContext();
-                var address = (from addressentity in context.EmailAddresses
-                               where addressentity.EmailAddressId == addressid
+                var context = new MonkeyCRMEntities();
+                var address = (from addressentity in context.tbl_Address
+                               where addressentity.addressid == addressid
                                select addressentity).SingleOrDefault();
                 if (address != null)
                 {
-                    context.EmailAddresses.Remove(address);
+                    context.tbl_Address.Remove(address);
                     int resultemailAddress = context.SaveChanges();
                     return 1;
                 }
@@ -50,24 +50,24 @@ namespace WebCustomerRelationManagement.Concrete
             }
         }
 
-        public IQueryable<Address> GetAddressByContact(Guid contactId, string contactType)
+        public IQueryable<tbl_Address> GetAddressByContact(Guid contactId, string contactType)
         {
-            var _Context = new DatabaseContext();
-            var addressDeatil = (from address in _Context.Addresses
-                                 where address.CustomerType == contactId &&
-                                 address.CustomerTypeName == contactType
+            var _Context = new MonkeyCRMEntities();
+            var addressDeatil = (from address in _Context.tbl_Address
+                                 where address.customertype == contactId &&
+                                 address.customertypename == contactType
                                  select address);
             return addressDeatil;
         }
 
 
-        public void UpdateAddress(Address address)
+        public void UpdateAddress(tbl_Address address)
         {
             try
             {
-                using (var context = new DatabaseContext())
+                using (var context = new MonkeyCRMEntities())
                 {
-                    var contactEntity = context.Addresses.Where(key => key.AddressId == address.AddressId).SingleOrDefault();
+                    var contactEntity = context.tbl_Address.Where(key => key.addressid == address.addressid).SingleOrDefault();
                     context.Entry(contactEntity).CurrentValues.SetValues(address);
                 }
             }

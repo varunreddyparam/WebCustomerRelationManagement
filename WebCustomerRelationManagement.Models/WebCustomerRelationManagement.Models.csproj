@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContactDetailView.cs" />
     <Compile Include="Enums\CustomEnum.cs" />
     <Compile Include="MonkeyCRM.Context.cs">
       <AutoGen>True</AutoGen>

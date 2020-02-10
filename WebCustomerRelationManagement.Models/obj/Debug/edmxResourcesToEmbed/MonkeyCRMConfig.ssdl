@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MonkeyCRMConfigModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_Organization">
+    <Key>
+      <PropertyRef Name="organizationid" />
+    </Key>
+    <Property Name="slno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="organizationid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="organizationname" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="organizationurl" Type="varchar(max)" />
+    <Property Name="createdon" Type="datetime" Nullable="false" />
+    <Property Name="createdby" Type="varchar(max)" />
+    <Property Name="modifiedon" Type="datetime" />
+    <Property Name="modifiedby" Type="varchar(max)" />
+    <Property Name="createdbyname" Type="varchar(max)" />
+    <Property Name="modifiedbyname" Type="varchar(max)" />
+    <Property Name="statuscodename" Type="varchar(max)" />
+    <Property Name="statuscode" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="MonkeyCRMConfigModelStoreContainer">
+    <EntitySet Name="tbl_Organization" EntityType="Self.tbl_Organization" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

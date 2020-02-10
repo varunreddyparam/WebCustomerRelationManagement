@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MonkeyCRMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Account">
+    <Key>
+      <PropertyRef Name="accountid" />
+    </Key>
+    <Property Name="slno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accountnumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accountid" Type="Guid" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="donotbulkemail" Type="Boolean" />
+    <Property Name="donotemail" Type="Boolean" />
+    <Property Name="donotbulkpostalmail" Type="Boolean" />
+    <Property Name="donotfax" Type="Boolean" />
+    <Property Name="donotphone" Type="Boolean" />
+    <Property Name="donotpostalmail" Type="Boolean" />
+    <Property Name="statecode" Type="Int32" />
+    <Property Name="statecodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="statuscode" Type="Int32" />
+    <Property Name="statuscodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="createdby" Type="Guid" Nullable="false" />
+    <Property Name="createdbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="createdon" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="createdonbehalfby" Type="Guid" />
+    <Property Name="createdonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedby" Type="Guid" />
+    <Property Name="modifiedbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedon" Type="DateTime" Precision="3" />
+    <Property Name="modifiedonbehalfby" Type="Guid" />
+    <Property Name="modifiedonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ownerid" Type="Int32" Nullable="false" />
+    <Property Name="ownername" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="departmentid" Type="Int32" Nullable="false" />
+    <Property Name="departmentname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="primarycontactid" Type="Guid" />
+    <Property Name="primarycontactname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_Contact" Relationship="Self.FK_tbl_Account_tbl_Contact" FromRole="tbl_Account" ToRole="tbl_Contact" />
+    <NavigationProperty Name="tbl_Address" Relationship="Self.FK_tbl_Address_tbl_Account" FromRole="tbl_Account" ToRole="tbl_Address" />
+    <NavigationProperty Name="tbl_EmailAddress" Relationship="Self.FK_tbl_EmailAddress_tbl_Account" FromRole="tbl_Account" ToRole="tbl_EmailAddress" />
+    <NavigationProperty Name="tbl_PhoneNumber" Relationship="Self.FK_tbl_PhoneNumber_tbl_Account" FromRole="tbl_Account" ToRole="tbl_PhoneNumber" />
+    <NavigationProperty Name="tbl_WebsiteURL" Relationship="Self.FK_tbl_WebsiteURL_tbl_Account" FromRole="tbl_Account" ToRole="tbl_WebsiteURL" />
+  </EntityType>
+  <EntityType Name="tbl_Address">
+    <Key>
+      <PropertyRef Name="addressid" />
+    </Key>
+    <Property Name="slno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="county" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="addressline1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="addressline2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="addressline3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="latitude" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="longitude" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="postalcode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="postofficebox" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="stateorprovince" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="addressid" Type="Guid" Nullable="false" />
+    <Property Name="customertype" Type="Guid" />
+    <Property Name="customertypename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="isprimary" Type="Boolean" />
+    <Property Name="statecode" Type="Int32" />
+    <Property Name="statecodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="statuscode" Type="Int32" />
+    <Property Name="statuscodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="createdby" Type="Guid" Nullable="false" />
+    <Property Name="createdbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="createdon" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="createdonbehalfby" Type="Guid" />
+    <Property Name="createdonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedby" Type="Guid" />
+    <Property Name="modifiedbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedon" Type="DateTime" Precision="3" />
+    <Property Name="modifiedonbehalfby" Type="Guid" />
+    <Property Name="modifiedonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ownerid" Type="Int32" Nullable="false" />
+    <Property Name="ownername" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="departmentid" Type="Int32" Nullable="false" />
+    <Property Name="departmentname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tbl_Account" Relationship="Self.FK_tbl_Address_tbl_Account" FromRole="tbl_Address" ToRole="tbl_Account" />
+    <NavigationProperty Name="tbl_Contact" Relationship="Self.FK_tbl_Address_tbl_Contact" FromRole="tbl_Address" ToRole="tbl_Contact" />
+  </EntityType>
+  <EntityType Name="tbl_Contact">
+    <Key>
+      <PropertyRef Name="contactid" />
+    </Key>
+    <Property Name="slno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="firstname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="lastname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="middlename" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contactid" Type="Guid" Nullable="false" />
+    <Property Name="contacttype" Type="Int32" />
+    <Property Name="contacttypename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="donotbulkemail" Type="Boolean" />
+    <Property Name="donotemail" Type="Boolean" />
+    <Property Name="donotbulkpostalmail" Type="Boolean" />
+    <Property Name="donotfax" Type="Boolean" />
+    <Property Name="donotphone" Type="Boolean" />
+    <Property Name="donotpostalmail" Type="Boolean" />
+    <Property Name="statecode" Type="Int32" />
+    <Property Name="statecodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="statuscode" Type="Int32" />
+    <Property Name="statuscodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="createdby" Type="Guid" Nullable="false" />
+    <Property Name="createdbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="createdon" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="createdonbehalfby" Type="Guid" />
+    <Property Name="createdonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedby" Type="Guid" />
+    <Property Name="modifiedbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedon" Type="DateTime" Precision="3" />
+    <Property Name="modifiedonbehalfby" Type="Guid" />
+    <Property Name="modifiedonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ownerid" Type="Int32" Nullable="false" />
+    <Property Name="ownername" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="departmentid" Type="Int32" Nullable="false" />
+    <Property Name="departmentname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tbl_Account" Relationship="Self.FK_tbl_Account_tbl_Contact" FromRole="tbl_Contact" ToRole="tbl_Account" />
+    <NavigationProperty Name="tbl_Address" Relationship="Self.FK_tbl_Address_tbl_Contact" FromRole="tbl_Contact" ToRole="tbl_Address" />
+    <NavigationProperty Name="tbl_EmailAddress" Relationship="Self.FK_tbl_EmailAddress_tbl_Contact" FromRole="tbl_Contact" ToRole="tbl_EmailAddress" />
+    <NavigationProperty Name="tbl_PhoneNumber" Relationship="Self.FK_tbl_PhoneNumber_tbl_Contact" FromRole="tbl_Contact" ToRole="tbl_PhoneNumber" />
+    <NavigationProperty Name="tbl_WebsiteURL" Relationship="Self.FK_tbl_WebsiteURL_tbl_Contact" FromRole="tbl_Contact" ToRole="tbl_WebsiteURL" />
+  </EntityType>
+  <EntityType Name="tbl_EmailAddress">
+    <Key>
+      <PropertyRef Name="emailaddressid" />
+    </Key>
+    <Property Name="slno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="emailaddressname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="emailaddressid" Type="Guid" Nullable="false" />
+    <Property Name="customertype" Type="Guid" />
+    <Property Name="customertypename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="isprimary" Type="Boolean" />
+    <Property Name="statecode" Type="Int32" />
+    <Property Name="statecodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="statuscode" Type="Int32" />
+    <Property Name="statuscodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="createdby" Type="Guid" Nullable="false" />
+    <Property Name="createdbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="createdon" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="createdonbehalfby" Type="Guid" />
+    <Property Name="createdonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedby" Type="Guid" />
+    <Property Name="modifiedbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedon" Type="DateTime" Precision="3" />
+    <Property Name="modifiedonbehalfby" Type="Guid" />
+    <Property Name="modifiedonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ownerid" Type="Int32" Nullable="false" />
+    <Property Name="ownername" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="departmentid" Type="Int32" Nullable="false" />
+    <Property Name="departmentname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tbl_Account" Relationship="Self.FK_tbl_EmailAddress_tbl_Account" FromRole="tbl_EmailAddress" ToRole="tbl_Account" />
+    <NavigationProperty Name="tbl_Contact" Relationship="Self.FK_tbl_EmailAddress_tbl_Contact" FromRole="tbl_EmailAddress" ToRole="tbl_Contact" />
+  </EntityType>
+  <EntityType Name="tbl_PhoneNumber">
+    <Key>
+      <PropertyRef Name="phonenumberd" />
+    </Key>
+    <Property Name="slno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phonenumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="phonenumbertype" Type="Int32" />
+    <Property Name="phonenumbertypename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="phonenumberd" Type="Guid" Nullable="false" />
+    <Property Name="customertype" Type="Guid" />
+    <Property Name="customertypename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="isprimary" Type="Boolean" />
+    <Property Name="statecode" Type="Int32" />
+    <Property Name="statecodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="statuscode" Type="Int32" />
+    <Property Name="statuscodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="createdby" Type="Guid" Nullable="false" />
+    <Property Name="createdbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="createdon" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="createdonbehalfby" Type="Guid" />
+    <Property Name="createdonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedby" Type="Guid" />
+    <Property Name="modifiedbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedon" Type="DateTime" Precision="3" />
+    <Property Name="modifiedonbehalfby" Type="Guid" />
+    <Property Name="modifiedonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ownerid" Type="Int32" Nullable="false" />
+    <Property Name="ownername" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="departmentid" Type="Int32" Nullable="false" />
+    <Property Name="departmentname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tbl_Account" Relationship="Self.FK_tbl_PhoneNumber_tbl_Account" FromRole="tbl_PhoneNumber" ToRole="tbl_Account" />
+    <NavigationProperty Name="tbl_Contact" Relationship="Self.FK_tbl_PhoneNumber_tbl_Contact" FromRole="tbl_PhoneNumber" ToRole="tbl_Contact" />
+  </EntityType>
+  <EntityType Name="tbl_SystemUser">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="slno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userid" Type="Guid" Nullable="false" />
+    <Property Name="username" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="emailaddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="passwordkey" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="addressline1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="addressline2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="addressline3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="state" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cretedon" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="createdby" Type="Guid" />
+    <Property Name="modifiedby" Type="Guid" />
+    <Property Name="modifiedon" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_WebsiteURL">
+    <Key>
+      <PropertyRef Name="websiteurlid" />
+    </Key>
+    <Property Name="slno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="websiteurl" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="websiteurlid" Type="Guid" Nullable="false" />
+    <Property Name="websiteurltype" Type="Int32" />
+    <Property Name="websiteurltypename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="customertype" Type="Guid" />
+    <Property Name="customertypename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="isprimary" Type="Boolean" />
+    <Property Name="statecode" Type="Int32" />
+    <Property Name="statecodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="statuscode" Type="Int32" />
+    <Property Name="statuscodename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="createdby" Type="Guid" Nullable="false" />
+    <Property Name="createdbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="createdon" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="createdonbehalfby" Type="Guid" />
+    <Property Name="createdonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedby" Type="Guid" />
+    <Property Name="modifiedbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="modifiedon" Type="DateTime" Precision="3" />
+    <Property Name="modifiedonbehalfby" Type="Guid" />
+    <Property Name="modifiedonbehalfbyname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ownerid" Type="Int32" Nullable="false" />
+    <Property Name="ownername" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="departmentid" Type="Int32" Nullable="false" />
+    <Property Name="departmentname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tbl_Account" Relationship="Self.FK_tbl_WebsiteURL_tbl_Account" FromRole="tbl_WebsiteURL" ToRole="tbl_Account" />
+    <NavigationProperty Name="tbl_Contact" Relationship="Self.FK_tbl_WebsiteURL_tbl_Contact" FromRole="tbl_WebsiteURL" ToRole="tbl_Contact" />
+  </EntityType>
+  <Association Name="FK_tbl_Account_tbl_Contact">
+    <End Role="tbl_Contact" Type="Self.tbl_Contact" Multiplicity="0..1" />
+    <End Role="tbl_Account" Type="Self.tbl_Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Contact">
+        <PropertyRef Name="contactid" />
+      </Principal>
+      <Dependent Role="tbl_Account">
+        <PropertyRef Name="primarycontactid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Address_tbl_Account">
+    <End Role="tbl_Account" Type="Self.tbl_Account" Multiplicity="0..1" />
+    <End Role="tbl_Address" Type="Self.tbl_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Account">
+        <PropertyRef Name="accountid" />
+      </Principal>
+      <Dependent Role="tbl_Address">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_EmailAddress_tbl_Account">
+    <End Role="tbl_Account" Type="Self.tbl_Account" Multiplicity="0..1" />
+    <End Role="tbl_EmailAddress" Type="Self.tbl_EmailAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Account">
+        <PropertyRef Name="accountid" />
+      </Principal>
+      <Dependent Role="tbl_EmailAddress">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_PhoneNumber_tbl_Account">
+    <End Role="tbl_Account" Type="Self.tbl_Account" Multiplicity="0..1" />
+    <End Role="tbl_PhoneNumber" Type="Self.tbl_PhoneNumber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Account">
+        <PropertyRef Name="accountid" />
+      </Principal>
+      <Dependent Role="tbl_PhoneNumber">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_WebsiteURL_tbl_Account">
+    <End Role="tbl_Account" Type="Self.tbl_Account" Multiplicity="0..1" />
+    <End Role="tbl_WebsiteURL" Type="Self.tbl_WebsiteURL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Account">
+        <PropertyRef Name="accountid" />
+      </Principal>
+      <Dependent Role="tbl_WebsiteURL">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Address_tbl_Contact">
+    <End Role="tbl_Contact" Type="Self.tbl_Contact" Multiplicity="0..1" />
+    <End Role="tbl_Address" Type="Self.tbl_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Contact">
+        <PropertyRef Name="contactid" />
+      </Principal>
+      <Dependent Role="tbl_Address">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_EmailAddress_tbl_Contact">
+    <End Role="tbl_Contact" Type="Self.tbl_Contact" Multiplicity="0..1" />
+    <End Role="tbl_EmailAddress" Type="Self.tbl_EmailAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Contact">
+        <PropertyRef Name="contactid" />
+      </Principal>
+      <Dependent Role="tbl_EmailAddress">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_PhoneNumber_tbl_Contact">
+    <End Role="tbl_Contact" Type="Self.tbl_Contact" Multiplicity="0..1" />
+    <End Role="tbl_PhoneNumber" Type="Self.tbl_PhoneNumber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Contact">
+        <PropertyRef Name="contactid" />
+      </Principal>
+      <Dependent Role="tbl_PhoneNumber">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_WebsiteURL_tbl_Contact">
+    <End Role="tbl_Contact" Type="Self.tbl_Contact" Multiplicity="0..1" />
+    <End Role="tbl_WebsiteURL" Type="Self.tbl_WebsiteURL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Contact">
+        <PropertyRef Name="contactid" />
+      </Principal>
+      <Dependent Role="tbl_WebsiteURL">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MonkeyCRMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="tbl_Account" EntityType="Self.tbl_Account" />
+    <EntitySet Name="tbl_Address" EntityType="Self.tbl_Address" />
+    <EntitySet Name="tbl_Contact" EntityType="Self.tbl_Contact" />
+    <EntitySet Name="tbl_EmailAddress" EntityType="Self.tbl_EmailAddress" />
+    <EntitySet Name="tbl_PhoneNumber" EntityType="Self.tbl_PhoneNumber" />
+    <EntitySet Name="tbl_SystemUser" EntityType="Self.tbl_SystemUser" />
+    <EntitySet Name="tbl_WebsiteURL" EntityType="Self.tbl_WebsiteURL" />
+    <AssociationSet Name="FK_tbl_Account_tbl_Contact" Association="Self.FK_tbl_Account_tbl_Contact">
+      <End Role="tbl_Contact" EntitySet="tbl_Contact" />
+      <End Role="tbl_Account" EntitySet="tbl_Account" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Address_tbl_Account" Association="Self.FK_tbl_Address_tbl_Account">
+      <End Role="tbl_Account" EntitySet="tbl_Account" />
+      <End Role="tbl_Address" EntitySet="tbl_Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_EmailAddress_tbl_Account" Association="Self.FK_tbl_EmailAddress_tbl_Account">
+      <End Role="tbl_Account" EntitySet="tbl_Account" />
+      <End Role="tbl_EmailAddress" EntitySet="tbl_EmailAddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_PhoneNumber_tbl_Account" Association="Self.FK_tbl_PhoneNumber_tbl_Account">
+      <End Role="tbl_Account" EntitySet="tbl_Account" />
+      <End Role="tbl_PhoneNumber" EntitySet="tbl_PhoneNumber" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_WebsiteURL_tbl_Account" Association="Self.FK_tbl_WebsiteURL_tbl_Account">
+      <End Role="tbl_Account" EntitySet="tbl_Account" />
+      <End Role="tbl_WebsiteURL" EntitySet="tbl_WebsiteURL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Address_tbl_Contact" Association="Self.FK_tbl_Address_tbl_Contact">
+      <End Role="tbl_Contact" EntitySet="tbl_Contact" />
+      <End Role="tbl_Address" EntitySet="tbl_Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_EmailAddress_tbl_Contact" Association="Self.FK_tbl_EmailAddress_tbl_Contact">
+      <End Role="tbl_Contact" EntitySet="tbl_Contact" />
+      <End Role="tbl_EmailAddress" EntitySet="tbl_EmailAddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_PhoneNumber_tbl_Contact" Association="Self.FK_tbl_PhoneNumber_tbl_Contact">
+      <End Role="tbl_Contact" EntitySet="tbl_Contact" />
+      <End Role="tbl_PhoneNumber" EntitySet="tbl_PhoneNumber" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_WebsiteURL_tbl_Contact" Association="Self.FK_tbl_WebsiteURL_tbl_Contact">
+      <End Role="tbl_Contact" EntitySet="tbl_Contact" />
+      <End Role="tbl_WebsiteURL" EntitySet="tbl_WebsiteURL" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MonkeyCRMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tbl_Account">
+    <Key>
+      <PropertyRef Name="accountid" />
+    </Key>
+    <Property Name="slno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar(max)" Nullable="false" />
+    <Property Name="accountnumber" Type="varchar(max)" Nullable="false" />
+    <Property Name="accountid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="description" Type="varchar(max)" />
+    <Property Name="donotbulkemail" Type="bit" />
+    <Property Name="donotemail" Type="bit" />
+    <Property Name="donotbulkpostalmail" Type="bit" />
+    <Property Name="donotfax" Type="bit" />
+    <Property Name="donotphone" Type="bit" />
+    <Property Name="donotpostalmail" Type="bit" />
+    <Property Name="statecode" Type="int" />
+    <Property Name="statecodename" Type="varchar" MaxLength="50" />
+    <Property Name="statuscode" Type="int" />
+    <Property Name="statuscodename" Type="varchar" MaxLength="50" />
+    <Property Name="createdby" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="createdbyname" Type="varchar(max)" Nullable="false" />
+    <Property Name="createdon" Type="datetime" Nullable="false" />
+    <Property Name="createdonbehalfby" Type="uniqueidentifier" />
+    <Property Name="createdonbehalfbyname" Type="varchar(max)" />
+    <Property Name="modifiedby" Type="uniqueidentifier" />
+    <Property Name="modifiedbyname" Type="varchar(max)" />
+    <Property Name="modifiedon" Type="datetime" />
+    <Property Name="modifiedonbehalfby" Type="uniqueidentifier" />
+    <Property Name="modifiedonbehalfbyname" Type="varchar(max)" />
+    <Property Name="ownerid" Type="int" Nullable="false" />
+    <Property Name="ownername" Type="varchar(max)" Nullable="false" />
+    <Property Name="departmentid" Type="int" Nullable="false" />
+    <Property Name="departmentname" Type="varchar(max)" Nullable="false" />
+    <Property Name="primarycontactid" Type="uniqueidentifier" />
+    <Property Name="primarycontactname" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_Address">
+    <Key>
+      <PropertyRef Name="addressid" />
+    </Key>
+    <Property Name="slno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar(max)" />
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="country" Type="varchar" MaxLength="50" />
+    <Property Name="county" Type="varchar" MaxLength="50" />
+    <Property Name="addressline1" Type="varchar" MaxLength="100" />
+    <Property Name="addressline2" Type="varchar" MaxLength="100" />
+    <Property Name="addressline3" Type="varchar" MaxLength="100" />
+    <Property Name="latitude" Type="varchar(max)" />
+    <Property Name="longitude" Type="varchar(max)" />
+    <Property Name="postalcode" Type="varchar" MaxLength="50" />
+    <Property Name="postofficebox" Type="varchar" MaxLength="50" />
+    <Property Name="stateorprovince" Type="varchar" MaxLength="50" />
+    <Property Name="addressid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="customertype" Type="uniqueidentifier" />
+    <Property Name="customertypename" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="isprimary" Type="bit" />
+    <Property Name="statecode" Type="int" />
+    <Property Name="statecodename" Type="varchar" MaxLength="50" />
+    <Property Name="statuscode" Type="int" />
+    <Property Name="statuscodename" Type="varchar" MaxLength="50" />
+    <Property Name="createdby" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="createdbyname" Type="varchar(max)" Nullable="false" />
+    <Property Name="createdon" Type="datetime" Nullable="false" />
+    <Property Name="createdonbehalfby" Type="uniqueidentifier" />
+    <Property Name="createdonbehalfbyname" Type="varchar(max)" />
+    <Property Name="modifiedby" Type="uniqueidentifier" />
+    <Property Name="modifiedbyname" Type="varchar(max)" />
+    <Property Name="modifiedon" Type="datetime" />
+    <Property Name="modifiedonbehalfby" Type="uniqueidentifier" />
+    <Property Name="modifiedonbehalfbyname" Type="varchar(max)" />
+    <Property Name="ownerid" Type="int" Nullable="false" />
+    <Property Name="ownername" Type="varchar(max)" Nullable="false" />
+    <Property Name="departmentid" Type="int" Nullable="false" />
+    <Property Name="departmentname" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Contact">
+    <Key>
+      <PropertyRef Name="contactid" />
+    </Key>
+    <Property Name="slno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar(max)" Nullable="false" />
+    <Property Name="firstname" Type="varchar(max)" Nullable="false" />
+    <Property Name="lastname" Type="varchar(max)" Nullable="false" />
+    <Property Name="middlename" Type="varchar(max)" />
+    <Property Name="contactid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="contacttype" Type="int" />
+    <Property Name="contacttypename" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="description" Type="varchar(max)" />
+    <Property Name="donotbulkemail" Type="bit" />
+    <Property Name="donotemail" Type="bit" />
+    <Property Name="donotbulkpostalmail" Type="bit" />
+    <Property Name="donotfax" Type="bit" />
+    <Property Name="donotphone" Type="bit" />
+    <Property Name="donotpostalmail" Type="bit" />
+    <Property Name="statecode" Type="int" />
+    <Property Name="statecodename" Type="varchar" MaxLength="50" />
+    <Property Name="statuscode" Type="int" />
+    <Property Name="statuscodename" Type="varchar" MaxLength="50" />
+    <Property Name="createdby" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="createdbyname" Type="varchar(max)" Nullable="false" />
+    <Property Name="createdon" Type="datetime" Nullable="false" />
+    <Property Name="createdonbehalfby" Type="uniqueidentifier" />
+    <Property Name="createdonbehalfbyname" Type="varchar(max)" />
+    <Property Name="modifiedby" Type="uniqueidentifier" />
+    <Property Name="modifiedbyname" Type="varchar(max)" />
+    <Property Name="modifiedon" Type="datetime" />
+    <Property Name="modifiedonbehalfby" Type="uniqueidentifier" />
+    <Property Name="modifiedonbehalfbyname" Type="varchar(max)" />
+    <Property Name="ownerid" Type="int" Nullable="false" />
+    <Property Name="ownername" Type="varchar(max)" Nullable="false" />
+    <Property Name="departmentid" Type="int" Nullable="false" />
+    <Property Name="departmentname" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_EmailAddress">
+    <Key>
+      <PropertyRef Name="emailaddressid" />
+    </Key>
+    <Property Name="slno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar(max)" />
+    <Property Name="emailaddressname" Type="varchar" MaxLength="50" />
+    <Property Name="emailaddressid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="customertype" Type="uniqueidentifier" />
+    <Property Name="customertypename" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="isprimary" Type="bit" />
+    <Property Name="statecode" Type="int" />
+    <Property Name="statecodename" Type="varchar" MaxLength="50" />
+    <Property Name="statuscode" Type="int" />
+    <Property Name="statuscodename" Type="varchar" MaxLength="50" />
+    <Property Name="createdby" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="createdbyname" Type="varchar(max)" Nullable="false" />
+    <Property Name="createdon" Type="datetime" Nullable="false" />
+    <Property Name="createdonbehalfby" Type="uniqueidentifier" />
+    <Property Name="createdonbehalfbyname" Type="varchar(max)" />
+    <Property Name="modifiedby" Type="uniqueidentifier" />
+    <Property Name="modifiedbyname" Type="varchar(max)" />
+    <Property Name="modifiedon" Type="datetime" />
+    <Property Name="modifiedonbehalfby" Type="uniqueidentifier" />
+    <Property Name="modifiedonbehalfbyname" Type="varchar(max)" />
+    <Property Name="ownerid" Type="int" Nullable="false" />
+    <Property Name="ownername" Type="varchar(max)" Nullable="false" />
+    <Property Name="departmentid" Type="int" Nullable="false" />
+    <Property Name="departmentname" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_PhoneNumber">
+    <Key>
+      <PropertyRef Name="phonenumberd" />
+    </Key>
+    <Property Name="slno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar(max)" Nullable="false" />
+    <Property Name="phonenumber" Type="varchar" MaxLength="50" />
+    <Property Name="phonenumbertype" Type="int" />
+    <Property Name="phonenumbertypename" Type="varchar" MaxLength="50" />
+    <Property Name="phonenumberd" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="customertype" Type="uniqueidentifier" />
+    <Property Name="customertypename" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="isprimary" Type="bit" />
+    <Property Name="statecode" Type="int" />
+    <Property Name="statecodename" Type="varchar" MaxLength="50" />
+    <Property Name="statuscode" Type="int" />
+    <Property Name="statuscodename" Type="varchar" MaxLength="50" />
+    <Property Name="createdby" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="createdbyname" Type="varchar(max)" Nullable="false" />
+    <Property Name="createdon" Type="datetime" Nullable="false" />
+    <Property Name="createdonbehalfby" Type="uniqueidentifier" />
+    <Property Name="createdonbehalfbyname" Type="varchar(max)" />
+    <Property Name="modifiedby" Type="uniqueidentifier" />
+    <Property Name="modifiedbyname" Type="varchar(max)" />
+    <Property Name="modifiedon" Type="datetime" />
+    <Property Name="modifiedonbehalfby" Type="uniqueidentifier" />
+    <Property Name="modifiedonbehalfbyname" Type="varchar(max)" />
+    <Property Name="ownerid" Type="int" Nullable="false" />
+    <Property Name="ownername" Type="varchar(max)" Nullable="false" />
+    <Property Name="departmentid" Type="int" Nullable="false" />
+    <Property Name="departmentname" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_SystemUser">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="slno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="username" Type="varchar(max)" Nullable="false" />
+    <Property Name="emailaddress" Type="varchar(max)" Nullable="false" />
+    <Property Name="password" Type="varchar(max)" Nullable="false" />
+    <Property Name="passwordkey" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="addressline1" Type="varchar" MaxLength="100" />
+    <Property Name="addressline2" Type="varchar" MaxLength="100" />
+    <Property Name="addressline3" Type="varchar" MaxLength="100" />
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="state" Type="varchar" MaxLength="50" />
+    <Property Name="pin" Type="varchar" MaxLength="50" />
+    <Property Name="country" Type="varchar" MaxLength="50" />
+    <Property Name="cretedon" Type="datetime" Nullable="false" />
+    <Property Name="createdby" Type="uniqueidentifier" />
+    <Property Name="modifiedby" Type="uniqueidentifier" />
+    <Property Name="modifiedon" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_WebsiteURL">
+    <Key>
+      <PropertyRef Name="websiteurlid" />
+    </Key>
+    <Property Name="slno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar(max)" />
+    <Property Name="websiteurl" Type="varchar" MaxLength="50" />
+    <Property Name="websiteurlid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="websiteurltype" Type="int" />
+    <Property Name="websiteurltypename" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="customertype" Type="uniqueidentifier" />
+    <Property Name="customertypename" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="isprimary" Type="bit" />
+    <Property Name="statecode" Type="int" />
+    <Property Name="statecodename" Type="varchar" MaxLength="50" />
+    <Property Name="statuscode" Type="int" />
+    <Property Name="statuscodename" Type="varchar" MaxLength="50" />
+    <Property Name="createdby" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="createdbyname" Type="varchar(max)" Nullable="false" />
+    <Property Name="createdon" Type="datetime" Nullable="false" />
+    <Property Name="createdonbehalfby" Type="uniqueidentifier" />
+    <Property Name="createdonbehalfbyname" Type="varchar(max)" />
+    <Property Name="modifiedby" Type="uniqueidentifier" />
+    <Property Name="modifiedbyname" Type="varchar(max)" />
+    <Property Name="modifiedon" Type="datetime" />
+    <Property Name="modifiedonbehalfby" Type="uniqueidentifier" />
+    <Property Name="modifiedonbehalfbyname" Type="varchar(max)" />
+    <Property Name="ownerid" Type="int" Nullable="false" />
+    <Property Name="ownername" Type="varchar(max)" Nullable="false" />
+    <Property Name="departmentid" Type="int" Nullable="false" />
+    <Property Name="departmentname" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tbl_Account_tbl_Contact">
+    <End Role="tbl_Contact" Type="Self.tbl_Contact" Multiplicity="0..1" />
+    <End Role="tbl_Account" Type="Self.tbl_Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Contact">
+        <PropertyRef Name="contactid" />
+      </Principal>
+      <Dependent Role="tbl_Account">
+        <PropertyRef Name="primarycontactid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Address_tbl_Account">
+    <End Role="tbl_Account" Type="Self.tbl_Account" Multiplicity="0..1" />
+    <End Role="tbl_Address" Type="Self.tbl_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Account">
+        <PropertyRef Name="accountid" />
+      </Principal>
+      <Dependent Role="tbl_Address">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Address_tbl_Contact">
+    <End Role="tbl_Contact" Type="Self.tbl_Contact" Multiplicity="0..1" />
+    <End Role="tbl_Address" Type="Self.tbl_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Contact">
+        <PropertyRef Name="contactid" />
+      </Principal>
+      <Dependent Role="tbl_Address">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_EmailAddress_tbl_Account">
+    <End Role="tbl_Account" Type="Self.tbl_Account" Multiplicity="0..1" />
+    <End Role="tbl_EmailAddress" Type="Self.tbl_EmailAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Account">
+        <PropertyRef Name="accountid" />
+      </Principal>
+      <Dependent Role="tbl_EmailAddress">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_EmailAddress_tbl_Contact">
+    <End Role="tbl_Contact" Type="Self.tbl_Contact" Multiplicity="0..1" />
+    <End Role="tbl_EmailAddress" Type="Self.tbl_EmailAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Contact">
+        <PropertyRef Name="contactid" />
+      </Principal>
+      <Dependent Role="tbl_EmailAddress">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_PhoneNumber_tbl_Account">
+    <End Role="tbl_Account" Type="Self.tbl_Account" Multiplicity="0..1" />
+    <End Role="tbl_PhoneNumber" Type="Self.tbl_PhoneNumber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Account">
+        <PropertyRef Name="accountid" />
+      </Principal>
+      <Dependent Role="tbl_PhoneNumber">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_PhoneNumber_tbl_Contact">
+    <End Role="tbl_Contact" Type="Self.tbl_Contact" Multiplicity="0..1" />
+    <End Role="tbl_PhoneNumber" Type="Self.tbl_PhoneNumber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Contact">
+        <PropertyRef Name="contactid" />
+      </Principal>
+      <Dependent Role="tbl_PhoneNumber">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_WebsiteURL_tbl_Account">
+    <End Role="tbl_Account" Type="Self.tbl_Account" Multiplicity="0..1" />
+    <End Role="tbl_WebsiteURL" Type="Self.tbl_WebsiteURL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Account">
+        <PropertyRef Name="accountid" />
+      </Principal>
+      <Dependent Role="tbl_WebsiteURL">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_WebsiteURL_tbl_Contact">
+    <End Role="tbl_Contact" Type="Self.tbl_Contact" Multiplicity="0..1" />
+    <End Role="tbl_WebsiteURL" Type="Self.tbl_WebsiteURL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Contact">
+        <PropertyRef Name="contactid" />
+      </Principal>
+      <Dependent Role="tbl_WebsiteURL">
+        <PropertyRef Name="customertype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MonkeyCRMModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Account" EntityType="Self.tbl_Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Address" EntityType="Self.tbl_Address" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Contact" EntityType="Self.tbl_Contact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_EmailAddress" EntityType="Self.tbl_EmailAddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_PhoneNumber" EntityType="Self.tbl_PhoneNumber" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_SystemUser" EntityType="Self.tbl_SystemUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_WebsiteURL" EntityType="Self.tbl_WebsiteURL" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tbl_Account_tbl_Contact" Association="Self.FK_tbl_Account_tbl_Contact">
+      <End Role="tbl_Contact" EntitySet="tbl_Contact" />
+      <End Role="tbl_Account" EntitySet="tbl_Account" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Address_tbl_Account" Association="Self.FK_tbl_Address_tbl_Account">
+      <End Role="tbl_Account" EntitySet="tbl_Account" />
+      <End Role="tbl_Address" EntitySet="tbl_Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Address_tbl_Contact" Association="Self.FK_tbl_Address_tbl_Contact">
+      <End Role="tbl_Contact" EntitySet="tbl_Contact" />
+      <End Role="tbl_Address" EntitySet="tbl_Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_EmailAddress_tbl_Account" Association="Self.FK_tbl_EmailAddress_tbl_Account">
+      <End Role="tbl_Account" EntitySet="tbl_Account" />
+      <End Role="tbl_EmailAddress" EntitySet="tbl_EmailAddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_EmailAddress_tbl_Contact" Association="Self.FK_tbl_EmailAddress_tbl_Contact">
+      <End Role="tbl_Contact" EntitySet="tbl_Contact" />
+      <End Role="tbl_EmailAddress" EntitySet="tbl_EmailAddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_PhoneNumber_tbl_Account" Association="Self.FK_tbl_PhoneNumber_tbl_Account">
+      <End Role="tbl_Account" EntitySet="tbl_Account" />
+      <End Role="tbl_PhoneNumber" EntitySet="tbl_PhoneNumber" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_PhoneNumber_tbl_Contact" Association="Self.FK_tbl_PhoneNumber_tbl_Contact">
+      <End Role="tbl_Contact" EntitySet="tbl_Contact" />
+      <End Role="tbl_PhoneNumber" EntitySet="tbl_PhoneNumber" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_WebsiteURL_tbl_Account" Association="Self.FK_tbl_WebsiteURL_tbl_Account">
+      <End Role="tbl_Account" EntitySet="tbl_Account" />
+      <End Role="tbl_WebsiteURL" EntitySet="tbl_WebsiteURL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_WebsiteURL_tbl_Contact" Association="Self.FK_tbl_WebsiteURL_tbl_Contact">
+      <End Role="tbl_Contact" EntitySet="tbl_Contact" />
+      <End Role="tbl_WebsiteURL" EntitySet="tbl_WebsiteURL" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MonkeyCRMModelStoreContainer" CdmEntityContainer="MonkeyCRMEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="MonkeyCRMModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Account">
+      <EntityTypeMapping TypeName="MonkeyCRMModel.tbl_Account">
+        <MappingFragment StoreEntitySet="tbl_Account">
+          <ScalarProperty Name="slno" ColumnName="slno" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="accountnumber" ColumnName="accountnumber" />
+          <ScalarProperty Name="accountid" ColumnName="accountid" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="donotbulkemail" ColumnName="donotbulkemail" />
+          <ScalarProperty Name="donotemail" ColumnName="donotemail" />
+          <ScalarProperty Name="donotbulkpostalmail" ColumnName="donotbulkpostalmail" />
+          <ScalarProperty Name="donotfax" ColumnName="donotfax" />
+          <ScalarProperty Name="donotphone" ColumnName="donotphone" />
+          <ScalarProperty Name="donotpostalmail" ColumnName="donotpostalmail" />
+          <ScalarProperty Name="statecode" ColumnName="statecode" />
+          <ScalarProperty Name="statecodename" ColumnName="statecodename" />
+          <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+          <ScalarProperty Name="statuscodename" ColumnName="statuscodename" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="createdbyname" ColumnName="createdbyname" />
+          <ScalarProperty Name="createdon" ColumnName="createdon" />
+          <ScalarProperty Name="createdonbehalfby" ColumnName="createdonbehalfby" />
+          <ScalarProperty Name="createdonbehalfbyname" ColumnName="createdonbehalfbyname" />
+          <ScalarProperty Name="modifiedby" ColumnName="modifiedby" />
+          <ScalarProperty Name="modifiedbyname" ColumnName="modifiedbyname" />
+          <ScalarProperty Name="modifiedon" ColumnName="modifiedon" />
+          <ScalarProperty Name="modifiedonbehalfby" ColumnName="modifiedonbehalfby" />
+          <ScalarProperty Name="modifiedonbehalfbyname" ColumnName="modifiedonbehalfbyname" />
+          <ScalarProperty Name="ownerid" ColumnName="ownerid" />
+          <ScalarProperty Name="ownername" ColumnName="ownername" />
+          <ScalarProperty Name="departmentid" ColumnName="departmentid" />
+          <ScalarProperty Name="departmentname" ColumnName="departmentname" />
+          <ScalarProperty Name="primarycontactid" ColumnName="primarycontactid" />
+          <ScalarProperty Name="primarycontactname" ColumnName="primarycontactname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Address">
+      <EntityTypeMapping TypeName="MonkeyCRMModel.tbl_Address">
+        <MappingFragment StoreEntitySet="tbl_Address">
+          <ScalarProperty Name="slno" ColumnName="slno" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="county" ColumnName="county" />
+          <ScalarProperty Name="addressline1" ColumnName="addressline1" />
+          <ScalarProperty Name="addressline2" ColumnName="addressline2" />
+          <ScalarProperty Name="addressline3" ColumnName="addressline3" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="postalcode" ColumnName="postalcode" />
+          <ScalarProperty Name="postofficebox" ColumnName="postofficebox" />
+          <ScalarProperty Name="stateorprovince" ColumnName="stateorprovince" />
+          <ScalarProperty Name="addressid" ColumnName="addressid" />
+          <ScalarProperty Name="customertype" ColumnName="customertype" />
+          <ScalarProperty Name="customertypename" ColumnName="customertypename" />
+          <ScalarProperty Name="isprimary" ColumnName="isprimary" />
+          <ScalarProperty Name="statecode" ColumnName="statecode" />
+          <ScalarProperty Name="statecodename" ColumnName="statecodename" />
+          <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+          <ScalarProperty Name="statuscodename" ColumnName="statuscodename" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="createdbyname" ColumnName="createdbyname" />
+          <ScalarProperty Name="createdon" ColumnName="createdon" />
+          <ScalarProperty Name="createdonbehalfby" ColumnName="createdonbehalfby" />
+          <ScalarProperty Name="createdonbehalfbyname" ColumnName="createdonbehalfbyname" />
+          <ScalarProperty Name="modifiedby" ColumnName="modifiedby" />
+          <ScalarProperty Name="modifiedbyname" ColumnName="modifiedbyname" />
+          <ScalarProperty Name="modifiedon" ColumnName="modifiedon" />
+          <ScalarProperty Name="modifiedonbehalfby" ColumnName="modifiedonbehalfby" />
+          <ScalarProperty Name="modifiedonbehalfbyname" ColumnName="modifiedonbehalfbyname" />
+          <ScalarProperty Name="ownerid" ColumnName="ownerid" />
+          <ScalarProperty Name="ownername" ColumnName="ownername" />
+          <ScalarProperty Name="departmentid" ColumnName="departmentid" />
+          <ScalarProperty Name="departmentname" ColumnName="departmentname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Contact">
+      <EntityTypeMapping TypeName="MonkeyCRMModel.tbl_Contact">
+        <MappingFragment StoreEntitySet="tbl_Contact">
+          <ScalarProperty Name="slno" ColumnName="slno" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="middlename" ColumnName="middlename" />
+          <ScalarProperty Name="contactid" ColumnName="contactid" />
+          <ScalarProperty Name="contacttype" ColumnName="contacttype" />
+          <ScalarProperty Name="contacttypename" ColumnName="contacttypename" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="donotbulkemail" ColumnName="donotbulkemail" />
+          <ScalarProperty Name="donotemail" ColumnName="donotemail" />
+          <ScalarProperty Name="donotbulkpostalmail" ColumnName="donotbulkpostalmail" />
+          <ScalarProperty Name="donotfax" ColumnName="donotfax" />
+          <ScalarProperty Name="donotphone" ColumnName="donotphone" />
+          <ScalarProperty Name="donotpostalmail" ColumnName="donotpostalmail" />
+          <ScalarProperty Name="statecode" ColumnName="statecode" />
+          <ScalarProperty Name="statecodename" ColumnName="statecodename" />
+          <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+          <ScalarProperty Name="statuscodename" ColumnName="statuscodename" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="createdbyname" ColumnName="createdbyname" />
+          <ScalarProperty Name="createdon" ColumnName="createdon" />
+          <ScalarProperty Name="createdonbehalfby" ColumnName="createdonbehalfby" />
+          <ScalarProperty Name="createdonbehalfbyname" ColumnName="createdonbehalfbyname" />
+          <ScalarProperty Name="modifiedby" ColumnName="modifiedby" />
+          <ScalarProperty Name="modifiedbyname" ColumnName="modifiedbyname" />
+          <ScalarProperty Name="modifiedon" ColumnName="modifiedon" />
+          <ScalarProperty Name="modifiedonbehalfby" ColumnName="modifiedonbehalfby" />
+          <ScalarProperty Name="modifiedonbehalfbyname" ColumnName="modifiedonbehalfbyname" />
+          <ScalarProperty Name="ownerid" ColumnName="ownerid" />
+          <ScalarProperty Name="ownername" ColumnName="ownername" />
+          <ScalarProperty Name="departmentid" ColumnName="departmentid" />
+          <ScalarProperty Name="departmentname" ColumnName="departmentname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmailAddress">
+      <EntityTypeMapping TypeName="MonkeyCRMModel.tbl_EmailAddress">
+        <MappingFragment StoreEntitySet="tbl_EmailAddress">
+          <ScalarProperty Name="slno" ColumnName="slno" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="emailaddressname" ColumnName="emailaddressname" />
+          <ScalarProperty Name="emailaddressid" ColumnName="emailaddressid" />
+          <ScalarProperty Name="customertype" ColumnName="customertype" />
+          <ScalarProperty Name="customertypename" ColumnName="customertypename" />
+          <ScalarProperty Name="isprimary" ColumnName="isprimary" />
+          <ScalarProperty Name="statecode" ColumnName="statecode" />
+          <ScalarProperty Name="statecodename" ColumnName="statecodename" />
+          <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+          <ScalarProperty Name="statuscodename" ColumnName="statuscodename" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="createdbyname" ColumnName="createdbyname" />
+          <ScalarProperty Name="createdon" ColumnName="createdon" />
+          <ScalarProperty Name="createdonbehalfby" ColumnName="createdonbehalfby" />
+          <ScalarProperty Name="createdonbehalfbyname" ColumnName="createdonbehalfbyname" />
+          <ScalarProperty Name="modifiedby" ColumnName="modifiedby" />
+          <ScalarProperty Name="modifiedbyname" ColumnName="modifiedbyname" />
+          <ScalarProperty Name="modifiedon" ColumnName="modifiedon" />
+          <ScalarProperty Name="modifiedonbehalfby" ColumnName="modifiedonbehalfby" />
+          <ScalarProperty Name="modifiedonbehalfbyname" ColumnName="modifiedonbehalfbyname" />
+          <ScalarProperty Name="ownerid" ColumnName="ownerid" />
+          <ScalarProperty Name="ownername" ColumnName="ownername" />
+          <ScalarProperty Name="departmentid" ColumnName="departmentid" />
+          <ScalarProperty Name="departmentname" ColumnName="departmentname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PhoneNumber">
+      <EntityTypeMapping TypeName="MonkeyCRMModel.tbl_PhoneNumber">
+        <MappingFragment StoreEntitySet="tbl_PhoneNumber">
+          <ScalarProperty Name="slno" ColumnName="slno" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="phonenumber" ColumnName="phonenumber" />
+          <ScalarProperty Name="phonenumbertype" ColumnName="phonenumbertype" />
+          <ScalarProperty Name="phonenumbertypename" ColumnName="phonenumbertypename" />
+          <ScalarProperty Name="phonenumberd" ColumnName="phonenumberd" />
+          <ScalarProperty Name="customertype" ColumnName="customertype" />
+          <ScalarProperty Name="customertypename" ColumnName="customertypename" />
+          <ScalarProperty Name="isprimary" ColumnName="isprimary" />
+          <ScalarProperty Name="statecode" ColumnName="statecode" />
+          <ScalarProperty Name="statecodename" ColumnName="statecodename" />
+          <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+          <ScalarProperty Name="statuscodename" ColumnName="statuscodename" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="createdbyname" ColumnName="createdbyname" />
+          <ScalarProperty Name="createdon" ColumnName="createdon" />
+          <ScalarProperty Name="createdonbehalfby" ColumnName="createdonbehalfby" />
+          <ScalarProperty Name="createdonbehalfbyname" ColumnName="createdonbehalfbyname" />
+          <ScalarProperty Name="modifiedby" ColumnName="modifiedby" />
+          <ScalarProperty Name="modifiedbyname" ColumnName="modifiedbyname" />
+          <ScalarProperty Name="modifiedon" ColumnName="modifiedon" />
+          <ScalarProperty Name="modifiedonbehalfby" ColumnName="modifiedonbehalfby" />
+          <ScalarProperty Name="modifiedonbehalfbyname" ColumnName="modifiedonbehalfbyname" />
+          <ScalarProperty Name="ownerid" ColumnName="ownerid" />
+          <ScalarProperty Name="ownername" ColumnName="ownername" />
+          <ScalarProperty Name="departmentid" ColumnName="departmentid" />
+          <ScalarProperty Name="departmentname" ColumnName="departmentname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SystemUser">
+      <EntityTypeMapping TypeName="MonkeyCRMModel.tbl_SystemUser">
+        <MappingFragment StoreEntitySet="tbl_SystemUser">
+          <ScalarProperty Name="slno" ColumnName="slno" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="emailaddress" ColumnName="emailaddress" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="passwordkey" ColumnName="passwordkey" />
+          <ScalarProperty Name="addressline1" ColumnName="addressline1" />
+          <ScalarProperty Name="addressline2" ColumnName="addressline2" />
+          <ScalarProperty Name="addressline3" ColumnName="addressline3" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="pin" ColumnName="pin" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="cretedon" ColumnName="cretedon" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="modifiedby" ColumnName="modifiedby" />
+          <ScalarProperty Name="modifiedon" ColumnName="modifiedon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WebsiteURL">
+      <EntityTypeMapping TypeName="MonkeyCRMModel.tbl_WebsiteURL">
+        <MappingFragment StoreEntitySet="tbl_WebsiteURL">
+          <ScalarProperty Name="slno" ColumnName="slno" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="websiteurl" ColumnName="websiteurl" />
+          <ScalarProperty Name="websiteurlid" ColumnName="websiteurlid" />
+          <ScalarProperty Name="websiteurltype" ColumnName="websiteurltype" />
+          <ScalarProperty Name="websiteurltypename" ColumnName="websiteurltypename" />
+          <ScalarProperty Name="customertype" ColumnName="customertype" />
+          <ScalarProperty Name="customertypename" ColumnName="customertypename" />
+          <ScalarProperty Name="isprimary" ColumnName="isprimary" />
+          <ScalarProperty Name="statecode" ColumnName="statecode" />
+          <ScalarProperty Name="statecodename" ColumnName="statecodename" />
+          <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+          <ScalarProperty Name="statuscodename" ColumnName="statuscodename" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="createdbyname" ColumnName="createdbyname" />
+          <ScalarProperty Name="createdon" ColumnName="createdon" />
+          <ScalarProperty Name="createdonbehalfby" ColumnName="createdonbehalfby" />
+          <ScalarProperty Name="createdonbehalfbyname" ColumnName="createdonbehalfbyname" />
+          <ScalarProperty Name="modifiedby" ColumnName="modifiedby" />
+          <ScalarProperty Name="modifiedbyname" ColumnName="modifiedbyname" />
+          <ScalarProperty Name="modifiedon" ColumnName="modifiedon" />
+          <ScalarProperty Name="modifiedonbehalfby" ColumnName="modifiedonbehalfby" />
+          <ScalarProperty Name="modifiedonbehalfbyname" ColumnName="modifiedonbehalfbyname" />
+          <ScalarProperty Name="ownerid" ColumnName="ownerid" />
+          <ScalarProperty Name="ownername" ColumnName="ownername" />
+          <ScalarProperty Name="departmentid" ColumnName="departmentid" />
+          <ScalarProperty Name="departmentname" ColumnName="departmentname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
