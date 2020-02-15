@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement.Models", "WebCustomerRelationManagement.Models\WebCustomerRelationManagement.Models.csproj", "{187E80D8-56AF-43A9-A81E-5C2A30BDC5EA}"
 EndProject
@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailApplication", "MailAppl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement", "WebCustomerRelationManagement\WebCustomerRelationManagement.csproj", "{F756642C-8C40-4D53-81AD-9A64FC4FCE1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebOrganizationService", "WebApplication1\WebOrganizationService.csproj", "{CCBB9A86-729D-4082-9281-41D79CE12CEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizationService", "OrganizationService\OrganizationService.csproj", "{497E785B-61EF-47C3-8060-0D7B44BF878C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{F756642C-8C40-4D53-81AD-9A64FC4FCE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F756642C-8C40-4D53-81AD-9A64FC4FCE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F756642C-8C40-4D53-81AD-9A64FC4FCE1F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CCBB9A86-729D-4082-9281-41D79CE12CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CCBB9A86-729D-4082-9281-41D79CE12CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CCBB9A86-729D-4082-9281-41D79CE12CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CCBB9A86-729D-4082-9281-41D79CE12CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{497E785B-61EF-47C3-8060-0D7B44BF878C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{497E785B-61EF-47C3-8060-0D7B44BF878C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{497E785B-61EF-47C3-8060-0D7B44BF878C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{497E785B-61EF-47C3-8060-0D7B44BF878C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

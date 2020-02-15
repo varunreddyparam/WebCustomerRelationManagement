@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MonkeyCRMConfig" Class="OrganizationConfigDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=desktop-n8fhtdg;Initial Catalog=MonkeyCRMConfig;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MonkeyCRMConfigConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_Organization" Member="tbl_Organizations">
+    <Type Name="tbl_Organization">
+      <Column Name="slno" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="organizationid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="organizationname" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="organizationurl" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="createdon" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="createdby" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="modifiedon" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="modifiedby" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="createdbyname" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="modifiedbyname" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="statuscodename" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="statuscode" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

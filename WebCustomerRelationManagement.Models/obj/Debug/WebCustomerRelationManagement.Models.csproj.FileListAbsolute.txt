@@ -16,8 +16,6 @@ C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelati
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\EntityFramework.xml
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.csproj.CoreCompileInputs.cache
-C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.csproj.CopyComplete
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.dll
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.pdb
-C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.csprojAssemblyReference.cache
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.csprojResolveAssemblyReference.cache
