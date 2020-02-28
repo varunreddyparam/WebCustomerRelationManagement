@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using WebCustomerRelationManagement.Models;
 
@@ -6,11 +7,11 @@ namespace WebCustomerRelationManagement.Interface
 {
     public interface IWebSiteURL
     {
-        IQueryable<tbl_WebsiteURL> GetWebSiteByContact(Guid contactId, string contactType);
-        void CreateWebSiteUrl(tbl_WebsiteURL entity);
+        IEnumerable<tbl_WebsiteURL> GetWebSiteByContact(Guid contactId, string contactType, string source, string initialCatalogue);
+        void CreateWebSiteUrl(tbl_WebsiteURL entity, string source, string initialCatalogue);
 
-        void UpdateWebsiteURL(tbl_WebsiteURL websiteURL);
+        void UpdateWebsiteURL(tbl_WebsiteURL websiteURL, string source, string initialCatalogue);
 
-        int DeleteWebsiteURL(Guid webSiteUrlId);
+        void DeleteWebsiteURL(Guid webSiteUrlId, string source, string initialCatalogue);
     }
 }

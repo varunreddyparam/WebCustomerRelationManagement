@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using WebCustomerRelationManagement.Models;
 
@@ -6,18 +7,18 @@ namespace WebCustomerRelationManagement.Interface
 {
     public interface IContacts
     {
-        int GetTotalContactsCount();
+        int GetTotalContactsCount(string source, string initialCatalogue);
 
-        int GetTotalContactbyType(int contactType);
+        int GetTotalContactbyType(int? contactType, string source, string initialCatalogue);
 
-        ContactDetailView GetContactById(Guid contactId);
+        ContactDetailView GetContactById(Guid contactId, string source, string initialCatalogue);
 
-        IQueryable<tbl_Contact> ShowAllContacts(string sortColumn, string sortColumnDir, string Search);
+        IEnumerable<tbl_Contact> ShowAllContacts(string sortColumn, string sortColumnDir, string Search, string source, string initialCatalogue);
 
-        Guid CreateContact(tbl_Contact contact);
+        Guid CreateContact(tbl_Contact contact, string source, string initialCatalogue);
 
-        void UpdateContact(tbl_Contact contact);
+        void UpdateContact(tbl_Contact contact, string source, string initialCatalogue);
 
-        int DeleteContact(Guid contactId);
+        void DeleteContact(Guid contactId, string source, string initialCatalogue);
     }
 }

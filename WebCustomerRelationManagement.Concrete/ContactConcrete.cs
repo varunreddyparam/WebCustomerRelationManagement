@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Dynamic;
 using WebCustomerRelationManagement.Interface;
 using WebCustomerRelationManagement.Models;
 
@@ -8,28 +8,40 @@ namespace WebCustomerRelationManagement.Concrete
 {
     public class ContactConcrete : IContacts
     {
-
+        /// <summary>
+        /// Declaration of Context
+        /// </summary>
+        private MonkeyCRMOrganizationDataContext monkeyCRMOrgEntitiesContext = null;
         public PhoneNumberConcrete phoneNumber = new PhoneNumberConcrete();
         public EmailAddressConcrete emailAddress = new EmailAddressConcrete();
         public WebSiteUrlConcrete webSiteUrl = new WebSiteUrlConcrete();
         public AddressConcrete address = new AddressConcrete();
         public const string contactType = "Contact";
 
-        public int GetTotalContactsCount()
+        public int GetTotalContactsCount(string source, string initialCatalogue)
         {
-            throw new NotImplementedException();
-            //return DapperORM.GetTotalCount<int>("Usp_GetContactsCount");
+            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+            return monkeyCRMOrgEntitiesContext.tbl_Contacts.Count();
         }
 
-        public int GetTotalContactbyType(int contactType)
+        public int GetTotalContactbyType(int? contactType, string source, string initialCatalogue)
         {
-            throw new NotImplementedException();
+            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+            //return monkeyCRMOrgEntitiesContext.tbl_Contacts.Where(contact=>contact.contacttype == contactType)
+            return 0;
         }
 
-        public ContactDetailView GetContactById(Guid contactId)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="contactId"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        /// <returns></returns>
+        public ContactDetailView GetContactById(Guid contactId, string source, string initialCatalogue)
         {
-            var _Context = new MonkeyCRMEntities();
-            var contactDeatil = (from contact in _Context.tbl_Contact
+            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+            var contactDeatil = (from contact in monkeyCRMOrgEntitiesContext.tbl_Contacts
                                  where contact.contactid == contactId
                                  select new ContactDetailView
                                  {
@@ -40,10 +52,10 @@ namespace WebCustomerRelationManagement.Concrete
                                      ContactId = contact.contactid,
                                      ContactType = contact.contacttype,
                                      ContactTypeName = contact.contacttypename,
-                                     Phone = phoneNumber.GetPhoneNumberByContact(contactId, contactType).ToList(),
-                                     Emails = emailAddress.GetEmailAddressByContact(contactId, contactType).ToList(),
-                                     WebsiteURLs = webSiteUrl.GetWebSiteByContact(contactId, contactType).ToList(),
-                                     Addresses = address.GetAddressByContact(contactId, contactType).ToList(),
+                                     Phone = phoneNumber.GetPhoneNumberByContact(contactId, contactType, source, initialCatalogue).ToList(),
+                                     Emails = emailAddress.GetEmailAddressByContact(contactId, contactType, source, initialCatalogue).ToList(),
+                                     WebsiteURLs = webSiteUrl.GetWebSiteByContact(contactId, contactType, source, initialCatalogue).ToList(),
+                                     Addresses = address.GetAddressByContact(contactId, contactType, source, initialCatalogue).ToList(),
                                      Description = contact.description,
                                      DoNotBulkEmail = contact.donotbulkemail,
                                      DoNotBulkPostalMail = contact.donotbulkpostalmail,
@@ -70,24 +82,39 @@ namespace WebCustomerRelationManagement.Concrete
             return contactDeatil;
         }
 
-        public IQueryable<tbl_Contact> ShowAllContacts(string sortColumn, string sortColumnDir, string Search)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sortColumn"></param>
+        /// <param name="sortColumnDir"></param>
+        /// <param name="Search"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        /// <returns></returns>
+        public IEnumerable<tbl_Contact> ShowAllContacts(string sortColumn, string sortColumnDir, string Search, string source, string initialCatalogue)
         {
-            var _Context = new MonkeyCRMEntities();
-            var contactList = (from contact in _Context.tbl_Contact
-                                 select contact);
+            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+            var contactList = (from contact in monkeyCRMOrgEntitiesContext.tbl_Contacts
+                               select contact);
             return contactList;
         }
 
-        public Guid CreateContact(tbl_Contact contact)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="contact"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        /// <returns></returns>
+        public Guid CreateContact(tbl_Contact contact, string source, string initialCatalogue)
         {
             try
             {
-                using (var context = new MonkeyCRMEntities())
-                {
-                    context.tbl_Contact.Add(contact);
-                    context.SaveChanges();
-                    return contact.contactid;
-                }
+                monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+                monkeyCRMOrgEntitiesContext.tbl_Contacts.InsertOnSubmit(contact);
+                monkeyCRMOrgEntitiesContext.SubmitChanges();
+                return contact.contactid;
+
             }
             catch (Exception)
             {
@@ -96,40 +123,40 @@ namespace WebCustomerRelationManagement.Concrete
             return Guid.Empty;
         }
 
-        public void UpdateContact(tbl_Contact contact)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="contact"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        public void UpdateContact(tbl_Contact contact, string source, string initialCatalogue)
         {
 
             try
             {
-                using (var context = new MonkeyCRMEntities())
-                {
-                    var contactEntity = context.tbl_Contact.Where(key => key.contactid == contact.contactid).SingleOrDefault();
-                    context.Entry(contactEntity).CurrentValues.SetValues(contact);
-                }
+                monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+                //var contactEntity = context.tbl_Contacts.Where(key => key.contactid == contact.contactid).SingleOrDefault();
+                monkeyCRMOrgEntitiesContext.SubmitChanges();
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
         }
 
-        public int DeleteContact(Guid contactId)
+        public void DeleteContact(Guid contactId, string source, string initialCatalogue)
         {
             try
             {
-                var context = new MonkeyCRMEntities();
-                var contact = (from addressentity in context.tbl_Contact
+                monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+                var contact = (from addressentity in monkeyCRMOrgEntitiesContext.tbl_Contacts
                                where addressentity.contactid == contactId
                                select addressentity).SingleOrDefault();
                 if (contact != null)
                 {
-                    context.tbl_Contact.Remove(contact);
-                    int resultContact = context.SaveChanges();
-                    return 1;
-                }
-                else
-                {
-                    return 0;
+                    monkeyCRMOrgEntitiesContext.tbl_Contacts.DeleteOnSubmit(contact);
+                    monkeyCRMOrgEntitiesContext.SubmitChanges();
                 }
 
             }

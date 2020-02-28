@@ -7,9 +7,9 @@
       <Column Name="organizationname" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
       <Column Name="organizationurl" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="createdon" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="createdby" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="createdby" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
       <Column Name="modifiedon" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="modifiedby" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="modifiedby" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
       <Column Name="createdbyname" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="modifiedbyname" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="statuscodename" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />

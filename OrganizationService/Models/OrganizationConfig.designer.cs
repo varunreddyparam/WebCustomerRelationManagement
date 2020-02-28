@@ -90,11 +90,11 @@ namespace OrganizationService.Models
 		
 		private System.DateTime _createdon;
 		
-		private string _createdby;
+		private System.Nullable<System.Guid> _createdby;
 		
 		private System.Nullable<System.DateTime> _modifiedon;
 		
-		private string _modifiedby;
+		private System.Nullable<System.Guid> _modifiedby;
 		
 		private string _createdbyname;
 		
@@ -118,11 +118,11 @@ namespace OrganizationService.Models
     partial void OnorganizationurlChanged();
     partial void OncreatedonChanging(System.DateTime value);
     partial void OncreatedonChanged();
-    partial void OncreatedbyChanging(string value);
+    partial void OncreatedbyChanging(System.Nullable<System.Guid> value);
     partial void OncreatedbyChanged();
     partial void OnmodifiedonChanging(System.Nullable<System.DateTime> value);
     partial void OnmodifiedonChanged();
-    partial void OnmodifiedbyChanging(string value);
+    partial void OnmodifiedbyChanging(System.Nullable<System.Guid> value);
     partial void OnmodifiedbyChanged();
     partial void OncreatedbynameChanging(string value);
     partial void OncreatedbynameChanged();
@@ -239,8 +239,8 @@ namespace OrganizationService.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_createdby", DbType="VarChar(MAX)")]
-		public string createdby
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_createdby", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> createdby
 		{
 			get
 			{
@@ -279,8 +279,8 @@ namespace OrganizationService.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_modifiedby", DbType="VarChar(MAX)")]
-		public string modifiedby
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_modifiedby", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> modifiedby
 		{
 			get
 			{

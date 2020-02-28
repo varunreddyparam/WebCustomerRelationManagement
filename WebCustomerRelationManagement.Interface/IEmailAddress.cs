@@ -9,11 +9,11 @@ namespace WebCustomerRelationManagement.Interface
 {
     public interface IEmailAddress
     {
-        IQueryable<tbl_EmailAddress> GetEmailAddressByContact(Guid contactId,string customerType);
-        void CreateEmailAddress(tbl_EmailAddress entity);
+        IEnumerable<tbl_EmailAddress> GetEmailAddressByContact(Guid contactId,string customerType, string source, string initialCatalogue);
+        void CreateEmailAddress(tbl_EmailAddress entity, string source, string initialCatalogue);
 
-        void UpdateEmailAddress(tbl_EmailAddress emailAddress);
+        void UpdateEmailAddress(tbl_EmailAddress emailAddress, string source, string initialCatalogue);
 
-        int DeleteEmailAddress(Guid phoneNumberId);
+        void DeleteEmailAddress(Guid phoneNumberId, string source, string initialCatalogue);
     }
 }

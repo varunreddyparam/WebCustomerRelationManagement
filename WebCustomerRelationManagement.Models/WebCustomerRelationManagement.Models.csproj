@@ -41,6 +41,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -53,74 +54,41 @@
   <ItemGroup>
     <Compile Include="ContactDetailView.cs" />
     <Compile Include="Enums\CustomEnum.cs" />
-    <Compile Include="MonkeyCRM.Context.cs">
+    <Compile Include="MonkeyCRMOrganization.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MonkeyCRM.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MonkeyCRM.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MonkeyCRM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MonkeyCRM.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MonkeyCRM.edmx</DependentUpon>
+      <DependentUpon>MonkeyCRMOrganization.dbml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>MonkeyCRM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tbl_Account.cs">
-      <DependentUpon>MonkeyCRM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tbl_Address.cs">
-      <DependentUpon>MonkeyCRM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tbl_Contact.cs">
-      <DependentUpon>MonkeyCRM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tbl_EmailAddress.cs">
-      <DependentUpon>MonkeyCRM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tbl_PhoneNumber.cs">
-      <DependentUpon>MonkeyCRM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tbl_SystemUser.cs">
-      <DependentUpon>MonkeyCRM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tbl_WebsiteURL.cs">
-      <DependentUpon>MonkeyCRM.tt</DependentUpon>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="MonkeyCRM.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MonkeyCRM.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
-    <None Include="MonkeyCRM.edmx.diagram">
-      <DependentUpon>MonkeyCRM.edmx</DependentUpon>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MonkeyCRMOrganization.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>MonkeyCRMOrganization.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MonkeyCRM.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>MonkeyCRM.Context.cs</LastGenOutput>
-      <DependentUpon>MonkeyCRM.edmx</DependentUpon>
-    </Content>
-    <Content Include="MonkeyCRM.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MonkeyCRM.edmx</DependentUpon>
-      <LastGenOutput>MonkeyCRM.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MonkeyCRMOrganization.dbml.layout">
+      <DependentUpon>MonkeyCRMOrganization.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

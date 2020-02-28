@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 20.875, 16.5" name="MonkeyCRMOrganization">
+  <DataContextMoniker Name="/MonkeyCRMOrganizationDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ede9c4b9-e42b-4921-ad10-fb0c275fd73f" absoluteBounds="12.625, 1.5, 2, 6.0015283203125023">
+      <DataClassMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_WebsiteURL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc7b7e9b-4897-44ea-9067-de7380ec93ab" absoluteBounds="12.64, 1.9600000000000009, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4b9e7fa7-6796-4146-87a6-70f9d0a99766" absoluteBounds="9.875, 4.625, 2, 6.7707340494791666">
+      <DataClassMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="924c9e90-5fe4-4709-a4a3-fce24d202284" absoluteBounds="9.89, 5.0850000000000009, 1.9700000000000002, 6.2107340494791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de852313-4cbf-4138-86f0-8db2660f1289" absoluteBounds="12.625, 8.75, 2, 7.5399397786458309">
+      <DataClassMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Address" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0c72d30-e78e-4550-a67b-9a86ba61e88d" absoluteBounds="12.64, 9.21, 1.9700000000000002, 6.979939778645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="283b4207-e4a6-4421-af9e-83c4cc88fa54" absoluteBounds="1.125, 5.875, 2, 7.1553369140624987">
+      <DataClassMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Contact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3e19c9b-f534-4b47-b251-1da69fcc5cd8" absoluteBounds="1.1400000000000001, 6.3350000000000009, 1.9700000000000002, 6.5953369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e58e155a-9dc1-40dd-bfc9-075b59c46cd3" absoluteBounds="15.625, 1.75, 2, 5.6169254557291666">
+      <DataClassMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_EmailAddress" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7aecaad8-1a20-4ff5-bc04-2bacdd21580b" absoluteBounds="15.64, 2.2100000000000009, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01d55c67-f671-43cf-939a-2a0dd1b96a23" absoluteBounds="18.625, 1.5, 2, 6.0015283203125023">
+      <DataClassMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_PhoneNumber" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe75d47e-b9c1-473d-a684-1cfc51adf392" absoluteBounds="18.64, 1.9600000000000009, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa30291b-2df3-420e-a718-6075a925e767" absoluteBounds="5.875, 1.125, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_SystemUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ff1ba79-227f-4fc1-89a6-0af10759398e" absoluteBounds="5.89, 1.585, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.875 : 6.06326416015625); (12.2916666666667 : 6.06326416015625 : JumpStart); (12.4583333333333 : 6.06326416015625 : JumpEnd); (12.625 : 6.06326416015625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Account/tbl_Account_tbl_WebsiteURL" />
+      <nodes>
+        <classShapeMoniker Id="4b9e7fa7-6796-4146-87a6-70f9d0a99766" />
+        <classShapeMoniker Id="ede9c4b9-e42b-4921-ad10-fb0c275fd73f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.875 : 10.0728670247396); (12.625 : 10.0728670247396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Account/tbl_Account_tbl_Address" />
+      <nodes>
+        <classShapeMoniker Id="4b9e7fa7-6796-4146-87a6-70f9d0a99766" />
+        <classShapeMoniker Id="de852313-4cbf-4138-86f0-8db2660f1289" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 5.875); (2.125 : 5.45351399739583); (9.29166666666667 : 5.45351399739583 : JumpStart); (9.45833333333333 : 5.45351399739583 : JumpEnd); (9.625 : 5.45351399739583); (9.625 : 4.375); (9.66666666666667 : 4.375 : JumpStart); (9.83333333333333 : 4.375 : JumpEnd); (12.25 : 4.375); (12.25 : 3.75038008007812); (12.625 : 3.75038008007812)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Contact/tbl_Contact_tbl_WebsiteURL" />
+      <nodes>
+        <classShapeMoniker Id="283b4207-e4a6-4421-af9e-83c4cc88fa54" />
+        <classShapeMoniker Id="ede9c4b9-e42b-4921-ad10-fb0c275fd73f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 8.66738825550881); (9.875 : 8.66738825550881)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Contact/tbl_Contact_tbl_Account" />
+      <nodes>
+        <classShapeMoniker Id="283b4207-e4a6-4421-af9e-83c4cc88fa54" />
+        <classShapeMoniker Id="4b9e7fa7-6796-4146-87a6-70f9d0a99766" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 12.2442854817708); (12.625 : 12.2442854817708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Contact/tbl_Contact_tbl_Address" />
+      <nodes>
+        <classShapeMoniker Id="283b4207-e4a6-4421-af9e-83c4cc88fa54" />
+        <classShapeMoniker Id="de852313-4cbf-4138-86f0-8db2660f1289" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.875 : 8.12576416015625); (16.625 : 8.12576416015625); (16.625 : 7.36692545572917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Account/tbl_Account_tbl_EmailAddress" />
+      <nodes>
+        <classShapeMoniker Id="4b9e7fa7-6796-4146-87a6-70f9d0a99766" />
+        <classShapeMoniker Id="e58e155a-9dc1-40dd-bfc9-075b59c46cd3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.656252 : 5.875); (2.656252 : 5.57851399739583); (9.375 : 5.57851399739583); (9.375 : 4.125); (9.66666666666667 : 4.125 : JumpStart); (9.83333333333333 : 4.125 : JumpEnd); (12.1666666666667 : 4.125 : JumpStart); (12.3333333333333 : 4.125 : JumpEnd); (12.375 : 4.125); (12.375 : 7.7515283203125); (15.25 : 7.7515283203125); (15.25 : 4.55846272786458); (15.625 : 4.55846272786458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Contact/tbl_Contact_tbl_EmailAddress" />
+      <nodes>
+        <classShapeMoniker Id="283b4207-e4a6-4421-af9e-83c4cc88fa54" />
+        <classShapeMoniker Id="e58e155a-9dc1-40dd-bfc9-075b59c46cd3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.875 : 8.43788458007813); (19.625 : 8.43788458007813); (19.625 : 7.5015283203125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Account/tbl_Account_tbl_PhoneNumber" />
+      <nodes>
+        <classShapeMoniker Id="4b9e7fa7-6796-4146-87a6-70f9d0a99766" />
+        <classShapeMoniker Id="01d55c67-f671-43cf-939a-2a0dd1b96a23" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.593748 : 5.875); (1.593748 : 5.32851399739583); (9.29166666666667 : 5.32851399739583 : JumpStart); (9.45833333333333 : 5.32851399739583 : JumpEnd); (9.54166666666667 : 5.32851399739583 : JumpStart); (9.70833333333333 : 5.32851399739583 : JumpEnd); (9.75 : 5.32851399739583); (9.75 : 1.25); (18.25 : 1.25); (18.25 : 4.50076416015625); (18.625 : 4.50076416015625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MonkeyCRMOrganizationDataContext/tbl_Contact/tbl_Contact_tbl_PhoneNumber" />
+      <nodes>
+        <classShapeMoniker Id="283b4207-e4a6-4421-af9e-83c4cc88fa54" />
+        <classShapeMoniker Id="01d55c67-f671-43cf-939a-2a0dd1b96a23" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

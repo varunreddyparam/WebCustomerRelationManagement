@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic;
 using WebCustomerRelationManagement.Interface;
@@ -8,15 +9,26 @@ namespace WebCustomerRelationManagement.Concrete
 {
     public class AddressConcrete : IAddress
     {
-        public void CreateAddress(tbl_Address entity)
+        /// <summary>
+        /// Declaration of Context
+        /// </summary>
+        private MonkeyCRMOrganizationDataContext monkeyCRMOrgEntitiesContext = null;
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        public void CreateAddress(tbl_Address entity, string source, string initialCatalogue)
         {
             try
             {
-                using (var context = new MonkeyCRMEntities())
-                {
-                    context.tbl_Address.Add(entity);
-                    context.SaveChanges();
-                }
+                monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+                monkeyCRMOrgEntitiesContext.tbl_Addresses.InsertOnSubmit(entity);
+                monkeyCRMOrgEntitiesContext.SubmitChanges();
+
             }
             catch (Exception)
             {
@@ -24,23 +36,24 @@ namespace WebCustomerRelationManagement.Concrete
             }
         }
 
-        public int DeleteAddress(Guid addressid)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="addressid"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        public void DeleteAddress(Guid addressid, string source, string initialCatalogue)
         {
+            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
             try
             {
-                var context = new MonkeyCRMEntities();
-                var address = (from addressentity in context.tbl_Address
+                var address = (from addressentity in monkeyCRMOrgEntitiesContext.tbl_Addresses
                                where addressentity.addressid == addressid
                                select addressentity).SingleOrDefault();
                 if (address != null)
                 {
-                    context.tbl_Address.Remove(address);
-                    int resultemailAddress = context.SaveChanges();
-                    return 1;
-                }
-                else
-                {
-                    return 0;
+                    monkeyCRMOrgEntitiesContext.tbl_Addresses.DeleteOnSubmit(address);
+                    monkeyCRMOrgEntitiesContext.SubmitChanges();
                 }
 
             }
@@ -50,26 +63,38 @@ namespace WebCustomerRelationManagement.Concrete
             }
         }
 
-        public IQueryable<tbl_Address> GetAddressByContact(Guid contactId, string contactType)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="contactId"></param>
+        /// <param name="contactType"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        /// <returns></returns>
+        public IEnumerable<tbl_Address> GetAddressByContact(Guid contactId, string contactType, string source, string initialCatalogue)
         {
-            var _Context = new MonkeyCRMEntities();
-            var addressDeatil = (from address in _Context.tbl_Address
+            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+            var addressDeatil = (from address in monkeyCRMOrgEntitiesContext.tbl_Addresses
                                  where address.customertype == contactId &&
                                  address.customertypename == contactType
                                  select address);
             return addressDeatil;
         }
 
-
-        public void UpdateAddress(tbl_Address address)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="address"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        public void UpdateAddress(tbl_Address address, string source, string initialCatalogue)
         {
             try
             {
-                using (var context = new MonkeyCRMEntities())
-                {
-                    var contactEntity = context.tbl_Address.Where(key => key.addressid == address.addressid).SingleOrDefault();
-                    context.Entry(contactEntity).CurrentValues.SetValues(address);
-                }
+                monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+                //var contactEntity = context.tbl_Addresses.Where(key => key.addressid == address.addressid).SingleOrDefault();
+                monkeyCRMOrgEntitiesContext.SubmitChanges();
+                
             }
             catch (Exception ex)
             {

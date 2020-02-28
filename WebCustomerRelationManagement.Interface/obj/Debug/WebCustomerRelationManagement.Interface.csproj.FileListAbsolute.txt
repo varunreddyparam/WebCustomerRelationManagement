@@ -14,10 +14,8 @@ C:\Mail\Gmail\WebCustomerRelationManagement\WebCustomerRelationManagement.Interf
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Interface.dll
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Interface.pdb
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Models.dll
-C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\EntityFramework.dll
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Models.pdb
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Models.dll.config
-C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\EntityFramework.xml
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Debug\WebCustomerRelationManagement.Interface.csprojAssemblyReference.cache
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Debug\WebCustomerRelationManagement.Interface.csproj.CoreCompileInputs.cache
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Debug\WebCustomerRelationManagement.Interface.csproj.CopyComplete

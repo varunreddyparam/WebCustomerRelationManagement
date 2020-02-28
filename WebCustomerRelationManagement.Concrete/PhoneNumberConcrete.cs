@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using WebCustomerRelationManagement.Interface;
 using WebCustomerRelationManagement.Models;
@@ -7,15 +8,25 @@ namespace WebCustomerRelationManagement.Concrete
 {
     public class PhoneNumberConcrete : IPhoneNumber
     {
-        public void CreatePhoneNumber(tbl_PhoneNumber entity)
+        /// <summary>
+        /// Declaration of Context
+        /// </summary>
+        private MonkeyCRMOrganizationDataContext monkeyCRMOrgEntitiesContext = null;
+
+        /// <summary>
+        /// Create PhoneNumber
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        /// <returns></returns>
+        public void CreatePhoneNumber(tbl_PhoneNumber entity, string source, string initialCatalogue)
         {
+            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
             try
             {
-                using (var context = new MonkeyCRMEntities())
-                {
-                    context.tbl_PhoneNumber.Add(entity);
-                    context.SaveChanges();
-                }
+                monkeyCRMOrgEntitiesContext.tbl_PhoneNumbers.InsertOnSubmit(entity);
+                monkeyCRMOrgEntitiesContext.SubmitChanges();
             }
             catch (Exception)
             {
@@ -23,25 +34,25 @@ namespace WebCustomerRelationManagement.Concrete
             }
         }
 
-        public int DeletePhoneNumber(Guid phoneNumberId)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="phoneNumberId"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        public void DeletePhoneNumber(Guid phoneNumberId, string source, string initialCatalogue)
         {
+            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
             try
             {
-                var context = new MonkeyCRMEntities();
-                var phoneNumber = (from phoneNumberentity in context.tbl_PhoneNumber
-                                   where phoneNumberentity.phonenumberd == phoneNumberId
+                var phoneNumber = (from phoneNumberentity in monkeyCRMOrgEntitiesContext.tbl_PhoneNumbers
+                                   where phoneNumberentity.phonenumberid == phoneNumberId
                                    select phoneNumberentity).SingleOrDefault();
                 if (phoneNumber != null)
                 {
-                    context.tbl_PhoneNumber.Remove(phoneNumber);
-                    int resultphoneNumber = context.SaveChanges();
-                    return 1;
+                    monkeyCRMOrgEntitiesContext.tbl_PhoneNumbers.DeleteOnSubmit(phoneNumber);
+                    monkeyCRMOrgEntitiesContext.SubmitChanges();
                 }
-                else
-                {
-                    return 0;
-                }
-
             }
             catch (Exception)
             {
@@ -49,17 +60,24 @@ namespace WebCustomerRelationManagement.Concrete
             }
         }
 
-        public IQueryable<tbl_PhoneNumber> GetPhoneNumberByContact(Guid contactId, string contactType)
+        /// <summary>
+        /// Retrieve PhoneNumber By Contact Type
+        /// </summary>
+        /// <param name="contactId"></param>
+        /// <param name="contactType"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        /// <returns></returns>
+        public IEnumerable<tbl_PhoneNumber> GetPhoneNumberByContact(Guid contactId, string contactType, string source, string initialCatalogue)
         {
-
+            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
             try
             {
-                var _Context = new MonkeyCRMEntities();
-                var phoneNumberDeatil = (from phoneNumber in _Context.tbl_PhoneNumber
+                var phoneNumberDeatil = (from phoneNumber in monkeyCRMOrgEntitiesContext.tbl_PhoneNumbers
                                          where phoneNumber.customertype == contactId &&
                                          phoneNumber.customertypename == contactType &&
                                          phoneNumber.statuscode == 0 &&
-                                         phoneNumber.statuscodename == "Active"
+                                         phoneNumber.statuscodename == "Activated"
                                          select phoneNumber);
                 return phoneNumberDeatil;
 
@@ -71,15 +89,14 @@ namespace WebCustomerRelationManagement.Concrete
             return null;
         }
 
-        public void UpdatePhoneNumber(tbl_PhoneNumber phoneNumber)
+        public void UpdatePhoneNumber(tbl_PhoneNumber phoneNumber, string source, string initialCatalogue)
         {
+            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
             try
             {
-                using (var context = new MonkeyCRMEntities())
-                {
-                    var phoneNumberEntity = context.tbl_PhoneNumber.Where(key => key.phonenumberd == phoneNumber.phonenumberd).SingleOrDefault();
-                    context.Entry(phoneNumberEntity).CurrentValues.SetValues(phoneNumber);
-                }
+                //var phoneNumberEntity = monkeyCRMOrgEntitiesContext.tbl_PhoneNumbers.Where(key => key.phonenumberid == phoneNumber.phonenumberid).FirstOrDefault();
+                monkeyCRMOrgEntitiesContext.SubmitChanges();
+
             }
             catch (Exception ex)
             {

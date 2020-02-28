@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using WebCustomerRelationManagement.Interface;
 using WebCustomerRelationManagement.Models;
@@ -7,15 +8,26 @@ namespace WebCustomerRelationManagement.Concrete
 {
     public class WebSiteUrlConcrete : IWebSiteURL
     {
-        public void CreateWebSiteUrl(tbl_WebsiteURL entity)
+        /// <summary>
+        /// Declaration of Context
+        /// </summary>
+        private MonkeyCRMOrganizationDataContext monkeyCRMOrgEntitiesContext = null;
+
+
+        /// <summary>
+        /// Create WebSiteUrls
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        /// <returns>Guid of WebsiteUrls</returns>
+        public void CreateWebSiteUrl(tbl_WebsiteURL entity, string source, string initialCatalogue)
         {
             try
             {
-                using (var context = new MonkeyCRMEntities())
-                {
-                    context.tbl_WebsiteURL.Add(entity);
-                    context.SaveChanges();
-                }
+                monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+                monkeyCRMOrgEntitiesContext.tbl_WebsiteURLs.InsertOnSubmit(entity);
+                monkeyCRMOrgEntitiesContext.SubmitChanges();
             }
             catch (Exception)
             {
@@ -23,25 +35,25 @@ namespace WebCustomerRelationManagement.Concrete
             }
         }
 
-        public int DeleteWebsiteURL(Guid webSiteUrlId)
+        /// <summary>
+        /// DeleteWebSiteUrls
+        /// </summary>
+        /// <param name="webSiteUrlId"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        public void DeleteWebsiteURL(Guid webSiteUrlId, string source, string initialCatalogue)
         {
             try
             {
-                var context = new MonkeyCRMEntities();
-                var webSiteUrl = (from webSiteUrlentity in context.tbl_WebsiteURL
-                                    where webSiteUrlentity.websiteurlid == webSiteUrlId
-                                    select webSiteUrlentity).SingleOrDefault();
+                monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+                var webSiteUrl = (from webSiteUrlentity in monkeyCRMOrgEntitiesContext.tbl_WebsiteURLs
+                                  where webSiteUrlentity.websiteurlid == webSiteUrlId
+                                  select webSiteUrlentity).SingleOrDefault();
                 if (webSiteUrl != null)
                 {
-                    context.tbl_WebsiteURL.Remove(webSiteUrl);
-                    int resultWebSiteUrl = context.SaveChanges();
-                    return 1;
+                    monkeyCRMOrgEntitiesContext.tbl_WebsiteURLs.DeleteOnSubmit(webSiteUrl);
+                    monkeyCRMOrgEntitiesContext.SubmitChanges();
                 }
-                else
-                {
-                    return 0;
-                }
-
             }
             catch (Exception)
             {
@@ -49,25 +61,40 @@ namespace WebCustomerRelationManagement.Concrete
             }
         }
 
-        public IQueryable<tbl_WebsiteURL> GetWebSiteByContact(Guid contactId, string contactType)
+
+        /// <summary>
+        /// retrieve table websiteUrls
+        /// </summary>
+        /// <param name="contactId"></param>
+        /// <param name="contactType"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        /// <returns>Collection of WebsiteUrls</returns>
+        public IEnumerable<tbl_WebsiteURL> GetWebSiteByContact(Guid contactId, string contactType, string source, string initialCatalogue)
         {
-            var _Context = new MonkeyCRMEntities();
-            var urlDeatil = (from webSiteUrl in _Context.tbl_WebsiteURL
+            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+            var urlDeatil = (from webSiteUrl in monkeyCRMOrgEntitiesContext.tbl_WebsiteURLs
                              where webSiteUrl.customertype == contactId &&
                              webSiteUrl.customertypename == contactType
                              select webSiteUrl);
             return urlDeatil;
         }
 
-        public void UpdateWebsiteURL(tbl_WebsiteURL websiteURL)
+
+        /// <summary>
+        /// Update With WebSiteUrls
+        /// </summary>
+        /// <param name="websiteURL"></param>
+        /// <param name="source"></param>
+        /// <param name="initialCatalogue"></param>
+        public void UpdateWebsiteURL(tbl_WebsiteURL websiteURL, string source, string initialCatalogue)
         {
             try
             {
-                using (var context = new MonkeyCRMEntities())
-                {
-                    var contactEntity = context.tbl_WebsiteURL.Where(key => key.websiteurlid == websiteURL.websiteurlid).SingleOrDefault();
-                    context.Entry(contactEntity).CurrentValues.SetValues(websiteURL);
-                }
+                monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
+                //var contactEntity = monkeyCRMOrgEntitiesContext.tbl_WebsiteURLs.Where(key => key.websiteurlid == websiteURL.websiteurlid).FirstOrDefault();
+                monkeyCRMOrgEntitiesContext.SubmitChanges();
+
             }
             catch (Exception ex)
             {
