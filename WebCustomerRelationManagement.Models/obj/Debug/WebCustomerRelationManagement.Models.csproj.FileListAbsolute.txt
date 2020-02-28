@@ -21,3 +21,14 @@ C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelati
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.csprojAssemblyReference.cache
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.csproj.CoreCompileInputs.cache
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\obj\Debug\WebCustomerRelationManagement.Models.csproj.CopyComplete
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\Microsoft.Azure.Storage.Common.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\Microsoft.Azure.Storage.Common.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\Microsoft.Azure.ConfigurationManager.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Models\bin\Debug\Microsoft.Azure.ConfigurationManager.xml

@@ -53,3 +53,12 @@ C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelati
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csproj.CopyComplete
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.dll
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.pdb
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.ConfigurationManager.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Common.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.ConfigurationManager.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Common.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.xml

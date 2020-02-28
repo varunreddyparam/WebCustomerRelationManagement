@@ -42,11 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IAddress.cs" />
-    <Compile Include="IContacts.cs" />
-    <Compile Include="IEmailAddress.cs" />
-    <Compile Include="IPhoneNumber.cs" />
-    <Compile Include="ISystemUser.cs" />
-    <Compile Include="IWebSiteURL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

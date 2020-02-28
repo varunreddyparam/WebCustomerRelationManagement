@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Microsoft.Azure;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Table;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Dynamic;
 using WebCustomerRelationManagement.Interface;
 using WebCustomerRelationManagement.Models;
 
@@ -9,97 +11,43 @@ namespace WebCustomerRelationManagement.Concrete
 {
     public class AddressConcrete : IAddress
     {
-        /// <summary>
-        /// Declaration of Context
-        /// </summary>
-        private MonkeyCRMOrganizationDataContext monkeyCRMOrgEntitiesContext = null;
-
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="entity"></param>
-        /// <param name="source"></param>
-        /// <param name="initialCatalogue"></param>
-        public void CreateAddress(tbl_Address entity, string source, string initialCatalogue)
+        private static string ConnectionStringConfig = "StorageConnectionString";
+        private const string key = "Address";
+        public string CreateOrUpdate(AddressEntity addressEntity)
         {
-            try
-            {
-                monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
-                monkeyCRMOrgEntitiesContext.tbl_Addresses.InsertOnSubmit(entity);
-                monkeyCRMOrgEntitiesContext.SubmitChanges();
-
-            }
-            catch (Exception)
-            {
-
-            }
+            throw new NotImplementedException();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="addressid"></param>
-        /// <param name="source"></param>
-        /// <param name="initialCatalogue"></param>
-        public void DeleteAddress(Guid addressid, string source, string initialCatalogue)
+        public void Delete(string id)
         {
-            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
-            try
+            if (Get(id) == null)
             {
-                var address = (from addressentity in monkeyCRMOrgEntitiesContext.tbl_Addresses
-                               where addressentity.addressid == addressid
-                               select addressentity).SingleOrDefault();
-                if (address != null)
-                {
-                    monkeyCRMOrgEntitiesContext.tbl_Addresses.DeleteOnSubmit(address);
-                    monkeyCRMOrgEntitiesContext.SubmitChanges();
-                }
-
+                return;
             }
-            catch (Exception)
-            {
-                throw;
-            }
+            GetTable().Execute(TableOperation.Delete(Get(id)));
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="contactId"></param>
-        /// <param name="contactType"></param>
-        /// <param name="source"></param>
-        /// <param name="initialCatalogue"></param>
-        /// <returns></returns>
-        public IEnumerable<tbl_Address> GetAddressByContact(Guid contactId, string contactType, string source, string initialCatalogue)
+        public AddressEntity Get(string id)
         {
-            monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
-            var addressDeatil = (from address in monkeyCRMOrgEntitiesContext.tbl_Addresses
-                                 where address.customertype == contactId &&
-                                 address.customertypename == contactType
-                                 select address);
-            return addressDeatil;
+            return GetTable().CreateQuery<AddressEntity>().Where(x => x.PartitionKey == key && x.RowKey == id).SingleOrDefault();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="address"></param>
-        /// <param name="source"></param>
-        /// <param name="initialCatalogue"></param>
-        public void UpdateAddress(tbl_Address address, string source, string initialCatalogue)
+        public List<AddressEntity> GetAll()
         {
-            try
-            {
-                monkeyCRMOrgEntitiesContext = new MonkeyCRMOrganizationDataContext(Connection.ConstructConnectionString(initialCatalogue, source));
-                //var contactEntity = context.tbl_Addresses.Where(key => key.addressid == address.addressid).SingleOrDefault();
-                monkeyCRMOrgEntitiesContext.SubmitChanges();
-                
-            }
-            catch (Exception ex)
-            {
+            var table = GetTable();
+            return table.CreateQuery<AddressEntity>().Where(x => x.PartitionKey == key).ToList();
+        }
+        private static CloudTable GetTable()
+        {
+            // retrieve the storage account details by passing in our 
+            // ConnectionStringConfig constant value
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
+                CloudConfigurationManager.GetSetting(ConnectionStringConfig));
 
-            }
+            var client = storageAccount.CreateCloudTableClient();
+            // creates a CloudTable instance pointing to the table for the name
+            // defined in the PK constant.
+            return client.GetTableReference(key);
         }
     }
 }
