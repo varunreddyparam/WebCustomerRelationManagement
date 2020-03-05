@@ -5,15 +5,13 @@ VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement.Models", "WebCustomerRelationManagement.Models\WebCustomerRelationManagement.Models.csproj", "{187E80D8-56AF-43A9-A81E-5C2A30BDC5EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement.Interface", "WebCustomerRelationManagement.Interface\WebCustomerRelationManagement.Interface.csproj", "{E9A61309-5A7F-464D-ABF6-1FA1180847D1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement.Concrete", "WebCustomerRelationManagement.Concrete\WebCustomerRelationManagement.Concrete.csproj", "{95CBE750-06AC-45E0-8DC2-8691A0FFC78E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailApplication", "MailApplication\MailApplication.csproj", "{A22B21D7-FD8C-4A52-BADF-220118D37E85}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizationService", "OrganizationService\OrganizationService.csproj", "{497E785B-61EF-47C3-8060-0D7B44BF878C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement.API", "WebCustomerRelationManagement.API\WebCustomerRelationManagement.API.csproj", "{BB095B61-A78A-4EE5-A00A-79CC40E66CD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCustomerRelationManagement.API", "WebCustomerRelationManagement.API\WebCustomerRelationManagement.API.csproj", "{BB095B61-A78A-4EE5-A00A-79CC40E66CD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +23,6 @@ Global
 		{187E80D8-56AF-43A9-A81E-5C2A30BDC5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{187E80D8-56AF-43A9-A81E-5C2A30BDC5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{187E80D8-56AF-43A9-A81E-5C2A30BDC5EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E9A61309-5A7F-464D-ABF6-1FA1180847D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9A61309-5A7F-464D-ABF6-1FA1180847D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9A61309-5A7F-464D-ABF6-1FA1180847D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9A61309-5A7F-464D-ABF6-1FA1180847D1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{95CBE750-06AC-45E0-8DC2-8691A0FFC78E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{95CBE750-06AC-45E0-8DC2-8691A0FFC78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95CBE750-06AC-45E0-8DC2-8691A0FFC78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
