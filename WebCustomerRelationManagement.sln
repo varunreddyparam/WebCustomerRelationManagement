@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1022
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement.Models", "WebCustomerRelationManagement.Models\WebCustomerRelationManagement.Models.csproj", "{187E80D8-56AF-43A9-A81E-5C2A30BDC5EA}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizationService", "OrganizationService\OrganizationService.csproj", "{497E785B-61EF-47C3-8060-0D7B44BF878C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCustomerRelationManagement.API", "WebCustomerRelationManagement.API\WebCustomerRelationManagement.API.csproj", "{BB095B61-A78A-4EE5-A00A-79CC40E66CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement", "WebCustomerRelationManagement\WebCustomerRelationManagement.csproj", "{ABB8AFFC-4DFB-49BB-9D0C-4F3ADB9DEC64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{BB095B61-A78A-4EE5-A00A-79CC40E66CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB095B61-A78A-4EE5-A00A-79CC40E66CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB095B61-A78A-4EE5-A00A-79CC40E66CD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB8AFFC-4DFB-49BB-9D0C-4F3ADB9DEC64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB8AFFC-4DFB-49BB-9D0C-4F3ADB9DEC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB8AFFC-4DFB-49BB-9D0C-4F3ADB9DEC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB8AFFC-4DFB-49BB-9D0C-4F3ADB9DEC64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

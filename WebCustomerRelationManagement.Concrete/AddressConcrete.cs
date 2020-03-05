@@ -17,16 +17,16 @@ namespace WebCustomerRelationManagement.Concrete
             throw new NotImplementedException();
         }
 
-        public async static void Delete(string id)
+        public async static void Delete(string id, string entityLogicalName)
         {
-            if (Get(id) == null)
+            if (Get(id,entityLogicalName) == null)
             {
                 return;
             }
-            await GetTable().ExecuteAsync(TableOperation.Delete(await Get(id)));
+            await GetTable().ExecuteAsync(TableOperation.Delete(await Get(id,entityLogicalName)));
         }
 
-        public async static Task<AddressEntity> Get(string id)
+        public async static Task<AddressEntity> Get(string id, string entitylogicalname)
         {
             //return GetTable().CreateQuery<AddressEntity>().Where(x => x.PartitionKey == key && x.RowKey == id).SingleOrDefault();
             TableOperation tableOperation = TableOperation.Retrieve(key, id);

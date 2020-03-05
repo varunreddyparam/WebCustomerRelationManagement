@@ -22,6 +22,22 @@
             <param name="source"></param>
             <returns></returns>
         </member>
+        <member name="T:OrganizationService.WebApiConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OrganizationService.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:OrganizationService.Areas.HelpPage.ApiDescriptionExtensions">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:OrganizationService.Areas.HelpPage.ApiDescriptionExtensions.GetFriendlyId(System.Web.Http.Description.ApiDescription)">
             <summary>
             Generates an URI-friendly ID for the <see cref="T:System.Web.Http.Description.ApiDescription"/>. E.g. "Get-Values-id_name" instead of "GetValues/{id}?name={name}"
@@ -40,6 +56,58 @@
             <summary>
             The controller that will handle requests for the help page.
             </summary>
+        </member>
+        <member name="M:OrganizationService.Areas.HelpPage.Controllers.HelpController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OrganizationService.Areas.HelpPage.Controllers.HelpController.#ctor(System.Web.Http.HttpConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="P:OrganizationService.Areas.HelpPage.Controllers.HelpController.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OrganizationService.Areas.HelpPage.Controllers.HelpController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OrganizationService.Areas.HelpPage.Controllers.HelpController.Api(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="apiId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrganizationService.Areas.HelpPage.Controllers.HelpController.ResourceModel(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="modelName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OrganizationService.Areas.HelpPage.HelpPageAreaRegistration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OrganizationService.Areas.HelpPage.HelpPageAreaRegistration.AreaName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OrganizationService.Areas.HelpPage.HelpPageAreaRegistration.RegisterArea(System.Web.Mvc.AreaRegistrationContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
         </member>
         <member name="M:OrganizationService.Areas.HelpPage.HelpPageConfigurationExtensions.SetDocumentationProvider(System.Web.Http.HttpConfiguration,System.Web.Http.Description.IDocumentationProvider)">
             <summary>
@@ -186,6 +254,46 @@
             <returns>
             An <see cref="T:OrganizationService.Areas.HelpPage.Models.HelpPageApiModel"/>
             </returns>
+        </member>
+        <member name="T:OrganizationService.Areas.HelpPage.ModelDescriptions.CollectionModelDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OrganizationService.Areas.HelpPage.ModelDescriptions.CollectionModelDescription.ElementDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OrganizationService.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OrganizationService.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OrganizationService.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription.Properties">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OrganizationService.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OrganizationService.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OrganizationService.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription.Values">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:OrganizationService.Areas.HelpPage.ModelDescriptions.ModelDescription">
             <summary>
