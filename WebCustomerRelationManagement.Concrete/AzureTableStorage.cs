@@ -6,8 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebCustomerRelationManagement.Interface;
 
-namespace WebCustomerRelationManagement.Interface
+namespace WebCustomerRelationManagement.Concrete
 {
     public class AzureTableStorage : ITableStorage
     {

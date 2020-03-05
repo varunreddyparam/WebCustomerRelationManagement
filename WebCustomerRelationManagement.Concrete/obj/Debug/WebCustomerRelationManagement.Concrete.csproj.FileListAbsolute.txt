@@ -119,3 +119,6 @@ C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRela
 C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csproj.CopyComplete
 C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.dll
 C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.pdb
+C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.dll
+C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.pdb
+C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.dll.config

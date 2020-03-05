@@ -50,12 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BatchOperationOptions.cs" />
     <Compile Include="ITableStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebCustomerRelationManagement.Models\WebCustomerRelationManagement.Models.csproj">
+      <Project>{187E80D8-56AF-43A9-A81E-5C2A30BDC5EA}</Project>
+      <Name>WebCustomerRelationManagement.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

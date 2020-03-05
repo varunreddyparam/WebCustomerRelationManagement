@@ -3,10 +3,10 @@ using System;
 
 namespace WebCustomerRelationManagement.Models
 {
-    public class AddressEntity : TableEntity
+    public partial class AddressEntity : TableEntity
     {
-        private const string key = "Address";
-        public AddressEntity (Guid id)
+        public const string key = "Address";
+        public AddressEntity(Guid id)
         {
             this.PartitionKey = key;
             this.RowKey = id.ToString();
@@ -27,7 +27,7 @@ namespace WebCustomerRelationManagement.Models
         public string CreatedByName { get; set; }
         public DateTime CreatedOn { get; set; }
         public string CreatedOnBehalfBy { get; set; }
-        public string  CreatedOnBehalfByName { get; set; }
+        public string CreatedOnBehalfByName { get; set; }
         public string CustomerAddressId { get; set; }
         public int ExchangeRate { get; set; }
         public string Fax { get; set; }
