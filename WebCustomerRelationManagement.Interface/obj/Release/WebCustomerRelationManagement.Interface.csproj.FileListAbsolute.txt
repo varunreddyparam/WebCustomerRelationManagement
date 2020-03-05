@@ -1,0 +1,6 @@
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\WebCustomerRelationManagement.Interface.dll.config
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\WebCustomerRelationManagement.Interface.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\WebCustomerRelationManagement.Interface.pdb
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Release\WebCustomerRelationManagement.Interface.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Release\WebCustomerRelationManagement.Interface.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Release\WebCustomerRelationManagement.Interface.pdb

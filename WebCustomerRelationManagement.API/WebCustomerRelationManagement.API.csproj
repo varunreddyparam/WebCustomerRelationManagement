@@ -3,15 +3,19 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>false</Optimize>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.13" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.31" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="WebCustomerRelationManagement.Interface">
-      <HintPath>..\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Interface.dll</HintPath>
+    <Reference Include="WebCustomerRelationManagement.Concrete">
+      <HintPath>..\WebCustomerRelationManagement.Concrete\bin\Release\WebCustomerRelationManagement.Concrete.dll</HintPath>
     </Reference>
     <Reference Include="WebCustomerRelationManagement.Models">
-      <HintPath>..\WebCustomerRelationManagement.Models\bin\Debug\WebCustomerRelationManagement.Models.dll</HintPath>
+      <HintPath>..\WebCustomerRelationManagement.Models\bin\Release\WebCustomerRelationManagement.Models.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
