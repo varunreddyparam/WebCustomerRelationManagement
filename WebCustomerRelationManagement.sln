@@ -17,6 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManageme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCustomerRelationManagement.Interface", "WebCustomerRelationManagement.Interface\WebCustomerRelationManagement.Interface.csproj", "{E9A61309-5A7F-464D-ABF6-1FA1180847D1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishProfiles", "PublishProfiles", "{25156270-C802-4D70-B349-3342D94D1298}"
+	ProjectSection(SolutionItems) = preProject
+		WebCustomerRelationManagementAPI.PublishSettings = WebCustomerRelationManagementAPI.PublishSettings
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
