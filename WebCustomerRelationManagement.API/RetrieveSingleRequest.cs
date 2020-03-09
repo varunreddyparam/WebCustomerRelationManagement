@@ -11,14 +11,13 @@ using WebCustomerRelationManagement.Concrete;
 
 namespace WebCustomerRelationManagement.API
 {
-    public static class RetrieveSingle
+    public static class RetrieveSingleRequest
     {
         private static string Id { get; set; }
         private static string EntityLogicalName { get; set; }
-
         private static string ResultJson { get; set; }
 
-        [FunctionName("RetrieveSingle")]
+        [FunctionName("RetrieveSingleRequest")]
         public static async Task<HttpResponseMessage> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)]HttpRequest req,
             ILogger log)
@@ -40,7 +39,7 @@ namespace WebCustomerRelationManagement.API
                 //"DefaultEndpointsProtocol=https;AccountName=monkeycrm;AccountKey=FSpn7CPjKKMOEdFggeBpfXZd71ZfeQpKSopP8DLZsIo5np3Y3oUrNN8PC/2bRTwsgFL9Abcy0mtT54ij1305AQ==;EndpointSuffix=core.windows.net");
                 //Environment.GetEnvironmentVariable("DataConnectionString"));
                 var entityType = TableStorageEntityFactory.GetEntityObject(EntityLogicalName);
-                ResultJson = entityType.Retrieve(EntityLogicalName, EntityLogicalName, azureTableStorage).Result;
+                ResultJson = entityType.RetrieveSingleRequest(EntityLogicalName, EntityLogicalName, azureTableStorage).Result;
             }
             catch (Exception ex)
             {

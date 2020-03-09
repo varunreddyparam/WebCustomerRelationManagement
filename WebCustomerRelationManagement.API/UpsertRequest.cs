@@ -1,24 +1,25 @@
-using Microsoft.AspNetCore.Http;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using System;
 using System.IO;
-using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using WebCustomerRelationManagement.Concrete;
+using System.Net.Http;
 
 namespace WebCustomerRelationManagement.API
 {
-    public static class CreateRequest
+    public static class UpsertRequest
     {
         private static string EntityLogicalName { get; set; }
         private static string ResultJson { get; set; }
-
-        [FunctionName("CreateRequest")]
+        private static string Id { get; set; }
+        [FunctionName("UpsertRequest")]
         public static async Task<HttpResponseMessage> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "put", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
             try
@@ -37,8 +38,10 @@ namespace WebCustomerRelationManagement.API
                     {
                         Content = new StringContent("This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.")
                     };
+                if (string.IsNullOrEmpty(Id))
+                    Id = Guid.NewGuid().ToString();
                 var entityType = TableStorageEntityFactory.GetEntityObject(EntityLogicalName);
-                ResultJson = entityType.CreateRequest(EntityLogicalName, requestBody, azureTableStorage).Result;
+                ResultJson = entityType.UpsertRequest(EntityLogicalName, Id, requestBody, azureTableStorage).Result;
             }
             catch (Exception ex)
             {
@@ -52,7 +55,7 @@ namespace WebCustomerRelationManagement.API
                     }
                     : new HttpResponseMessage(System.Net.HttpStatusCode.NoContent)
                     {
-                        Content = new StringContent("Record Not Inserted")
+                        Content = new StringContent("Record Not Inserted/Updated")
                     };
         }
     }

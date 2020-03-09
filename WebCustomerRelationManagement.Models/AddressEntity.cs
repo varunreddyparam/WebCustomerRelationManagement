@@ -14,7 +14,7 @@ namespace WebCustomerRelationManagement.Models
         }
         public AddressEntity()
         {
-            
+
         }
 
         public int AddressNumber { get; set; }
@@ -38,6 +38,7 @@ namespace WebCustomerRelationManagement.Models
         public string Line1 { get; set; }
         public string Line2 { get; set; }
         public string Line3 { get; set; }
+        public string State { get; set; }
         public string Zip { get; set; }
         public string Longitude { get; set; }
         public string ModifiedBy { get; set; }
