@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs/WebCustomerRelationManagement/v15/Server/sqlite3
+.vs/WebCustomerRelationManagement/DesignTimeBuild/.dtbcache
+.vs/WebCustomerRelationManagement/DesignTimeBuild/.dtbcache
+.vs/WebCustomerRelationManagement/v16/.suo
+*.ide
+*.ide-shm
+*.ide-wal
