@@ -9,3 +9,6 @@
 *.ide
 *.ide-shm
 *.ide-wal
+.vs/WebCustomerRelationManagement/v16/Server/sqlite3/storage.ide
+.vs/WebCustomerRelationManagement/v16/.suo
+.vs/WebCustomerRelationManagement/v16/Server/sqlite3/storage.ide

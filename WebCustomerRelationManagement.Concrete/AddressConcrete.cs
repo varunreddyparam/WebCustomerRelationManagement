@@ -7,6 +7,10 @@ namespace WebCustomerRelationManagement.Concrete
 {
     public class AddressConcrete : IEntity
     {
+        public AddressConcrete()
+        {
+        }
+
         public async Task<string> RetrieveSingleRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage)
         {
             return JsonConvert.SerializeObject(await azureTableStorage.GetAsync<AddressEntity>(entityLogicalName, entityLogicalName, Id));
@@ -42,5 +46,12 @@ namespace WebCustomerRelationManagement.Concrete
             return JsonConvert.SerializeObject(await azureTableStorage.AddOrUpdateAsync(entityLogicalName, entity));
         }
 
+        public async Task<string>DeleteRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage)
+        {
+            AddressEntity entity = new AddressEntity();
+            entity.PartitionKey = entityLogicalName;
+            entity.RowKey = Id;
+            return JsonConvert.SerializeObject(await azureTableStorage.DeleteAsync(entityLogicalName, entity));
+        }
     }
 }
