@@ -39,7 +39,7 @@ namespace WebCustomerRelationManagement.API
                 //"DefaultEndpointsProtocol=https;AccountName=monkeycrm;AccountKey=FSpn7CPjKKMOEdFggeBpfXZd71ZfeQpKSopP8DLZsIo5np3Y3oUrNN8PC/2bRTwsgFL9Abcy0mtT54ij1305AQ==;EndpointSuffix=core.windows.net");
                 //Environment.GetEnvironmentVariable("DataConnectionString"));
                 var entityType = TableStorageEntityFactory.GetEntityObject(EntityLogicalName);
-                ResultJson = entityType.RetrieveSingleRequest(EntityLogicalName, EntityLogicalName, azureTableStorage).Result;
+                ResultJson = entityType.RetrieveSingleRequest(EntityLogicalName, Id, azureTableStorage).Result;
             }
             catch (Exception ex)
             {
