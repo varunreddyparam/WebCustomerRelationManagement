@@ -1,0 +1,6 @@
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\QueryEngine\bin\Debug\netstandard2.0\QueryEngine.deps.json
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\QueryEngine\bin\Debug\netstandard2.0\QueryEngine.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\QueryEngine\obj\Debug\netstandard2.0\QueryEngine.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\QueryEngine\obj\Debug\netstandard2.0\QueryEngine.AssemblyInfoInputs.cache
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\QueryEngine\obj\Debug\netstandard2.0\QueryEngine.AssemblyInfo.cs
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\QueryEngine\obj\Debug\netstandard2.0\QueryEngine.csprojAssemblyReference.cache
