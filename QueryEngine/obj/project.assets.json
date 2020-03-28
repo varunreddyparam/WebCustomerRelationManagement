@@ -762,7 +762,7 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "Q1/X453JpdWCu3EqZkDNZRSKs9JZiQMlHH1sYov0kWVhPoWLGcMIVPIlr5C/Lj4LV4sVUQK8SClDXonUGGNcOA==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -1161,7 +1161,7 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "sha512": "+jHF+sTz3vvpdiD7G+AMJXYmc4UK1dIVGmizjsNEUKqiUNDfa8abj3r8hUhM27HZsmZfnA7mP0gOmnerY/Xn6Q==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
@@ -1281,7 +1281,7 @@
       ]
     },
     "System.Dynamic.Runtime/4.3.0": {
-      "sha512": "SNVi1E/vfWUAs/WYKhE9+qlS6KqK0YVhnlT0HQtr8pMIA8YX3lwy3uPMownDwdYISBdmAF/2holEIldVp85Wag==",
+      "sha512": "30pVW0+uTzD2ZaXYA34rthGb62pSTJsOxb/LjmtDEZzuL7UiUiAaq6DHNrmNTdCqmlN2UjKYxUBT7NiXVeztUA==",
       "type": "package",
       "path": "system.dynamic.runtime/4.3.0",
       "files": [
@@ -1419,7 +1419,7 @@
       ]
     },
     "System.Globalization.Extensions/4.3.0": {
-      "sha512": "FhKmdR6MPG+pxow6wGtNAWdZh7noIOpdD5TwQ3CprzgIE1bBBoim0vbR1+AWsWjQmU7zXHgQo4TWSP6lCeiWcQ==",
+      "sha512": "xo7zGbYj4wV9QVygFF31zTORmQReaIQN/OfdOUUe12GZypDGnXJtgl9bxURpLB6rL4pPaR5Hrfsmdp6XIC69cw==",
       "type": "package",
       "path": "system.globalization.extensions/4.3.0",
       "files": [
@@ -1924,7 +1924,7 @@
       ]
     },
     "System.Reflection.Emit/4.3.0": {
-      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+      "sha512": "PnbFLAi5xRuJ9XJNUDd3nMEN7W0gx4ay4z0ZHPRJlLeRvlbO16q424MuT8cLa2HBNpRVgSA1yMrBvSfA1TeZtQ==",
       "type": "package",
       "path": "system.reflection.emit/4.3.0",
       "files": [
@@ -1959,7 +1959,7 @@
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
-      "sha512": "59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
+      "sha512": "aVCdBT6yAkuog+I7Qg2JOUOvFLDTFjvZG/xZXXF9QOOdI6Gm5nkpVf/lYf8Sai+1am+A0oQHtRN1pTy7U677AQ==",
       "type": "package",
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "files": [
@@ -2003,7 +2003,7 @@
       ]
     },
     "System.Reflection.Emit.Lightweight/4.3.0": {
-      "sha512": "oadVHGSMsTmZsAF864QYN1t1QzZjIcuKU3l2S9cZOwDdDueNTrqq1yRj7koFfIGEnKpt6NjpL3rOzRhs4ryOgA==",
+      "sha512": "e6M6Ddbw9l+ARL7SiDkWQy4PHtvhWOwMT1pCpiDA7RcuGg6EsQRKulbbsbGcAdHsD58gNB7rOAAxTTnr8A+STA==",
       "type": "package",
       "path": "system.reflection.emit.lightweight/4.3.0",
       "files": [
@@ -2605,7 +2605,7 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.3.0": {
-      "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
+      "sha512": "A0JDvfYtMxZcJLrkAW3AyAHysEnHdE0hDT8NKuxnpqRsUJrLdAoI90LeINzh27l9BWeosheFaxZ2QpplV8lu4A==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
@@ -3125,7 +3125,7 @@
       ]
     },
     "System.Xml.XmlDocument/4.3.0": {
-      "sha512": "lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
+      "sha512": "+MMQ/pl7qjFhTjE3btGv09rohTs7iXvRGymdmFjXXQChYl0s1Y1bIIXdawd/J1c70FJDrTMgaQwUx5mIy71JIw==",
       "type": "package",
       "path": "system.xml.xmldocument/4.3.0",
       "files": [
@@ -3194,23 +3194,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\31086660\\.nuget\\packages\\": {},
+    "C:\\Users\\lenovo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\31086660\\Documents\\GitHub\\WebCustomerRelationManagement\\QueryEngine\\QueryEngine.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\Documents\\GitHub\\WebCustomerRelationManagement\\QueryEngine\\QueryEngine.csproj",
       "projectName": "QueryEngine",
-      "projectPath": "C:\\Users\\31086660\\Documents\\GitHub\\WebCustomerRelationManagement\\QueryEngine\\QueryEngine.csproj",
-      "packagesPath": "C:\\Users\\31086660\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\31086660\\Documents\\GitHub\\WebCustomerRelationManagement\\QueryEngine\\obj\\",
+      "projectPath": "C:\\Users\\lenovo\\Documents\\GitHub\\WebCustomerRelationManagement\\QueryEngine\\QueryEngine.csproj",
+      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lenovo\\Documents\\GitHub\\WebCustomerRelationManagement\\QueryEngine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\31086660\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3246,16 +3246,10 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }

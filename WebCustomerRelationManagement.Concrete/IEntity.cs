@@ -10,6 +10,8 @@ namespace WebCustomerRelationManagement.Concrete
         Task<string> UpsertRequest(string entityLogicalName, string Id, string requestBody, AzureTableStorage azureTableStorage);
         //Task<string> BulkCreateRequest();
         Task<string> DeleteRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage);
+        Task<string> RetrieveMultipleRequest(QueryDeSerializer queryExpression, AzureTableStorage azureTableStorage);
+
 
     }
 }
