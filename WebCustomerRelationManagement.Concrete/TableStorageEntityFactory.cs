@@ -16,6 +16,8 @@ namespace WebCustomerRelationManagement.Concrete
             {
                 case "Address":
                     return new AddressConcrete();
+                case "Account":
+                    return new ContactConcrete();
                 default:
                     return (IEntity)new Object();
             }
