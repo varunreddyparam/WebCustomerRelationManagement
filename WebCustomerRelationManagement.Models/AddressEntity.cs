@@ -16,7 +16,8 @@ namespace WebCustomerRelationManagement.Models
         {
 
         }
-
+        public Guid OrganizationId { get; set; }
+        public string Organizationname { get; set; }
         public int AddressNumber { get; set; }
         public int AddressTypeCode { get; set; }
         public string AddressTypeCodeName { get; set; }
@@ -55,5 +56,7 @@ namespace WebCustomerRelationManagement.Models
         public int UTCConversionTimeZoneCode { get; set; }
         public string UTCOffset { get; set; }
         public string VersionNumber { get; set; }
+        public Guid OwnerId { get; set; }
+        public string OwnerName { get; set; }
     }
 }

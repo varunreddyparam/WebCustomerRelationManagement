@@ -23,7 +23,7 @@ namespace WebCustomerRelationManagement.Concrete
             entity = JsonConvert.DeserializeObject<AddressEntity>(requestBody);
             entity.PartitionKey = entityLogicalName;
             entity.RowKey = Guid.NewGuid().ToString();
-            entity.CustomerAddressId = entity.RowKey;
+            entity.CustomerAddressId = Guid.Parse(entity.RowKey);
             return JsonConvert.SerializeObject(await azureTableStorage.AddAsync(entityLogicalName, entity));
         }
 
@@ -33,7 +33,7 @@ namespace WebCustomerRelationManagement.Concrete
             entity = JsonConvert.DeserializeObject<AddressEntity>(requestBody);
             entity.PartitionKey = entityLogicalName;
             entity.RowKey = Id;
-            entity.CustomerAddressId = entity.RowKey;
+            entity.CustomerAddressId = Guid.Parse(entity.RowKey);
             return JsonConvert.SerializeObject(await azureTableStorage.UpdateAsync(entityLogicalName, entity));
         }
 
@@ -43,7 +43,7 @@ namespace WebCustomerRelationManagement.Concrete
             entity = JsonConvert.DeserializeObject<AddressEntity>(requestBody);
             entity.PartitionKey = entityLogicalName;
             entity.RowKey = Id;
-            entity.CustomerAddressId = entity.RowKey;
+            entity.CustomerAddressId = Guid.Parse(entity.RowKey);
             return JsonConvert.SerializeObject(await azureTableStorage.AddOrUpdateAsync(entityLogicalName, entity));
         }
 

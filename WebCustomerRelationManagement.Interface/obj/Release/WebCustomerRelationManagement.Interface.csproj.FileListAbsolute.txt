@@ -4,3 +4,15 @@ C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelati
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Release\WebCustomerRelationManagement.Interface.csproj.CoreCompileInputs.cache
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Release\WebCustomerRelationManagement.Interface.dll
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Release\WebCustomerRelationManagement.Interface.pdb
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\Microsoft.WindowsAzure.Storage.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\Newtonsoft.Json.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\WebCustomerRelationManagement.Models.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\WebCustomerRelationManagement.Models.pdb
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\WebCustomerRelationManagement.Models.dll.config
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\Microsoft.WindowsAzure.Storage.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Release\Newtonsoft.Json.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Release\WebCustomerRelationManagement.Interface.csprojAssemblyReference.cache
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Release\WebCustomerRelationManagement.Interface.csproj.CopyComplete

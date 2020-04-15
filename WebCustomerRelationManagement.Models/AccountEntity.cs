@@ -3,9 +3,9 @@ using System;
 
 namespace WebCustomerRelationManagement.Models
 {
-    public class AccountEntity :TableEntity
+    public partial class AccountEntity :TableEntity
     {
-        public const string key = "Contact";
+        public const string key = "Account";
         public AccountEntity(Guid id, string partitionKey)
         {
             this.PartitionKey = key;
@@ -16,6 +16,8 @@ namespace WebCustomerRelationManagement.Models
         {
 
         }
+        public Guid OrganizationId { get; set; }
+        public string Organizationname { get; set; }
         public Guid AccountId { get; set; }
         public string AccouuntType { get; set; }
         public int AccountTypeCode { get; set; }
@@ -34,6 +36,8 @@ namespace WebCustomerRelationManagement.Models
         public string BlogURL1 { get; set; }
         public string BlogURL2 { get; set; }
         public string BlogURL3 { get; set; }
+        public Guid OwnerId { get; set; }
+        public string OwnerName { get; set; }
         public string CreatedBy { get; set; }
         public string CreatedByName { get; set; }
         public DateTime CreatedOn { get; set; }

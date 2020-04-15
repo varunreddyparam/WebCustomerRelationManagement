@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebCustomerRelationManagement.Models;
-using WebCustomerRelationManagement.Interface;
 
 namespace WebCustomerRelationManagement.Concrete
 {
@@ -16,8 +15,24 @@ namespace WebCustomerRelationManagement.Concrete
             {
                 case "Address":
                     return new AddressConcrete();
-                case "Account":
+                case "Contact":
                     return new ContactConcrete();
+                case "Account":
+                    return new AccountConcrete();
+                case "User":
+                    return new UserConcrete();
+                case "Organization":
+                    return new OrganizationConcrete();
+                case "Notes":
+                    return new NotesConcrete();
+                case "TimeSheet":
+                    return new TimeSheetConcrete();
+                case "Task":
+                    return new TaskConcrete();
+                case "ExpenseSheet":
+                    return new ExpenseSheetConcrete();
+                case "UserPrivilege":
+                    return new UserPrivilegeConcrete();
                 default:
                     return (IEntity)new Object();
             }

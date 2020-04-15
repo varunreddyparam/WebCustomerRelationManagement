@@ -1,0 +1,14 @@
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Release\WebTimeSheetManagementModels.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Release\WebTimeSheetManagementModels.pdb
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Release\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Release\Microsoft.WindowsAzure.Storage.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Release\Newtonsoft.Json.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Release\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Release\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Release\Microsoft.WindowsAzure.Storage.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Release\Newtonsoft.Json.xml
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Release\WebTimeSheetManagementModels.csprojAssemblyReference.cache
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Release\WebTimeSheetManagementModels.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Release\WebTimeSheetManagementModels.csproj.CopyComplete
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Release\WebTimeSheetManagementModels.dll
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Release\WebTimeSheetManagementModels.pdb

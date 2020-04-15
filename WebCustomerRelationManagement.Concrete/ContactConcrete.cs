@@ -1,37 +1,62 @@
-﻿using System.Threading.Tasks;
+﻿using Microsoft.WindowsAzure.Storage.Table;
+using Newtonsoft.Json;
+using System;
+using System.Threading.Tasks;
+using WebCustomerRelationManagement.Models;
 
 namespace WebCustomerRelationManagement.Concrete
 {
     public class ContactConcrete : IEntity
     {
-        public Task<string> CreateRequest(string entityLogicalName, string requestBody, AzureTableStorage azureTableStorage)
+        public async Task<string> CreateRequest(string entityLogicalName, string requestBody, AzureTableStorage azureTableStorage)
         {
-            throw new System.NotImplementedException();
+            ContactEntity entity = new ContactEntity();
+            entity = JsonConvert.DeserializeObject<ContactEntity>(requestBody);
+            entity.PartitionKey = entityLogicalName;
+            entity.RowKey = Guid.NewGuid().ToString();
+            entity.CustomerId = Guid.Parse(entity.RowKey);
+            return JsonConvert.SerializeObject(await azureTableStorage.AddAsync(entityLogicalName, entity));
         }
 
-        public Task<string> DeleteRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage)
+        public async Task<string> DeleteRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage)
         {
-            throw new System.NotImplementedException();
+            ContactEntity entity = new ContactEntity();
+            entity.PartitionKey = entityLogicalName;
+            entity.RowKey = Id;
+            return JsonConvert.SerializeObject(await azureTableStorage.DeleteAsync(entityLogicalName, entity));
         }
 
-        public Task<string> RetrieveMultipleRequest(QueryDeSerializer queryExpression, AzureTableStorage azureTableStorage)
+        public async Task<string> RetrieveMultipleRequest(QueryDeSerializer queryExpression, AzureTableStorage azureTableStorage)
         {
-            throw new System.NotImplementedException();
+            TableQuery<ContactEntity> table = new TableQuery<ContactEntity>();
+            table.SelectColumns = queryExpression.Attributes;
+            table.Where(queryExpression.FilterCondition);
+            return JsonConvert.SerializeObject(await azureTableStorage.QueryAsync(queryExpression.EntityLogicalName, table));
         }
 
-        public Task<string> RetrieveSingleRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage)
+        public async Task<string> RetrieveSingleRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage)
         {
-            throw new System.NotImplementedException();
+            return JsonConvert.SerializeObject(await azureTableStorage.GetAsync<ContactEntity>(entityLogicalName, entityLogicalName, Id));
         }
 
-        public Task<string> UpdateRequest(string entityLogicalName, string Id, string requestBody, AzureTableStorage azureTableStorage)
+        public async Task<string> UpdateRequest(string entityLogicalName, string Id, string requestBody, AzureTableStorage azureTableStorage)
         {
-            throw new System.NotImplementedException();
+            ContactEntity entity = new ContactEntity();
+            entity = JsonConvert.DeserializeObject<ContactEntity>(requestBody);
+            entity.PartitionKey = entityLogicalName;
+            entity.RowKey = Id;
+            entity.CustomerAddressId = Guid.Parse(entity.RowKey);
+            return JsonConvert.SerializeObject(await azureTableStorage.UpdateAsync(entityLogicalName, entity));
         }
 
-        public Task<string> UpsertRequest(string entityLogicalName, string Id, string requestBody, AzureTableStorage azureTableStorage)
+        public async Task<string> UpsertRequest(string entityLogicalName, string Id, string requestBody, AzureTableStorage azureTableStorage)
         {
-            throw new System.NotImplementedException();
+            ContactEntity entity = new ContactEntity();
+            entity = JsonConvert.DeserializeObject<ContactEntity>(requestBody);
+            entity.PartitionKey = entityLogicalName;
+            entity.RowKey = Id;
+            entity.CustomerAddressId = Guid.Parse(entity.RowKey);
+            return JsonConvert.SerializeObject(await azureTableStorage.AddOrUpdateAsync(entityLogicalName, entity));
         }
     }
 }

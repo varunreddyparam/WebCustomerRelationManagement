@@ -3,7 +3,7 @@ using System;
 
 namespace WebCustomerRelationManagement.Models
 {
-    public class ContactEntity : TableEntity
+    public partial class ContactEntity : TableEntity
     {
         public const string key = "Contact";
         public ContactEntity(Guid id, string partitionKey)
@@ -39,6 +39,8 @@ namespace WebCustomerRelationManagement.Models
         public string BlogURL1 { get; set; }
         public string BlogURL2 { get; set; }
         public string BlogURL3 { get; set; }
+        public Guid OwnerId { get; set; }
+        public string OwnerName { get; set; }
         public string CreatedBy { get; set; }
         public string CreatedByName { get; set; }
         public DateTime CreatedOn { get; set; }
