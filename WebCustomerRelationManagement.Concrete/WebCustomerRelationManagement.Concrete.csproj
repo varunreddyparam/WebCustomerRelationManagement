@@ -141,6 +141,7 @@
     <Compile Include="OrganizationConcrete.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryDeSerializer.cs" />
+    <Compile Include="StringCipher.cs" />
     <Compile Include="TableStorageEntityFactory.cs" />
     <Compile Include="TaskConcrete.cs" />
     <Compile Include="TimeSheetConcrete.cs" />

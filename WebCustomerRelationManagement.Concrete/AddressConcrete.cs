@@ -62,5 +62,10 @@ namespace WebCustomerRelationManagement.Concrete
             table.Where(queryDeSerializer.FilterCondition);
             return JsonConvert.SerializeObject(await azureTableStorage.QueryAsync(queryDeSerializer.EntityLogicalName, table));
         }
+
+        public Task<string> ValidateRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage, string requestBody)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

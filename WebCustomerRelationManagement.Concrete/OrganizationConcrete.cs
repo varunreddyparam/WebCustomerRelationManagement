@@ -57,5 +57,10 @@ namespace WebCustomerRelationManagement.Concrete
                 TableQuery.GenerateFilterCondition("Organizationname", QueryComparisons.Equal, ((Newtonsoft.Json.Linq.JValue)((Newtonsoft.Json.Linq.JProperty)((Newtonsoft.Json.Linq.JContainer)orgObject).First).Value).Value.ToString())));
             return JsonConvert.SerializeObject(await azureTableStorage.QueryAsync(entityLogicalName, table));
         }
+
+        public Task<string> ValidateRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage, string requestBody)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

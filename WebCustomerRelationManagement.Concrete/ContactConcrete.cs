@@ -58,5 +58,10 @@ namespace WebCustomerRelationManagement.Concrete
             entity.CustomerAddressId = Guid.Parse(entity.RowKey);
             return JsonConvert.SerializeObject(await azureTableStorage.AddOrUpdateAsync(entityLogicalName, entity));
         }
+
+        public Task<string> ValidateRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage, string requestBody)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
