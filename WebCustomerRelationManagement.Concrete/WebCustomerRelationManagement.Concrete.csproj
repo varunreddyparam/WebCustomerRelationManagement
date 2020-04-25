@@ -121,14 +121,13 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="WebCustomerRelationManagement.Interface">
-      <HintPath>..\WebCustomerRelationManagement.Interface\bin\Release\WebCustomerRelationManagement.Interface.dll</HintPath>
+      <HintPath>..\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Interface.dll</HintPath>
     </Reference>
-    <Reference Include="WebCustomerRelationManagement.Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\WebCustomerRelationManagement.Models\bin\Release\WebCustomerRelationManagement.Models.dll</HintPath>
+    <Reference Include="WebCustomerRelationManagement.Models">
+      <HintPath>..\WebCustomerRelationManagement.Models\bin\Debug\WebCustomerRelationManagement.Models.dll</HintPath>
     </Reference>
     <Reference Include="WebTimeSheetManagementModels">
-      <HintPath>..\WebTimeSheetManagementModels\bin\Release\WebTimeSheetManagementModels.dll</HintPath>
+      <HintPath>..\WebTimeSheetManagementModels\bin\Debug\WebTimeSheetManagementModels.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

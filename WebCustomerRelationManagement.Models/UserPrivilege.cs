@@ -26,6 +26,8 @@ namespace WebCustomerRelationManagement.Models
         public bool CanDelete { get; set; }
         public Guid OwnerId { get; set; }
         public string OwnerName { get; set; }
+        public Guid Organization { get; set; }
+        public string OrganizationName { get; set; }
         public string CreatedBy { get; set; }
         public string CreatedByName { get; set; }
         public DateTime CreatedOn { get; set; }

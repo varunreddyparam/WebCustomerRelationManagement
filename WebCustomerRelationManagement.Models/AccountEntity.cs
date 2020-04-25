@@ -16,8 +16,6 @@ namespace WebCustomerRelationManagement.Models
         {
 
         }
-        public Guid OrganizationId { get; set; }
-        public string Organizationname { get; set; }
         public Guid AccountId { get; set; }
         public string AccouuntType { get; set; }
         public int AccountTypeCode { get; set; }
@@ -38,6 +36,8 @@ namespace WebCustomerRelationManagement.Models
         public string BlogURL3 { get; set; }
         public Guid OwnerId { get; set; }
         public string OwnerName { get; set; }
+        public Guid Organization { get; set; }
+        public string OrganizationName { get; set; }
         public string CreatedBy { get; set; }
         public string CreatedByName { get; set; }
         public DateTime CreatedOn { get; set; }

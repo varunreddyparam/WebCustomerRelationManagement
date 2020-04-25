@@ -18,8 +18,8 @@ namespace WebCustomerRelationManagement.API
         private static string ResultJson { get; set; }
 
         [FunctionName("RetrieveSingleRequest")]
-        public static async Task<HttpResponseMessage> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)]HttpRequest req,
+        public async static Task<HttpResponseMessage> Run(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequest req,
             ILogger log)
         {
             try
@@ -29,17 +29,19 @@ namespace WebCustomerRelationManagement.API
                 Id = req.Query["id"];
                 EntityLogicalName = req.Query["entitylogicalname"];
                 string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+                log.LogInformation(requestBody);
                 if (Id == null && EntityLogicalName == null)
                     return new HttpResponseMessage(System.Net.HttpStatusCode.BadRequest)
                     {
                         Content = new StringContent("Please Pass id and entitylogicalname on the query string")
                     };
-
+                log.LogInformation(Environment.GetEnvironmentVariable("DataConnectionString"));
                 AzureTableStorage azureTableStorage = new AzureTableStorage(Environment.GetEnvironmentVariable("DataConnectionString"));
-                //"DefaultEndpointsProtocol=https;AccountName=monkeycrm;AccountKey=FSpn7CPjKKMOEdFggeBpfXZd71ZfeQpKSopP8DLZsIo5np3Y3oUrNN8PC/2bRTwsgFL9Abcy0mtT54ij1305AQ==;EndpointSuffix=core.windows.net");
                 //Environment.GetEnvironmentVariable("DataConnectionString"));
+                //"DefaultEndpointsProtocol=https;AccountName=monkeycrm;AccountKey=FSpn7CPjKKMOEdFggeBpfXZd71ZfeQpKSopP8DLZsIo5np3Y3oUrNN8PC/2bRTwsgFL9Abcy0mtT54ij1305AQ==;EndpointSuffix=core.windows.net");
                 var entityType = TableStorageEntityFactory.GetEntityObject(EntityLogicalName);
-                ResultJson = entityType.RetrieveSingleRequest(EntityLogicalName, Id, azureTableStorage).Result;
+                ResultJson = entityType.RetrieveSingleRequest(EntityLogicalName, Id, azureTableStorage, requestBody).Result;
+                log.LogInformation(ResultJson);
             }
             catch (Exception ex)
             {

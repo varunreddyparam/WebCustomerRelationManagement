@@ -12,7 +12,7 @@ namespace WebCustomerRelationManagement.Concrete
         {
         }
 
-        public async Task<string> RetrieveSingleRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage)
+        public async Task<string> RetrieveSingleRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage, string requestBody)
         {
             return JsonConvert.SerializeObject(await azureTableStorage.GetAsync<AddressEntity>(entityLogicalName, entityLogicalName, Id));
         }

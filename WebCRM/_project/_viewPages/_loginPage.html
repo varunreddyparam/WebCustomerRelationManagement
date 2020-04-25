@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <title>Signin Monkey TimeSheets</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../_styleSheets/_signinPage.css" rel="stylesheet">
+    <script type="text/javascript" src="../../Scripts/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_library/_sdk/documentReader.js"></script>
+    <script type="text/javascript" src="../_library/_entityModels/_organizationModel.js"></script>
+    <script type="text/javascript" src="../_library/_entityModels/_userModel.js"></script>
+    <script type="text/javascript" src="../_library/Commonfunctions.js"></script>
+    <script type="text/javascript" src="../_library/AzureFunctionLib.js"></script>
+    <script type="text/javascript" src="../_pageScripts/_loginPage/loginModel.js"></script>
+    <script type="text/javascript" src="../_pageScripts/_loginPage/loginController.js"></script>
+
+</head>
+
+<body class="text-center">
+    <form class="form-signin">
+        <!--<img class="mb-4" src="" alt="" width="72" height="72">-->
+        <h1 class="h3 mb-3 font-weight-normal">Monkey TimeSheets</h1>
+        <div id="alert_placeholder"></div>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="Monkey.CRM.Login.Main.onSubmitClick()">Sign in</button> <!--data-bind="click:loginViewModel.login"-->
+        <a href="_signUpPage.html" class="h6 mb-3 font-weight-normal">Create an account</a>
+        <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+    </form>
+</body>
+</html>

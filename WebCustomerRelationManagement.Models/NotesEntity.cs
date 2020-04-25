@@ -28,6 +28,8 @@ namespace WebCustomerRelationManagement.Models
         public string BlobUrl { get; set; }
         public string FileName { get; set; }
         public string FileExtension { get; set; }
+        public Guid Organization { get; set; }
+        public string OrganizationName { get; set; }
         public Guid OwnerId { get; set; }
         public string OwnerName { get; set; }
         public string CreatedBy { get; set; }

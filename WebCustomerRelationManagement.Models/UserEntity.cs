@@ -28,7 +28,6 @@ namespace WebCustomerRelationManagement.Models
         public string MiddleName { get; set; }
         public string FullName { get; set; }
         public bool IsPrimary { get; set; }
-        public string OrganizationName { get; set; }
         public Guid CustomerAddressId { get; set; }
         public string CustomerFullAddress { get; set; }
         public string Phone1 { get; set; }
@@ -43,6 +42,8 @@ namespace WebCustomerRelationManagement.Models
         public string BlogURL1 { get; set; }
         public string BlogURL2 { get; set; }
         public string BlogURL3 { get; set; }
+        public Guid Organization { get; set; }
+        public string OrganizationName { get; set; }
         public Guid OwnerId { get; set; }
         public string OwnerName { get; set; }
         public string CreatedBy { get; set; }

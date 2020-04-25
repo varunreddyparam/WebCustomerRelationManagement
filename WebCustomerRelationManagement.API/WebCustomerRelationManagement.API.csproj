@@ -18,12 +18,6 @@
     <Reference Include="WebCustomerRelationManagement.Concrete">
       <HintPath>..\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Concrete.dll</HintPath>
     </Reference>
-    <Reference Include="WebCustomerRelationManagement.Interface">
-      <HintPath>..\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Interface.dll</HintPath>
-    </Reference>
-    <Reference Include="WebCustomerRelationManagement.Models">
-      <HintPath>..\WebCustomerRelationManagement.Models\bin\Debug\WebCustomerRelationManagement.Models.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

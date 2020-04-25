@@ -45,3 +45,4 @@ C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRela
 C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Models.dll
 C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Models.pdb
 C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Models.dll.config
+C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
