@@ -45,7 +45,7 @@ Monkey.CRM.Model.LoginModel = {
                 throw loginFailMsg;
             }
             else
-                window.sessionStorage.setItem("_useDetail", userModel);
+                window.sessionStorage.setItem("_useDetail", JSON.parse(userModel));
             return userModel;
         }
         catch (exception) {
