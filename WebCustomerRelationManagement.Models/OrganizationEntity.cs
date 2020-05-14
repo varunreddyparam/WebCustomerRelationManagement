@@ -6,7 +6,7 @@ namespace WebCustomerRelationManagement.Models
     public partial class OrganizationEntity : TableEntity
     {
         public const string key = "Organization";
-        public OrganizationEntity(Guid id, string partitionKey)
+        public OrganizationEntity(Guid id)
         {
             this.PartitionKey = key;
             this.RowKey = id.ToString();
@@ -19,6 +19,7 @@ namespace WebCustomerRelationManagement.Models
         public Guid OraganizationId { get; set; }
         public string Organizationname { get; set; }
         public string OrganizationURL { get; set; }
+        public Guid AddressId { get; set; }
         public string OrganizationFullAddress { get; set; }
         public string Phone1 { get; set; }
         public string Phone2 { get; set; }
@@ -34,15 +35,15 @@ namespace WebCustomerRelationManagement.Models
         public string BlogURL3 { get; set; }
         public Guid OwnerId { get; set; }
         public string OwnerName { get; set; }
-        public string CreatedBy { get; set; }
+        public Guid CreatedBy { get; set; }
         public string CreatedByName { get; set; }
         public DateTime CreatedOn { get; set; }
-        public string CreatedOnBehalfBy { get; set; }
+        public Guid CreatedOnBehalfBy { get; set; }
         public string CreatedOnBehalfByName { get; set; }
         public DateTime ModifiedOn { get; set; }
-        public string ModifiedBy { get; set; }
+        public Guid ModifiedBy { get; set; }
         public string ModifiedByName { get; set; }
-        public string ModifiedOnBehalfBy { get; set; }
+        public Guid ModifiedOnBehalfBy { get; set; }
         public string ModifiedOnBehalfByName { get; set; }
     }
 }

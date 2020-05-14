@@ -4,11 +4,13 @@
         this.RowKey = null;
         this.UserId = null;
         this.UserName = null;
+        this.Password = null;
         this.FirstName = null;
         this.LastName = null;
         this.MiddleName = null;
         this.FullName = null;
         this.IsPrimary = null;
+        this.OrganizationId = null;
         this.OrganizationName = null;
         this.CustomerAddressId = null;
         this.CustomerFullAddress = null;

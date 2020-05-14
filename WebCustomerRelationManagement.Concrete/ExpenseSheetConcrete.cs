@@ -49,9 +49,6 @@ namespace WebCustomerRelationManagement.Concrete
         {
             ExpenseSheetEntity entity = new ExpenseSheetEntity();
             entity = JsonConvert.DeserializeObject<ExpenseSheetEntity>(requestBody);
-            entity.PartitionKey = entityLogicalName;
-            entity.RowKey = Id;
-            entity.ExpenseSheetId = Guid.Parse(entity.RowKey);
             return JsonConvert.SerializeObject(await azureTableStorage.UpdateAsync(entityLogicalName, entity));
         }
 

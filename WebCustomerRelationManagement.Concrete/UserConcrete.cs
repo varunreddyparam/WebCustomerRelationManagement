@@ -18,7 +18,9 @@ namespace WebCustomerRelationManagement.Concrete
             entity.PartitionKey = entityLogicalName;
             entity.RowKey = Guid.NewGuid().ToString();
             entity.UserId = Guid.Parse(entity.RowKey);
-            return JsonConvert.SerializeObject(await azureTableStorage.AddAsync(entityLogicalName, entity));
+            entity.Password = StringCipher.Encrypt(entity.Password);
+            JsonConvert.SerializeObject(await azureTableStorage.AddAsync(entityLogicalName, entity));
+            return entity.UserId.ToString();
         }
 
         public async Task<string> DeleteRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage)
@@ -68,15 +70,15 @@ namespace WebCustomerRelationManagement.Concrete
             {
                 object userObject = JsonConvert.DeserializeObject(requestBody);
                 string inputPassword = ((Newtonsoft.Json.Linq.JValue)((Newtonsoft.Json.Linq.JContainer)((Newtonsoft.Json.Linq.JContainer)userObject).Last).Last).Value.ToString();
-                var UserValidate = this.ValidateUser(userObject, azureTableStorage, entityLogicalName);
-                if (UserValidate.Result.Length > 2)
+                var UserValidate = await this.ValidateUser(userObject, azureTableStorage, entityLogicalName);
+                if (UserValidate.Length > 2)
                 {
-                    var user = JsonConvert.DeserializeObject<UserEntity>(UserValidate.Result);
+                    var user = JsonConvert.DeserializeObject<UserEntity>(UserValidate);
                     if (string.Equals(StringCipher.Decrypt(user.Password), inputPassword))
-                        return UserValidate.Result;
+                        return UserValidate;
                 }
             }
-            return Convert.ToString(false);
+            return JsonConvert.SerializeObject(Convert.ToString(false));
         }
 
         public async Task<string> ValidateUser(object userObject, AzureTableStorage azureTableStorage, string entityLogicalName)

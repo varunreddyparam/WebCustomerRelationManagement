@@ -19,6 +19,7 @@ Monkey.CRM.DocumentReader.Main = {
     },
 
     createElement: function (elementName) {
-        document.createElement(elementName);
+        let element = document.createElement(elementName);
+        return element;
     }
 };

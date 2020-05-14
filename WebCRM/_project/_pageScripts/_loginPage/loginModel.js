@@ -25,8 +25,9 @@ Monkey.CRM.Model.LoginModel = {
             if (orgModel === null || orgModel === "undefined") {
                 throw errorMsg;
             }
-            else
-                window.sessionStorage.setItem("_orgDetail", orgModel);
+            else {
+                window.sessionStorage.setItem("_orgDetail", JSON.parse(orgModel));
+            }
         }
         catch (exception) {
             console.log(exception);
@@ -37,14 +38,15 @@ Monkey.CRM.Model.LoginModel = {
 
     getUserAuthenticated: function (UserName, Password) {
         try {
-            let loginFailMsg = "InCorrect UserName or Password";
             let azureAuthRequest = new AzureFunctionLibrary(window.sessionStorage.getItem("SessionId"), "User", JSON.stringify({ user: UserName, pass: Password }));
-            let userModel = azureAuthRequest.getSingleRequest();
+            let userModel = azureAuthRequest.ValidateRequest();
+            userModel = JSON.parse(userModel.toLowerCase());
             if (userModel === null || userModel === "undefined") {
                 throw loginFailMsg;
             }
             else
                 window.sessionStorage.setItem("_useDetail", userModel);
+            return userModel;
         }
         catch (exception) {
             console.log(exception);

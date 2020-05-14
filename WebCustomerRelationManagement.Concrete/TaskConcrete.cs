@@ -49,9 +49,6 @@ namespace WebCustomerRelationManagement.Concrete
         {
             TaskEntity entity = new TaskEntity();
             entity = JsonConvert.DeserializeObject<TaskEntity>(requestBody);
-            entity.PartitionKey = entityLogicalName;
-            entity.RowKey = Id;
-            entity.TaskId = Guid.Parse(entity.RowKey);
             return JsonConvert.SerializeObject(await azureTableStorage.UpdateAsync(entityLogicalName, entity));
         }
 

@@ -12,94 +12,106 @@
     <!-- Custom styles for this template -->
     <link href="../_styleSheets/_signinPage.css" rel="stylesheet">
     <script type="text/javascript" src="../../Scripts/jquery-3.5.0.min.js"></script>
-    <script type="text/javascript" src="../../Scripts/knockout-3.5.1.js"></script>
+    <script type="text/javascript" src="../../Scripts/bootstrap.min.js"></script>
+    <script src="../_library/_entityModels/_registrationModel.js"></script>
+    <script src="../_library/_entityModels/_addressModel.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="../_library/_sdk/documentReader.js"></script>
     <script type="text/javascript" src="../_library/Commonfunctions.js"></script>
     <script type="text/javascript" src="../_library/AzureFunctionLib.js"></script>
     <script type="text/javascript" src="../_library/CountryProvinceData.js"></script>
+    <script type="text/javascript" src="../_pageScripts/_signUpPage/signupModel.js"></script>
     <script type='text/javascript' src="../_pageScripts/_signUpPage/signupController.js"></script>
 
 </head>
 
-<body class="text-center">
+<body class="text-center" onload="Monkey.CRM.SignUp.Main.onLoad()">
     <form>
         <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputFirstName">FirstName</label>
-                <input type="text" class="form-control" id="inputFirstName" placeholder="FirstName">
+            <div class="form-group col-md-12" id="alert_placeholder"></div>
             </div>
-            <div class="form-group col-md-6">
-                <label for="inputLastName">LastName</label>
-                <input type="text" class="form-control" id="inputLastName" placeholder="LastName">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label class="sr-only" for="inlineFormInput">Name</label>
-                <input type="text" class="form-control" id="inlineFormInput" placeholder="UserName">
-            </div>
-            <div class="form-group col-md-8">
-                <label class="sr-only" for="inlineFormInputGroup">OrganizationName</label>
-                <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">@</div>
-                    </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="OrganizationName">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputFirstName">FirstName</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="FirstName" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputLastName">LastName</label>
+                    <input type="text" class="form-control" id="inputLastName" placeholder="LastName" required>
                 </div>
             </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputPassword1">Password</label>
-                <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label class="sr-only" for="inlineFormInput">Name</label>
+                    <input type="text" class="form-control" id="inlineFormInput" placeholder="UserName" required>
+                </div>
+                <div class="form-group col-md-8">
+                    <label class="sr-only" for="inlineFormInputGroup">OrganizationName</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="OrganizationName" onfocusout="Monkey.CRM.SignUp.Main.CheckOrgExist()" required>
+                    </div>
+                </div>
             </div>
-            <div class="form-group col-md-6">
-                <label for="inputPassword2">ConfirmPassword</label>
-                <input type="password" class="form-control" id="inputPassword2" placeholder="Confirm Password">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputPassword1">Password</label>
+                    <input type="password" class="form-control" id="inputPassword1" placeholder="Password" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword2">ConfirmPassword</label>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Confirm Password" required>
+                </div>
             </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPhone">Phone</label>
+                    <input type="text" class="form-control" id="inputPhone" placeholder="Phone with Country Code" required>
+                </div>
             </div>
-            <div class="form-group col-md-6">
-                <label for="inputPhone">Phone</label>
-                <input type="text" class="form-control" id="inputPhone" placeholder="Phone with Country Code">
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-group">
-            <label for="inputAddress3">Address 3</label>
-            <input type="text" class="form-control" id="inputAddress3" placeholder="Line 3">
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputCountry">Country</label>
-                <select id="inputCountry" class="form-control" onload="Monkey.CRM.SignUp.Main.onLoad"></select>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
             </div>
-            <div class="form-group col-md-6">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control"></select>
+            <div class="form-group">
+                <label for="inputAddress3">Address 3</label>
+                <input type="text" class="form-control" id="inputAddress3" placeholder="Line 3">
             </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-8">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCountry">Country</label>
+                    <select id="inputCountry" class="form-control" onchange="Monkey.CRM.SignUp.Main.CountrySelect()" required>
+                        <option>Select Country</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control" required>
+                        <option>Select State</option>
+                    </select>
+                </div>
             </div>
-            <div class="form-group col-md-4">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip" required>
+                </div>
             </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign up</button>
+            <button type="button" class="btn btn-primary" onclick="Monkey.CRM.SignUp.Main.SignUpClick()">Sign up</button>
     </form>
 </body>
 </html>

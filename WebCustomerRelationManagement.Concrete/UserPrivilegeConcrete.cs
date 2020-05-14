@@ -48,9 +48,6 @@ namespace WebCustomerRelationManagement.Concrete
         {
             UserPrivilegeEntity entity = new UserPrivilegeEntity();
             entity = JsonConvert.DeserializeObject<UserPrivilegeEntity>(requestBody);
-            entity.PartitionKey = entityLogicalName;
-            entity.RowKey = Id;
-            entity.UserPrivilegeId = Guid.Parse(entity.RowKey);
             return JsonConvert.SerializeObject(await azureTableStorage.UpdateAsync(entityLogicalName, entity));
         }
 

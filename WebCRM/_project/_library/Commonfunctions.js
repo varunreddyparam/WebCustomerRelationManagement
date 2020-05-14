@@ -22,5 +22,13 @@ function ipLookup() {
 }
 
 function errorBootstrap_alert(message) {
-    $('#alert_placeholder').html('<div class="alert alert-danger alert-dismissible fade show"><a class="close" data-dismiss="alert">×</a><span>' + message + '</span></div>');
+    $('#alert_placeholder').html('<div class="alert alert-danger alert-dismissible fade show"><a class="close" data-dismiss="alert">×</a><span><i class="fa fa-times-circle"></i> ' + message + '</span></div>');
 }
+
+function successBootstrap_alert(message) {
+    $('#alert_placeholder').html('<div class="alert alert-success alert-dismissible fade show"><a class="close" data-dismiss="alert">×</a ><span><i class="fa fa-check-circle" ></i > ' + message + '</span></div > ');
+}
+
+function handleForm(event) {
+    event.preventDefault();
+} 

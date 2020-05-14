@@ -43,9 +43,6 @@ namespace WebCustomerRelationManagement.Concrete
         {
             ContactEntity entity = new ContactEntity();
             entity = JsonConvert.DeserializeObject<ContactEntity>(requestBody);
-            entity.PartitionKey = entityLogicalName;
-            entity.RowKey = Id;
-            entity.CustomerAddressId = Guid.Parse(entity.RowKey);
             return JsonConvert.SerializeObject(await azureTableStorage.UpdateAsync(entityLogicalName, entity));
         }
 

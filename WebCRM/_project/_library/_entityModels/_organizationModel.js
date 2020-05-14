@@ -1,5 +1,5 @@
 ﻿class OrganizationModel {
-    constructor(partitionKey, rowKey, orgId, orgName, orgUrl, orgfullAddress, phone1, phone2, phone3, email1, email2, email3,
+    constructor(partitionKey, rowKey, orgId, orgName, orgUrl, addressId,orgfullAddress, phone1, phone2, phone3, email1, email2, email3,
         linkedinUrl, twitter, facebook, blogurl1, blogurl2, blogurl3,ownerId, ownerName, createdBy, createdByName, createdOn, createdOnBehalfBy,
         createdOnBehalfByName, modifiedOn, modifiedBy,modifiedByName, modifiedOnBehalfBy, modifiedOnBehalfByName) {
         this.PartitionKey = partitionKey;
@@ -7,6 +7,7 @@
         this.OraganizationId = orgId;
         this.Organizationname = orgName;
         this.OrganizationURL = orgUrl;
+        this.AddressId = addressId;
         this.OrganizationFullAddress = orgfullAddress;
         this.Phone1 = phone1;
         this.Phone2 = phone2;

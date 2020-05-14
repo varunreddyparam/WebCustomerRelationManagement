@@ -23,8 +23,14 @@ Monkey.CRM.Login.Main = {
             Monkey.CRM.Model.LoginModel.getOrganizationDetail(userId.value.split("@")[1].split(".")[0]);
             let Authenticate = Monkey.CRM.Model.LoginModel.getUserAuthenticated(userId.value, pass.value);
             if (Authenticate !== null || Authenticate !== "undefined") {
-                isAuthenticated = true;
-                window.location.href = "../../_viewPages/Dashboard.html";
+
+                isAuthenticated = Authenticate;
+                if (isAuthenticated)
+                    window.location.href = "../../_viewPages/Dashboard.html";
+                else {
+                    let loginFailMsg = "Incorrect UserName or Password";
+                    errorBootstrap_alert(loginFailMsg);
+                }
             }
         }
         catch (exception) {

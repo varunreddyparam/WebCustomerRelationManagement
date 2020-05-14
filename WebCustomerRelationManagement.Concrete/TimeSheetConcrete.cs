@@ -49,9 +49,6 @@ namespace WebCustomerRelationManagement.Concrete
         {
             TimeSheetEntity entity = new TimeSheetEntity();
             entity = JsonConvert.DeserializeObject<TimeSheetEntity>(requestBody);
-            entity.PartitionKey = entityLogicalName;
-            entity.RowKey = Id;
-            entity.TimesheetId = Guid.Parse(entity.RowKey);
             return JsonConvert.SerializeObject(await azureTableStorage.UpdateAsync(entityLogicalName, entity));
         }
 

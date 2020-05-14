@@ -164,7 +164,9 @@
     <Content Include="_project\_library\AzureFunctionLib.js" />
     <Content Include="_project\_library\Commonfunctions.js" />
     <Content Include="_project\_library\CountryProvinceData.js" />
+    <Content Include="_project\_library\_entityModels\_addressModel.js" />
     <Content Include="_project\_library\_entityModels\_organizationModel.js" />
+    <Content Include="_project\_library\_entityModels\_registrationModel.js" />
     <Content Include="_project\_library\_entityModels\_userModel.js" />
     <Content Include="_project\_library\_sdk\documentReader.js" />
     <Content Include="_project\_pageScripts\_loginPage\loginController.js" />
