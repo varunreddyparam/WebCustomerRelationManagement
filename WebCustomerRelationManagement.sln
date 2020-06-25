@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCRM", "WebCRM\WebCRM.csp
 		{BB095B61-A78A-4EE5-A00A-79CC40E66CD4} = {BB095B61-A78A-4EE5-A00A-79CC40E66CD4}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService", "EmailService\EmailService.csproj", "{33C8B770-AEBA-4959-8D4E-7D1EA2CD2259}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{1AC7CF5D-65B4-4927-B3F8-E946F9A60DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AC7CF5D-65B4-4927-B3F8-E946F9A60DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AC7CF5D-65B4-4927-B3F8-E946F9A60DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C8B770-AEBA-4959-8D4E-7D1EA2CD2259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C8B770-AEBA-4959-8D4E-7D1EA2CD2259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C8B770-AEBA-4959-8D4E-7D1EA2CD2259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C8B770-AEBA-4959-8D4E-7D1EA2CD2259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

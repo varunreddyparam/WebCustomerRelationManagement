@@ -12,3 +12,31 @@ C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManag
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.csproj.CopyComplete
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.dll
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.pdb
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\WebTimeSheetManagementModels.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\WebTimeSheetManagementModels.pdb
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Newtonsoft.Json.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Newtonsoft.Json.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.csprojAssemblyReference.cache
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.csproj.CoreCompileInputs.cache
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.csproj.CopyComplete
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\WebTimeSheetManagementModels.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\WebTimeSheetManagementModels.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Newtonsoft.Json.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Newtonsoft.Json.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.csprojAssemblyReference.cache
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.csproj.CoreCompileInputs.cache
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.csproj.CopyComplete
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.pdb

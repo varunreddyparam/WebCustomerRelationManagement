@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../_styleSheets/ContactPage.css" rel="stylesheet" />
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <script type="text/javascript" src="../../Scripts/jquery-3.5.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <!--<script type="text/javascript" src="../../Scripts/popper.js"></script>-->
+    <script type="text/javascript" src="../../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script type="text/javascript" src="../_library/Commonfunctions.js"></script>
+
+</head>
+<body>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <section class="container">
+                    <form>
+                        <div class="form-row">
+                            <h5 class="header-color col-md-12"> Demographic Information</h5>
+                            <div class="chip col-md-12 mb-4">
+                                <img src="" width="200" height="200">
+                                John Doe
+                            </div>
+                            <div class="col-md-12">
+                                <label for="validationDefault01">Full Name</label>
+                                <input type="text" id="validationDefault01" placeholder="First Name" value="Mark" data-toggle="fullNamePopover" title="FullName" required>
+                            </div>
+                            <div id="FullNamePopoverContent" class="d-none">
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                        <label for="firstname">First Name</label>
+                                        <input type="text" id="firstname" placeholder="First Name" value="Mark" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="lastname">Last Name</label>
+                                        <input type="text" id="lastname" placeholder="Last name" value="Otto" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="middlename">Middle Name</label>
+                                        <input type="text" id="middlename" placeholder="Middle name" value="Otto" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="Phone1">Primary PhoneNumber</label>
+                                <input type="text" id="Phone1" placeholder="Primary PhoneNumber" value="+1 (732)-123-1234" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="Phone2">Business PhoneNumber</label>
+                                <input type="text" id="Phone2" placeholder="Business PhoneNumber" value="+1 (732)-123-1234" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="Phone3">PhoneNumber</label>
+                                <input type="text" id="Phone3" placeholder="PhoneNumber" value="+1 (732)-123-1234" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="EmailAddress1">Primary Email</label>
+                                <input type="text" id="EmailAddress1" placeholder="Primary Email" value="abcdefgh@mail.com" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="EmailAddress2">Business Email</label>
+                                <input type="text" id="EmailAddress2" placeholder="Business Email" value="abcdefgh@mail.com" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="EmailAddress3">Email</label>
+                                <input type="text" id="EmailAddress3" placeholder="Email" value="abcdefgh@mail.com" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="addressForm">Address</label>
+                                <input rows="5" id="addressForm" class="input" placeholder="Address" value="Otto" data-toggle="addressPopover" title="Address">
+                            </div>
+                            <div id="AddressPopoverContent" class="d-none">
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                        <label for="addressLine1">Address Line1</label>
+                                        <input type="text" id="addressLine1" placeholder="Address Line1" value="Otto">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="addressLine1">Address Line2</label>
+                                        <input type="text" id="addressLine2" placeholder="Address Line1" value="Otto">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="addressLine1">Address Line3</label>
+                                        <input type="text" id="addressLine1" placeholder="Address Line3" value="Otto">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationDefault03">City</label>
+                                        <input type="text" id="validationDefault03" placeholder="City" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationDefault03">County</label>
+                                        <input type="text" id="validationDefault03" placeholder="County" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationDefault04">State</label>
+                                        <input type="text" id="validationDefault04" placeholder="State" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationDefault05">Zip</label>
+                                        <input type="text" id="validationDefault05" placeholder="Zip" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="country">Country</label>
+                                        <input type="text" id="country" placeholder="Country" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="col-md-9 demographic-border">
+                <section class="container-fluid">
+                    <div class="row accord-div">
+                        <div class="col-md-11">
+                            <h5>Other Information</h5>
+                        </div>
+                        <div class="col-md-1" style="vertical-align:central; text-align:right;">
+                            <i class="fa fa-chevron-circle-down" aria-hidden="true" data-toggle="collapse" data-target="#OtherInformation"></i>
+                        </div>
+                        <div class="col-md-12 collapse in" id="OtherInformation" style="border:1px solid #ced4da; margin:3px 3px 0px 0px; padding-bottom:10px">
+                            <section class="container-fluid">
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <label for="LinkedINURL">LinkedIn</label>
+                                        <input type="text" id="LinkedINURL" placeholder="LinkedIn" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="TwitterUrL">Twitter</label>
+                                        <input type="text" id="TwitterUrL" placeholder="Twitter" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="facebookURL">Facebook</label>
+                                        <input type="text" id="facebookURL" placeholder="Facebook" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL1">Blog1</label>
+                                        <input type="text" id="BlogURL1" placeholder="Blog1" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL2">Blog2</label>
+                                        <input type="text" id="BlogURL2" placeholder="Blog3" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL3">Blog3</label>
+                                        <input type="text" id="BlogURL3" placeholder="Blog3" value="" required>
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="container-fluid" style="margin-top:200px">
+                    <div class="row accord-div">
+                        <div class="col-md-11">
+                            <h5>Account Information</h5>
+                        </div>
+                        <div class="col-md-1" style="vertical-align:central; text-align:right;">
+                            <i class="fa fa-chevron-circle-down" aria-hidden="true" data-toggle="collapse" data-target="#accountInformation"></i>
+                        </div>
+                        <div class="col-md-12 collapse in" id="accountInformation" style="border:1px solid #ced4da; margin:3px 3px 0px 0px; padding-bottom:10px">
+                            <section class="container-fluid">
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <label for="LinkedINURL">LinkedIn</label>
+                                        <input type="text" id="LinkedINURL" placeholder="LinkedIn" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="TwitterUrL">Twitter</label>
+                                        <input type="text" id="TwitterUrL" placeholder="Twitter" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="facebookURL">Facebook</label>
+                                        <input type="text" id="facebookURL" placeholder="Facebook" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL1">Blog1</label>
+                                        <input type="text" id="BlogURL1" placeholder="Blog1" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL2">Blog2</label>
+                                        <input type="text" id="BlogURL2" placeholder="Blog3" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL3">Blog3</label>
+                                        <input type="text" id="BlogURL3" placeholder="Blog3" value="" required>
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="container-fluid" style="margin-top:200px">
+                    <div class="row accord-div">
+                        <div class="col-md-11">
+                            <h5>Account Information</h5>
+                        </div>
+                        <div class="col-md-1" style="vertical-align:central; text-align:right;">
+                            <i class="fa fa-chevron-circle-down" aria-hidden="true" data-toggle="collapse" data-target="#accountInformation"></i>
+                        </div>
+                        <div class="col-md-12 collapse in" id="accountInformation" style="border:1px solid #ced4da; margin:3px 3px 0px 0px; padding-bottom:10px">
+                            <section class="container-fluid">
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <label for="LinkedINURL">LinkedIn</label>
+                                        <input type="text" id="LinkedINURL" placeholder="LinkedIn" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="TwitterUrL">Twitter</label>
+                                        <input type="text" id="TwitterUrL" placeholder="Twitter" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="facebookURL">Facebook</label>
+                                        <input type="text" id="facebookURL" placeholder="Facebook" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL1">Blog1</label>
+                                        <input type="text" id="BlogURL1" placeholder="Blog1" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL2">Blog2</label>
+                                        <input type="text" id="BlogURL2" placeholder="Blog3" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL3">Blog3</label>
+                                        <input type="text" id="BlogURL3" placeholder="Blog3" value="" required>
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="container-fluid" style="margin-top:200px">
+                    <div class="row accord-div">
+                        <div class="col-md-11">
+                            <h5>Account Information</h5>
+                        </div>
+                        <div class="col-md-1" style="vertical-align:central; text-align:right;">
+                            <i class="fa fa-chevron-circle-down" aria-hidden="true" data-toggle="collapse" data-target="#accountInformation"></i>
+                        </div>
+                        <div class="col-md-12 collapse in" id="accountInformation" style="border:1px solid #ced4da; margin:3px 3px 0px 0px; padding-bottom:10px">
+                            <section class="container-fluid">
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <label for="LinkedINURL">LinkedIn</label>
+                                        <input type="text" id="LinkedINURL" placeholder="LinkedIn" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="TwitterUrL">Twitter</label>
+                                        <input type="text" id="TwitterUrL" placeholder="Twitter" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="facebookURL">Facebook</label>
+                                        <input type="text" id="facebookURL" placeholder="Facebook" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL1">Blog1</label>
+                                        <input type="text" id="BlogURL1" placeholder="Blog1" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL2">Blog2</label>
+                                        <input type="text" id="BlogURL2" placeholder="Blog3" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL3">Blog3</label>
+                                        <input type="text" id="BlogURL3" placeholder="Blog3" value="" required>
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="container-fluid" style="margin-top:200px">
+                    <div class="row accord-div">
+                        <div class="col-md-11">
+                            <h5>Account Information</h5>
+                        </div>
+                        <div class="col-md-1" style="vertical-align:central; text-align:right;">
+                            <i class="fa fa-chevron-circle-down" aria-hidden="true" data-toggle="collapse" data-target="#accountInformation"></i>
+                        </div>
+                        <div class="col-md-12 collapse in" id="accountInformation" style="border:1px solid #ced4da; margin:3px 3px 0px 0px; padding-bottom:10px">
+                            <section class="container-fluid">
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <label for="LinkedINURL">LinkedIn</label>
+                                        <input type="text" id="LinkedINURL" placeholder="LinkedIn" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="TwitterUrL">Twitter</label>
+                                        <input type="text" id="TwitterUrL" placeholder="Twitter" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="facebookURL">Facebook</label>
+                                        <input type="text" id="facebookURL" placeholder="Facebook" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL1">Blog1</label>
+                                        <input type="text" id="BlogURL1" placeholder="Blog1" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL2">Blog2</label>
+                                        <input type="text" id="BlogURL2" placeholder="Blog3" value="" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="BlogURL3">Blog3</label>
+                                        <input type="text" id="BlogURL3" placeholder="Blog3" value="" required>
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

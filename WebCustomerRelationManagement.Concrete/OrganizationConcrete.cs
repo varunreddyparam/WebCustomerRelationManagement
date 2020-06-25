@@ -264,5 +264,10 @@ namespace WebCustomerRelationManagement.Concrete
             List<T> list = new List<T>(array);
             return list;
         }
+
+        public Task<string> EmailRetrieveRequest(string entityLogicalName, string userId, string organizationId, AzureTableStorage azureTableStorage, string requestBody)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -33,6 +33,10 @@ namespace WebCustomerRelationManagement.Concrete
                     return new ExpenseSheetConcrete();
                 case "UserPrivilege":
                     return new UserPrivilegeConcrete();
+                case "EmailActivity":
+                    return new EmailActrivityConcrete();
+                case "EmailConfiguration":
+                    return new EmailConfigurationConcrete();
                 default:
                     return (IEntity)new Object();
             }

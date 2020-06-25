@@ -80,3 +80,31 @@ C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\MailApplication
 C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.csproj.CopyComplete
 C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.dll
 C:\Users\31086660\Documents\GitHub\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\MailApplication.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\MailApplication.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\BouncyCastle.Crypto.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Auth.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Core.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Gmail.v1.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.PlatformServices.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\MailKit.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\MimeKit.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Newtonsoft.Json.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Auth.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Auth.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Core.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Core.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Gmail.v1.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Gmail.v1.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\MailKit.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\MimeKit.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\bin\Debug\Newtonsoft.Json.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.csprojAssemblyReference.cache
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.csproj.CoreCompileInputs.cache
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.csproj.CopyComplete
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.pdb

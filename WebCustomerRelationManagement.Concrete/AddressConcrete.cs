@@ -67,5 +67,10 @@ namespace WebCustomerRelationManagement.Concrete
         {
             throw new NotImplementedException();
         }
+
+        public Task<string> EmailRetrieveRequest(string entityLogicalName, string userId, string organizationId, AzureTableStorage azureTableStorage, string requestBody)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

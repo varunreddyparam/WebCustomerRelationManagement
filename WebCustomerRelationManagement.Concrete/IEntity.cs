@@ -12,6 +12,7 @@ namespace WebCustomerRelationManagement.Concrete
         Task<string> DeleteRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage);
         Task<string> RetrieveMultipleRequest(QueryDeSerializer queryExpression, AzureTableStorage azureTableStorage);
         Task<string> ValidateRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage, string requestBody);
+        Task<string> EmailRetrieveRequest(string entityLogicalName, string userId, string organizationId, AzureTableStorage azureTableStorage, string requestBody);
 
     }
 }

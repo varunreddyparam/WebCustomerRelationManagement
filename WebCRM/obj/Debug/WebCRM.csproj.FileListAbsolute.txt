@@ -54,3 +54,123 @@ C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCRM\obj\Debug\
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.dll
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.pdb
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.csprojAssemblyReference.cache
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\WebCRM.dll.config
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\WebCRM.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\WebCRM.pdb
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csc.exe
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csc.exe.config
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csc.rsp
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csi.exe
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csi.exe.config
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csi.rsp
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.Managed.Core.targets
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.AppContext.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Collections.Immutable.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Console.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.IO.Compression.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.IO.FileSystem.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.IO.Pipes.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Reflection.Metadata.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.AccessControl.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Claims.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Principal.Windows.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.ValueTuple.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Xml.XmlDocument.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Xml.XPath.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\vbc.exe
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\vbc.exe.config
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\vbc.rsp
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\VBCSCompiler.exe
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\VBCSCompiler.exe.config
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.csprojAssemblyReference.cache
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.csproj.CoreCompileInputs.cache
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.csproj.CopyComplete
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\WebCRM.dll.config
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\WebCRM.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\WebCRM.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csc.exe
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csc.exe.config
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csc.rsp
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csi.exe
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csi.exe.config
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\csi.rsp
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.AppContext.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Collections.Immutable.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Console.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.IO.Compression.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.IO.FileSystem.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.IO.Pipes.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Reflection.Metadata.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.AccessControl.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Claims.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.ValueTuple.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Xml.XPath.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\vbc.exe
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\vbc.exe.config
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\vbc.rsp
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\VBCSCompiler.exe
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\roslyn\VBCSCompiler.exe.config
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.csprojAssemblyReference.cache
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.csproj.CoreCompileInputs.cache
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.csproj.CopyComplete
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\obj\Debug\WebCRM.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\BouncyCastle.Crypto.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\MailKit.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\MimeKit.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\BouncyCastle.Crypto.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\MailKit.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\MailKit.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\MimeKit.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCRM\bin\MimeKit.xml

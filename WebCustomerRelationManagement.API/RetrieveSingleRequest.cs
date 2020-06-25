@@ -14,6 +14,8 @@ namespace WebCustomerRelationManagement.API
     public static class RetrieveSingleRequest
     {
         private static string Id { get; set; }
+        private static string UserId { get; set; }
+        private static string OrganizationId { get; set; }
         private static string EntityLogicalName { get; set; }
         private static string ResultJson { get; set; }
 

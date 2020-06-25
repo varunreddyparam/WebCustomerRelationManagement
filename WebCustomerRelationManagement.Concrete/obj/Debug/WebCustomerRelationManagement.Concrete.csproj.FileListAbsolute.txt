@@ -131,3 +131,103 @@ C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelati
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebTimeSheetManagementModels.dll
 C:\Users\lenovo\Documents\GitHub\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebTimeSheetManagementModels.pdb
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Concrete.dll.config
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Concrete.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Concrete.pdb
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.ConfigurationManager.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Common.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Owin.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Owin.Security.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Newtonsoft.Json.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Owin.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Linq.Dynamic.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.Helpers.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.Mvc.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.Razor.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.WebPages.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.WebPages.Razor.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Models.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebTimeSheetManagementModels.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.ConfigurationManager.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Common.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Owin.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Owin.Security.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Rest.ClientRuntime.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Newtonsoft.Json.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.Helpers.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.Mvc.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.Razor.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.WebPages.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Web.WebPages.Razor.xml
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.pdb
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.dll.config
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Models.pdb
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Models.dll.config
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebTimeSheetManagementModels.pdb
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csprojAssemblyReference.cache
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csproj.CoreCompileInputs.cache
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csproj.CopyComplete
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.dll
+D:\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Concrete.dll.config
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Concrete.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Concrete.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.ConfigurationManager.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Common.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Newtonsoft.Json.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Linq.Dynamic.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Models.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebTimeSheetManagementModels.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.ConfigurationManager.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Common.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Newtonsoft.Json.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.dll.config
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Models.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Models.dll.config
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebTimeSheetManagementModels.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csprojAssemblyReference.cache
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csproj.CoreCompileInputs.cache
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csproj.CopyComplete
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Blob.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.DataMovement.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.File.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Blob.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.DataMovement.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.DataMovement.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.File.xml
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Configuration.xml

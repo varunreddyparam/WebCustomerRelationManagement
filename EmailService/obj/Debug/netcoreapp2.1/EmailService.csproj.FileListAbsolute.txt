@@ -1,0 +1,9 @@
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\EmailService\bin\Debug\netcoreapp2.1\EmailService.deps.json
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\EmailService\bin\Debug\netcoreapp2.1\EmailService.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\EmailService\obj\Debug\netcoreapp2.1\EmailService.csprojAssemblyReference.cache
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\EmailService\obj\Debug\netcoreapp2.1\EmailService.csproj.CoreCompileInputs.cache
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\EmailService\obj\Debug\netcoreapp2.1\EmailService.AssemblyInfoInputs.cache
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\EmailService\obj\Debug\netcoreapp2.1\EmailService.AssemblyInfo.cs
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\EmailService\bin\Debug\netcoreapp2.1\EmailService.pdb
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\EmailService\obj\Debug\netcoreapp2.1\EmailService.dll
+D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\EmailService\obj\Debug\netcoreapp2.1\EmailService.pdb

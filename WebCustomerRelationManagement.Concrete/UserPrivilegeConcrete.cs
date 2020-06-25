@@ -31,6 +31,11 @@ namespace WebCustomerRelationManagement.Concrete
             return JsonConvert.SerializeObject(await azureTableStorage.DeleteAsync(entityLogicalName, entity));
         }
 
+        public Task<string> EmailRetrieveRequest(string entityLogicalName, string userId, string organizationId, AzureTableStorage azureTableStorage, string requestBody)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<string> RetrieveMultipleRequest(QueryDeSerializer queryExpression, AzureTableStorage azureTableStorage)
         {
             TableQuery<UserPrivilegeEntity> table = new TableQuery<UserPrivilegeEntity>();

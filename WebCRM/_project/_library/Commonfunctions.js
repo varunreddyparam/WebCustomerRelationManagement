@@ -31,4 +31,28 @@ function successBootstrap_alert(message) {
 
 function handleForm(event) {
     event.preventDefault();
-} 
+}
+
+$(function () {
+    $('[data-toggle="addressPopover"]').popover({
+        container: 'body',
+        html: true,
+        placement: 'right',
+        sanitize: false,
+        content: function () {
+            return $('#AddressPopoverContent').html()
+        }
+    })
+});
+
+$(function () {
+    $('[data-toggle="fullNamePopover"]').popover({
+        container: 'body',
+        html: true,
+        placement: 'right',
+        sanitize: false,
+        content: function () {
+            return $('#FullNamePopoverContent').html()
+        }
+    })
+});
