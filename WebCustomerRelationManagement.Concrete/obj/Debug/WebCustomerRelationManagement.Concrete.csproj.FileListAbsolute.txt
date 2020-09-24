@@ -231,3 +231,44 @@ D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagemen
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.DataMovement.xml
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.File.xml
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Concrete.dll.config
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Concrete.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Concrete.pdb
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.ConfigurationManager.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Blob.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Common.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.DataMovement.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.File.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Newtonsoft.Json.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\System.Linq.Dynamic.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Models.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebTimeSheetManagementModels.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.ConfigurationManager.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Blob.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.Common.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.DataMovement.pdb
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.DataMovement.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Azure.Storage.File.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\Newtonsoft.Json.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.pdb
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Interface.dll.config
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Models.pdb
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebCustomerRelationManagement.Models.dll.config
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\bin\Debug\WebTimeSheetManagementModels.pdb
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csprojAssemblyReference.cache
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csproj.CoreCompileInputs.cache
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.csproj.CopyComplete
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Concrete\obj\Debug\WebCustomerRelationManagement.Concrete.pdb

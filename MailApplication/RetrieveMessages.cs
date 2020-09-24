@@ -8,7 +8,6 @@ namespace MailApplication
 {
     public class RetrieveMessages : IMessages
     {
-
         /// <summary>
         /// Get all the list of EmailMessages
         /// </summary>
@@ -16,7 +15,7 @@ namespace MailApplication
         /// <param name="userId"></param>
         /// <param name="query"></param>
         /// <returns>list of Messages</returns>
-        public List<Message> GetGmailMessageList(GmailService service, String userId, String query)
+        public List<Message> GetGmailMessageList(Google.Apis.Gmail.v1.GmailService service, String userId, String query)
         {
             List<Message> result = new List<Message>();
             try
@@ -51,7 +50,7 @@ namespace MailApplication
         /// <param name="userId"></param>
         /// <param name="messageId"></param>
         /// <returns>Message</returns>
-        public Message GetMessage(GmailService service, String userId, String messageId)
+        public Message GetMessage(Google.Apis.Gmail.v1.GmailService service, String userId, String messageId)
         {
             try
             {
@@ -114,5 +113,8 @@ namespace MailApplication
                 return str;
             }
         }
+
+
+
     }
 }

@@ -14,7 +14,7 @@ namespace WebCustomerRelationManagement.Concrete
 
         }
 
-        public async Task<string> CreateRequest(string entityLogicalName, string requestBody, AzureTableStorage azureTableStorage)
+        public async Task<string> CreateRequest(string entityLogicalName, string OrganizationId, string UserId, string requestBody, AzureTableStorage azureTableStorage)
         {
             TimeSheetEntity entity = new TimeSheetEntity();
             entity = JsonConvert.DeserializeObject<TimeSheetEntity>(requestBody);

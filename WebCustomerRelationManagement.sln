@@ -32,7 +32,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCRM", "WebCRM\WebCRM.csp
 		{BB095B61-A78A-4EE5-A00A-79CC40E66CD4} = {BB095B61-A78A-4EE5-A00A-79CC40E66CD4}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService", "EmailService\EmailService.csproj", "{33C8B770-AEBA-4959-8D4E-7D1EA2CD2259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailService", "EmailService\EmailService.csproj", "{33C8B770-AEBA-4959-8D4E-7D1EA2CD2259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmailtoCRM", "Gmail to CRM\GmailtoCRM.csproj", "{8DE29BC7-C5D6-4522-925B-290F32E424F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +82,10 @@ Global
 		{33C8B770-AEBA-4959-8D4E-7D1EA2CD2259}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33C8B770-AEBA-4959-8D4E-7D1EA2CD2259}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33C8B770-AEBA-4959-8D4E-7D1EA2CD2259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE29BC7-C5D6-4522-925B-290F32E424F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE29BC7-C5D6-4522-925B-290F32E424F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE29BC7-C5D6-4522-925B-290F32E424F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE29BC7-C5D6-4522-925B-290F32E424F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

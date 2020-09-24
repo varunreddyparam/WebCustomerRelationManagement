@@ -4122,11 +4122,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Lenovo Disk D BakUp\\My developements\\Development\\WebCustomerRelationManagement\\EmailService\\EmailService.csproj",
+      "projectUniqueName": "C:\\WebCustomerRelationManagement\\EmailService\\EmailService.csproj",
       "projectName": "EmailService",
-      "projectPath": "D:\\Lenovo Disk D BakUp\\My developements\\Development\\WebCustomerRelationManagement\\EmailService\\EmailService.csproj",
+      "projectPath": "C:\\WebCustomerRelationManagement\\EmailService\\EmailService.csproj",
       "packagesPath": "C:\\Users\\Varun\\.nuget\\packages\\",
-      "outputPath": "D:\\Lenovo Disk D BakUp\\My developements\\Development\\WebCustomerRelationManagement\\EmailService\\obj\\",
+      "outputPath": "C:\\WebCustomerRelationManagement\\EmailService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

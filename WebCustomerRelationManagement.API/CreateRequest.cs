@@ -30,7 +30,7 @@ namespace WebCustomerRelationManagement.API
                 EntityLogicalName = req.Query["entitylogicalname"];
                 string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
 
-                AzureTableStorage azureTableStorage = new AzureTableStorage(Environment.GetEnvironmentVariable("DataConnectionString"));
+                AzureTableStorage azureTableStorage = new AzureTableStorage("DefaultEndpointsProtocol=https;AccountName=monkeycrm;AccountKey=FSpn7CPjKKMOEdFggeBpfXZd71ZfeQpKSopP8DLZsIo5np3Y3oUrNN8PC/2bRTwsgFL9Abcy0mtT54ij1305AQ==;EndpointSuffix=core.windows.net");
                 //Environment.GetEnvironmentVariable("DataConnectionString"));
                 //"DefaultEndpointsProtocol=https;AccountName=monkeycrm;AccountKey=FSpn7CPjKKMOEdFggeBpfXZd71ZfeQpKSopP8DLZsIo5np3Y3oUrNN8PC/2bRTwsgFL9Abcy0mtT54ij1305AQ==;EndpointSuffix=core.windows.net");
 

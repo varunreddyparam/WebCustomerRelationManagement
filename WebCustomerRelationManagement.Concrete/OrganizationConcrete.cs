@@ -14,7 +14,14 @@ namespace WebCustomerRelationManagement.Concrete
 
         }
 
-        public async Task<string> CreateRequest(string entityLogicalName, string requestBody, AzureTableStorage azureTableStorage)
+        /// <summary>
+        /// When User is ready to create account with Monkey CRM, Registration process starts with setup of Organization and then add himself as user in to the org.
+        /// </summary>
+        /// <param name="entityLogicalName"></param>
+        /// <param name="requestBody"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <returns></returns>
+        public async Task<string> CreateRequest(string entityLogicalName, string OrganizationId, string UserId, string requestBody, AzureTableStorage azureTableStorage)
         {
             if (requestBody != null)
             {
@@ -35,12 +42,21 @@ namespace WebCustomerRelationManagement.Concrete
             throw new System.NotImplementedException();
         }
 
+        /// <summary>
+        /// Retrieve Organization based on the Name in request body and 
+        /// Retrieve Organization Name based on Id, Tablename and partion key (Entity Logical Name)
+        /// </summary>
+        /// <param name="entityLogicalName"></param>
+        /// <param name="Id"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <param name="requestBody"></param>
+        /// <returns></returns>
         public async Task<string> RetrieveSingleRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage, string requestBody)
         {
             if (requestBody != null)
             {
                 object orgObject = JsonConvert.DeserializeObject(requestBody);
-                var getOgId = await this.getOrganization(orgObject, azureTableStorage, entityLogicalName);
+                var getOgId = await this.GetOrganization(orgObject, azureTableStorage, entityLogicalName);
                 if (getOgId.Length > 2)
                     return getOgId;
             }
@@ -56,7 +72,15 @@ namespace WebCustomerRelationManagement.Concrete
         {
             throw new System.NotImplementedException();
         }
-        public async Task<string> getOrganization(object orgObject, AzureTableStorage azureTableStorage, string entityLogicalName)
+
+        /// <summary>
+        /// GetOrganization detail from the orgObject
+        /// </summary>
+        /// <param name="orgObject"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <param name="entityLogicalName"></param>
+        /// <returns></returns>
+        public async Task<string> GetOrganization(object orgObject, AzureTableStorage azureTableStorage, string entityLogicalName)
         {
             TableQuery<OrganizationEntity> table = new TableQuery<OrganizationEntity>();
             table.Where(TableQuery.CombineFilters(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, entityLogicalName),
@@ -65,12 +89,20 @@ namespace WebCustomerRelationManagement.Concrete
             return JsonConvert.SerializeObject(await azureTableStorage.QueryAsync(entityLogicalName, table));
         }
 
+        /// <summary>
+        /// OrganizationName is available or not
+        /// </summary>
+        /// <param name="entityLogicalName"></param>
+        /// <param name="Id"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <param name="requestBody"></param>
+        /// <returns></returns>
         public async Task<string> ValidateRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage, string requestBody)
         {
             if (requestBody != null)
             {
                 object orgObject = JsonConvert.DeserializeObject(requestBody);
-                var getOgId = await this.getOrganization(orgObject, azureTableStorage, entityLogicalName);
+                var getOgId = await this.GetOrganization(orgObject, azureTableStorage, entityLogicalName);
                 if (getOgId.Length > 2)
                     return JsonConvert.SerializeObject(true);
                 else
@@ -79,6 +111,17 @@ namespace WebCustomerRelationManagement.Concrete
             return JsonConvert.SerializeObject(false);
         }
 
+        /// <summary>
+        /// 1. Sign up requestbody is deserialized to Registration Model.
+        /// 2. To create the Organization and user in the ServiceAccount User is used as the Owner of the Organization.
+        /// 3. Once Organization is create the User will be created under newly created Organization.
+        /// 4. Address will be created in address entity under the newly created Org and Updates Organization and user with the newly created Address
+        /// 5. Userprivileges will be given as full access for the first created User (System Admin)
+        /// </summary>
+        /// <param name="entityLogicalName"></param>
+        /// <param name="requestBody"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <returns></returns>
         private async Task<string> SetupOrganization(string entityLogicalName, string requestBody, AzureTableStorage azureTableStorage)
         {
             OrganizationEntity entity = new OrganizationEntity(Guid.NewGuid());
@@ -95,6 +138,14 @@ namespace WebCustomerRelationManagement.Concrete
             return JsonConvert.SerializeObject(entity);
         }
 
+        /// <summary>
+        /// Create Organization from registration Model and  use service account User as the owner for Organization
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="registration"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <param name="ownerEntity"></param>
+        /// <returns></returns>
         private async Task<string> CreateOrganization(OrganizationEntity entity, Registration registration, AzureTableStorage azureTableStorage, UserEntity ownerEntity)
         {
             entity.Organizationname = registration.UserName.Split('@')[1];
@@ -129,6 +180,15 @@ namespace WebCustomerRelationManagement.Concrete
 
         }
 
+        /// <summary>
+        /// Create User under Created Organization and owner from the service account
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="registration"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <param name="ownerEntity"></param>
+        /// <param name="userEntity"></param>
+        /// <returns></returns>
         private async Task<string> CreateUser(OrganizationEntity entity, Registration registration, AzureTableStorage azureTableStorage, UserEntity ownerEntity, UserEntity userEntity)
         {
             userEntity.UserName = registration.UserName.Split('@')[0];
@@ -169,6 +229,15 @@ namespace WebCustomerRelationManagement.Concrete
             return JsonConvert.SerializeObject(await azureTableStorage.AddAsync(userEntity.PartitionKey, userEntity));
         }
 
+        /// <summary>
+        /// Create Address from Registration Model
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="registration"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <param name="ownerEntity"></param>
+        /// <param name="addressEntity"></param>
+        /// <returns></returns>
         private async Task<string> CreateAddress(OrganizationEntity entity, Registration registration, AzureTableStorage azureTableStorage, UserEntity ownerEntity, AddressEntity addressEntity)
         {
 
@@ -205,6 +274,15 @@ namespace WebCustomerRelationManagement.Concrete
 
         }
 
+        /// <summary>
+        /// Update Organization Address from addressid
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="registration"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <param name="addressEntity"></param>
+        /// <param name="ownerEntity"></param>
+        /// <returns></returns>
         private async Task<string> UpdateOrganization(OrganizationEntity entity, Registration registration, AzureTableStorage azureTableStorage, AddressEntity addressEntity, UserEntity ownerEntity)
         {
             entity.AddressId = addressEntity.CustomerAddressId;
@@ -215,6 +293,15 @@ namespace WebCustomerRelationManagement.Concrete
 
         }
 
+        /// <summary>
+        /// Update User Address from registration Model
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="userEntity"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <param name="addressEntity"></param>
+        /// <param name="ownerEntity"></param>
+        /// <returns></returns>
         private async Task<string> UpdateUser(OrganizationEntity entity, UserEntity userEntity, AzureTableStorage azureTableStorage, AddressEntity addressEntity, UserEntity ownerEntity)
         {
             userEntity.CustomerAddressId = addressEntity.CustomerAddressId;
@@ -225,6 +312,14 @@ namespace WebCustomerRelationManagement.Concrete
 
         }
 
+        /// <summary>
+        /// Create Privilege for the newly created User, give full access permissions on all the entities
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="userEntity"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <param name="addressEntity"></param>
+        /// <param name="ownerEntity"></param>
         private async void CreateUserPrivilege(OrganizationEntity entity, UserEntity userEntity, AzureTableStorage azureTableStorage, AddressEntity addressEntity, UserEntity ownerEntity)
         {
             List<EntityName> entityNames = new List<EntityName>();
@@ -258,6 +353,11 @@ namespace WebCustomerRelationManagement.Concrete
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         private List<T> GetEnumList<T>()
         {
             T[] array = (T[])Enum.GetValues(typeof(T));
@@ -265,6 +365,15 @@ namespace WebCustomerRelationManagement.Concrete
             return list;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entityLogicalName"></param>
+        /// <param name="userId"></param>
+        /// <param name="organizationId"></param>
+        /// <param name="azureTableStorage"></param>
+        /// <param name="requestBody"></param>
+        /// <returns></returns>
         public Task<string> EmailRetrieveRequest(string entityLogicalName, string userId, string organizationId, AzureTableStorage azureTableStorage, string requestBody)
         {
             throw new NotImplementedException();

@@ -11,7 +11,7 @@ namespace WebCustomerRelationManagement.Concrete
         public UserConcrete()
         { }
 
-        public async Task<string> CreateRequest(string entityLogicalName, string requestBody, AzureTableStorage azureTableStorage)
+        public async Task<string> CreateRequest(string entityLogicalName, string OrganizationId, string UserId, string requestBody, AzureTableStorage azureTableStorage)
         {
             UserEntity entity = new UserEntity();
             entity = JsonConvert.DeserializeObject<UserEntity>(requestBody);
@@ -46,6 +46,10 @@ namespace WebCustomerRelationManagement.Concrete
 
         public async Task<string> RetrieveSingleRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage, string requestBody)
         {
+            if(requestBody!= null)
+            {
+
+            }
             return JsonConvert.SerializeObject(await azureTableStorage.GetAsync<UserEntity>(entityLogicalName, entityLogicalName, Id));
         }
 

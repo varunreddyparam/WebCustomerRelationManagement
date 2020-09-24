@@ -75,6 +75,7 @@
     <Compile Include="ContactEntity.cs" />
     <Compile Include="EmailActivityEntity.cs" />
     <Compile Include="EmailConfigurationEntity.cs" />
+    <Compile Include="MailMessage.cs" />
     <Compile Include="NotesEntity.cs" />
     <Compile Include="OptionSets.cs" />
     <Compile Include="OrganizationEntity.cs" />

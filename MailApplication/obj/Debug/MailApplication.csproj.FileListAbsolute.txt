@@ -108,3 +108,31 @@ D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagemen
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.csproj.CopyComplete
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.dll
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.pdb
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\MailApplication.dll
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\MailApplication.pdb
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\BouncyCastle.Crypto.dll
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Auth.dll
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Core.dll
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.dll
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Gmail.v1.dll
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.PlatformServices.dll
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\MailKit.dll
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\MimeKit.dll
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Newtonsoft.Json.dll
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.pdb
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.xml
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Auth.pdb
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Auth.xml
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Core.pdb
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Core.xml
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Gmail.v1.pdb
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Google.Apis.Gmail.v1.xml
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\MailKit.xml
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\MimeKit.xml
+C:\WebCustomerRelationManagement\MailApplication\bin\Debug\Newtonsoft.Json.xml
+C:\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.csprojAssemblyReference.cache
+C:\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.csproj.CoreCompileInputs.cache
+C:\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.csproj.CopyComplete
+C:\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.dll
+C:\WebCustomerRelationManagement\MailApplication\obj\Debug\MailApplication.pdb

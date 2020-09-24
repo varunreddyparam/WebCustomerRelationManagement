@@ -8,7 +8,7 @@ namespace WebCustomerRelationManagement.Concrete
 {
     public class NotesConcrete : IEntity
     {
-        public async Task<string> CreateRequest(string entityLogicalName, string requestBody, AzureTableStorage azureTableStorage)
+        public async Task<string> CreateRequest(string entityLogicalName, string OrganizationId, string UserId, string requestBody, AzureTableStorage azureTableStorage)
         {
             NotesEntity entity = new NotesEntity();
             entity = JsonConvert.DeserializeObject<NotesEntity>(requestBody);

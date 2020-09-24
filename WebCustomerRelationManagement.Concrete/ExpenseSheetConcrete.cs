@@ -14,7 +14,7 @@ namespace WebCustomerRelationManagement.Concrete
 
         }
 
-        public async Task<string> CreateRequest(string entityLogicalName, string requestBody, AzureTableStorage azureTableStorage)
+        public async Task<string> CreateRequest(string entityLogicalName, string OrganizationId, string UserId, string requestBody, AzureTableStorage azureTableStorage)
         {
             ExpenseSheetEntity entity = new ExpenseSheetEntity();
             entity = JsonConvert.DeserializeObject<ExpenseSheetEntity>(requestBody);
@@ -30,6 +30,11 @@ namespace WebCustomerRelationManagement.Concrete
             entity.PartitionKey = entityLogicalName;
             entity.RowKey = Id;
             return JsonConvert.SerializeObject(await azureTableStorage.DeleteAsync(entityLogicalName, entity));
+        }
+
+        public Task<string> EmailRetrieveRequest(string entityLogicalName, string userId, string organizationId, AzureTableStorage azureTableStorage, string requestBody)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<string> RetrieveMultipleRequest(QueryDeSerializer queryExpression, AzureTableStorage azureTableStorage)

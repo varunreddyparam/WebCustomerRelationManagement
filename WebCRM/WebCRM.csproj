@@ -188,6 +188,7 @@
     <Content Include="_project\_styleSheets\MasterPage.min.css" />
     <Content Include="_project\_styleSheets\_signinPage.css" />
     <Content Include="_project\_viewPages\ContactPage.html" />
+    <Content Include="_project\_viewPages\ContactViewPage.html" />
     <Content Include="_project\_viewPages\Dashboard.html" />
     <Content Include="_project\_viewPages\MasterPage.html" />
     <Content Include="_project\_viewPages\_loginPage.html" />

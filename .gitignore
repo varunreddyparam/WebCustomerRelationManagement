@@ -14,3 +14,6 @@
 .vs/WebCustomerRelationManagement/v16/Server/sqlite3/storage.ide
 .vs/WebCustomerRelationManagement/DesignTimeBuild/.dtbcache
 .vs/WebCustomerRelationManagement/v15/.suo
+/CustomerRelationManagement/obj
+/Gmail to CRM/bin/Debug
+/Gmail to CRM/obj/Debug

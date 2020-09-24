@@ -93,3 +93,32 @@ D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagemen
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.Storage.DataMovement.xml
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.Storage.File.xml
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Interface.dll.config
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Interface.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Interface.pdb
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.Storage.Blob.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.Storage.Common.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.Storage.DataMovement.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.Storage.File.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Newtonsoft.Json.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Models.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Models.pdb
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\WebCustomerRelationManagement.Models.dll.config
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.Storage.Blob.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.Storage.Common.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.Storage.DataMovement.pdb
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.Storage.DataMovement.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.Azure.Storage.File.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\bin\Debug\Newtonsoft.Json.xml
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Debug\WebCustomerRelationManagement.Interface.csprojAssemblyReference.cache
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Debug\WebCustomerRelationManagement.Interface.csproj.CoreCompileInputs.cache
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Debug\WebCustomerRelationManagement.Interface.csproj.CopyComplete
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Debug\WebCustomerRelationManagement.Interface.dll
+C:\WebCustomerRelationManagement\WebCustomerRelationManagement.Interface\obj\Debug\WebCustomerRelationManagement.Interface.pdb

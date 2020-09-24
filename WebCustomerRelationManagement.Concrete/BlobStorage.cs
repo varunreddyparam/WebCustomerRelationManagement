@@ -226,6 +226,24 @@ namespace WebCustomerRelationManagement.Concrete
 
             return cloudBlobContainer.GetAppendBlobReference(blobId);
         }
+
+        public CloudBlobDirectory GetDirectoryReference(string folderName)
+        {
+            return cloudBlobContainer.GetDirectoryReference(folderName);
+        }
+
+        public string CreateBlockBlob(CloudBlobDirectory path, string blobId, string contentType, string data)
+        {
+            Validate.BlobName(blobId, "blobId");
+            Validate.String(contentType, "contentType");
+            Validate.String(data, "data");
+
+            var cloudBlockBlob = path.GetBlockBlobReference(blobId);
+            cloudBlockBlob.Properties.ContentType = contentType;
+            cloudBlockBlob.UploadText(data);
+
+            return cloudBlockBlob.Uri.ToString();
+        }
     }
 }
 

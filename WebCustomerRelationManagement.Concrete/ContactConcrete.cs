@@ -8,7 +8,7 @@ namespace WebCustomerRelationManagement.Concrete
 {
     public class ContactConcrete : IEntity
     {
-        public async Task<string> CreateRequest(string entityLogicalName, string requestBody, AzureTableStorage azureTableStorage)
+        public async Task<string> CreateRequest(string entityLogicalName, string OrganizationId, string UserId, string requestBody, AzureTableStorage azureTableStorage)
         {
             ContactEntity entity = new ContactEntity();
             entity = JsonConvert.DeserializeObject<ContactEntity>(requestBody);
@@ -64,6 +64,45 @@ namespace WebCustomerRelationManagement.Concrete
         public Task<string> ValidateRequest(string entityLogicalName, string Id, AzureTableStorage azureTableStorage, string requestBody)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<string> GetContactByName(string entityLogicalName, string contactName, AzureTableStorage azureTableStorage)
+        {
+            TableQuery<ContactEntity> table = new TableQuery<ContactEntity>();
+            table.Where(TableQuery.CombineFilters(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, entityLogicalName),
+                TableOperators.And,
+                TableQuery.GenerateFilterCondition("Name", QueryComparisons.Equal, contactName)));
+            return JsonConvert.SerializeObject(await azureTableStorage.QueryAsync(entityLogicalName, table));
+        }
+
+        public async Task<string> InsertOrUpdateContact(string entityLogicalName,string contactName, AzureTableStorage azureTableStorage, AccountEntity account, UserEntity user, OrganizationEntity org)
+        {
+            ContactEntity contactEntity = new ContactEntity();
+            var contact = JsonConvert.DeserializeObject<ContactEntity>(await this.GetContactByName(entityLogicalName, contactName, azureTableStorage));
+            if (contact == null)
+            {
+                contactEntity.PartitionKey = entityLogicalName;
+                contactEntity.RowKey = Guid.NewGuid().ToString();
+                contactEntity.CustomerId = Guid.Parse(contactEntity.RowKey);
+                contactEntity.Name = contactName;
+                contactEntity.Organization = org.OraganizationId;
+                contactEntity.OrganizationName = org.Organizationname;
+                contactEntity.OwnerId = user.OwnerId;
+                contactEntity.OwnerName = user.OwnerName;
+                contactEntity.PrimaryAccountId = account.AccountId;
+                contactEntity.PrimaryAccountName = account.CompanyName;
+                contactEntity.CreatedOn = DateTime.Now;
+                contactEntity.CreatedBy = user.OwnerId;
+                contactEntity.CreatedByName = user.OwnerName;
+                contactEntity.ModifiedBy = user.OwnerId;
+                contactEntity.ModifiedByName = user.OwnerName;
+                contactEntity.ModifiedOn = DateTime.Now;
+                await azureTableStorage.AddAsync(entityLogicalName, contactEntity);
+            }
+            else
+                return "Contact already exist";
+            return "Contact is Created";
+            
         }
     }
 }

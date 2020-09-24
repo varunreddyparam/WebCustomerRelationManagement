@@ -43,15 +43,15 @@ namespace WebCustomerRelationManagement.Models
         public string OwnerName { get; set; }
         public Guid Organization { get; set; }
         public string OrganizationName { get; set; }
-        public string CreatedBy { get; set; }
+        public Guid CreatedBy { get; set; }
         public string CreatedByName { get; set; }
         public DateTime CreatedOn { get; set; }
-        public string CreatedOnBehalfBy { get; set; }
+        public Guid CreatedOnBehalfBy { get; set; }
         public string CreatedOnBehalfByName { get; set; }
         public DateTime ModifiedOn { get; set; }
-        public string ModifiedBy { get; set; }
+        public Guid ModifiedBy { get; set; }
         public string ModifiedByName { get; set; }
-        public string ModifiedOnBehalfBy { get; set; }
+        public Guid ModifiedOnBehalfBy { get; set; }
         public string ModifiedOnBehalfByName { get; set; }
 
     }

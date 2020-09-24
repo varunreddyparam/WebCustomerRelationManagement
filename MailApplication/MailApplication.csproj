@@ -72,6 +72,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectGmail.cs" />
+    <Compile Include="GetMailProgram.cs" />
     <Compile Include="IMessageClient.cs" />
     <Compile Include="MailMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -40,3 +40,17 @@ D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagemen
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.csproj.CopyComplete
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.dll
 D:\Lenovo Disk D BakUp\My developements\Development\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.pdb
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\WebTimeSheetManagementModels.dll
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\WebTimeSheetManagementModels.pdb
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Newtonsoft.Json.dll
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\bin\Debug\Newtonsoft.Json.xml
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.csprojAssemblyReference.cache
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.csproj.CoreCompileInputs.cache
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.csproj.CopyComplete
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.dll
+C:\WebCustomerRelationManagement\WebTimeSheetManagementModels\obj\Debug\WebTimeSheetManagementModels.pdb

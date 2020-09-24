@@ -13,7 +13,7 @@ namespace WebCustomerRelationManagement.Concrete
 
         }
 
-        public async Task<string> CreateRequest(string entityLogicalName, string requestBody, AzureTableStorage azureTableStorage)
+        public async Task<string> CreateRequest(string entityLogicalName, string OrganizationId, string UserId, string requestBody, AzureTableStorage azureTableStorage)
         {
             UserPrivilegeEntity entity = new UserPrivilegeEntity();
             entity = JsonConvert.DeserializeObject<UserPrivilegeEntity>(requestBody);

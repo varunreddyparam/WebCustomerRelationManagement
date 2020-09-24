@@ -9,6 +9,7 @@ namespace WebCustomerRelationManagement.Interface
         string CreateBlockBlob(string blobId, string contentType, Stream data);
         string CreateBlockBlob(string blobId, string contentType, byte[] data);
         string CreateBlockBlob(string blobId, string contentType, string data);
+        string CreateBlockBlob(CloudBlobDirectory path,string blobId, string contentType, string data);
         string CreateBlockBlob(string blobId, string filePath);
         string AddDataToAppendBlockBlob(string blobId, string data);
         CloudBlockBlob GetBlockBlobReference(string blobId);
@@ -18,5 +19,6 @@ namespace WebCustomerRelationManagement.Interface
         IEnumerable<IListBlobItem> ListBlobsInContainer();
         void DeleteBlobContainer();
         void DeleteBlob(string blobId);
+        CloudBlobDirectory GetDirectoryReference(string folderName);
     }
 }
